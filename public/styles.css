@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html:has(.shower.full) {
+    background-color: black;
+}
+
+main.shower.list {
+    min-height: 100vh;
+}
+
+.picture {
+    width: 100%;
+}
+
+.smaller {
+    font-size: 0.7em !important;
+}
+
+.smallest {
+    font-size: 0.5em !important;
+}
+
+.bigger {
+    font-size: 1.2em !important;
+}
+
+.biggest {
+    font-size: 1.4em !important;
+}
+
+error {
+    color: red;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerAbsolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+pre.no-code code::before {
+    content: '' !important;
+}

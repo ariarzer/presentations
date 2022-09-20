@@ -1,0 +1,13 @@
+.true.next-light.active,
+.true.next-light.visited {
+    background-color: rgba(0, 255, 22, 0.15) !important;
+}
+
+.false.next-light.active,
+.false.next-light.visited {
+    background-color: rgba(255, 0, 4, 0.15) !important;
+}
+
+.shower.full .next.next-light {
+    visibility: visible;
+}

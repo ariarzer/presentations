@@ -1,0 +1,62 @@
+.CascadedValue__example--animation {
+    font-size: 70px;
+    font-weight: bold;
+    color: red;
+    animation: anim 3s infinite;
+}
+
+.CascadedValue__example--animationImportant {
+    font-size: 70px;
+    font-weight: bold;
+    color: red;
+}
+
+@keyframes anim {
+    50% {
+        color: green;
+    }
+}
+
+.CascadedValue__example--author {
+    color: red;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.CascadedValue__example {
+    display: flex;
+    flex-direction: column;
+}
+
+.CascadedValue__tablePlus tbody td::after,
+.CascadedValue__table tbody td::after {
+    content: ' +';
+}
+
+.CascadedValue__table tbody  td:first-child::after,
+.CascadedValue__tablePlus tbody  td:first-child::after,
+.CascadedValue__table tbody  td:last-child::after,
+.CascadedValue__tablePlus tbody  td:last-child::after {
+    content: '';
+}
+
+.CascadedValue__table tbody  td:nth-last-child(2)::after {
+    content: '';
+}
+
+.CascadedValue__table tbody  td:last-child::before {
+    content: '= ';
+}
+
+.CascadedValue__ruby rt {
+    font-size: 20px;
+}
+
+.CascadedValue__compareTable {
+    font-size: 0.9em;
+}
+
+.CascadedValue__compareTable td:last-child {
+    opacity: 0.4;
+    text-align: right;
+}

@@ -1,0 +1,11 @@
+.TransitionImportant__text.red {
+    color: red;
+}
+
+.TransitionImportant__text.green {
+    color: green !important;
+}
+
+.TransitionImportant__text {
+    transition: color 1s;
+}

@@ -1,0 +1,7 @@
+.nextList * {
+    color: grey;
+}
+
+.nextList .active {
+    color: inherit;
+}
