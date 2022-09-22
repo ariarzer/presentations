@@ -56,3 +56,7 @@ center {
 pre.no-code code::before {
     content: '' !important;
 }
+
+.slide.noBadge::after {
+    content: none;
+}
