@@ -30,7 +30,13 @@ export default function index() {
 
             <Slide>
                 <h2>Итого</h2>
-                <error>дописать</error>
+                <ul>
+                    <li>Отбираем декларации</li>
+                    <li>Выбираем одну</li>
+                    <li>Наследуем её</li>
+                    <li>Вычисляем</li>
+                    <li>Отрисовываем на устройстве</li>
+                </ul>
             </Slide>
 
             <Slide>
@@ -39,8 +45,8 @@ export default function index() {
                     <ul>
                         <li>Спецификация <a target="_blank" href="https://www.w3.org/TR/css-cascade-4/">css-cascade-4</a></li>
                         <li><a href="https://ru.ariarzer.dev/articles/2021/value-definition-syntax.html">Про Value Definition Syntax</a></li>
-                        <li><a href="https://ru.ariarzer.dev/articles/2020/css-value-processing.html">Про Value Procesing</a></li>
-                        <li><a target="_blank" href="https://lists.w3.org/Archives/Public/www-style/">Почтовая расслыка</a> www-style</li>
+                        <li><a href="https://ru.ariarzer.dev/articles/2020/css-value-processing.html">Про Value Processing</a></li>
+                        <li><a target="_blank" href="https://lists.w3.org/Archives/Public/www-style/">Почтовая рассылка</a> www-style</li>
                     </ul>
                 </ul>
             </Slide>

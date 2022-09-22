@@ -69,160 +69,160 @@ export default function SpecialIntro() {
                 </div>
             </Slide>
 
-            <Slide>
-                <h2>Какого цвета блок?</h2>
-                <div className={'columns two'}>
-                    <div>
-                        <span>index.html</span>
-                        <pre className={'smallest'}>
-                            <code>{'<link rel="stylesheet" href="style.css"/>'}</code>
-                            <code>{'<div '}</code>
-                            <code>{'   class="red blue"'}</code>
-                            <code>{'   id="block"'}</code>
-                            <code>{'   style="color: red"'}</code>
-                            <code>{'>CSS</div>'}</code>
-                            <code>{'<style>'}</code>
-                            <code>{'   .red { color: red;}'}</code>
-                            <code>{'   .red.blue { color: green; !important}'}</code>
-                            <code>{'   .blue { color: blue !important;}'}</code>
-                            <code>{'   @import "custom.css";'}</code>
-                            <code>{'</style>'}</code>
-                        </pre>
-                    </div>
+            {/*<Slide>*/}
+            {/*    <h2>Какого цвета блок?</h2>*/}
+            {/*    <div className={'columns two'}>*/}
+            {/*        <div>*/}
+            {/*            <span>index.html</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code>{'<link rel="stylesheet" href="style.css"/>'}</code>*/}
+            {/*                <code>{'<div '}</code>*/}
+            {/*                <code>{'   class="red blue"'}</code>*/}
+            {/*                <code>{'   id="block"'}</code>*/}
+            {/*                <code>{'   style="color: red"'}</code>*/}
+            {/*                <code>{'>CSS</div>'}</code>*/}
+            {/*                <code>{'<style>'}</code>*/}
+            {/*                <code>{'   .red { color: red;}'}</code>*/}
+            {/*                <code>{'   .red.blue { color: green; !important}'}</code>*/}
+            {/*                <code>{'   .blue { color: blue !important;}'}</code>*/}
+            {/*                <code>{'   @import "custom.css";'}</code>*/}
+            {/*                <code>{'</style>'}</code>*/}
+            {/*            </pre>*/}
+            {/*        </div>*/}
 
-                    <div>
-                        <span>style.css</span>
-                        <pre className={'smallest'}>
-                            <code>{'#block.red'}</code>
-                            <code>{'   color: red;'}</code>
-                            <code>{'}'}</code>
-                        </pre>
-                        <span>custom.css</span>
-                        <pre className={'smallest'}>
-                            <code>{'.blue {'}</code>
-                            <code>{'  color: blue;'}</code>
-                            <code>{'}'}</code>
-                            <code>{'@media (min-width: 600px) {'}</code>
-                            <code>{'  [class="blue"] {'}</code>
-                            <code>{'    color: blue;'}</code>
-                            <code>{'  }'}</code>
-                            <code>{'}'}</code>
-                        </pre>
-                    </div>
-                </div>
-            </Slide>
+            {/*        <div>*/}
+            {/*            <span>style.css</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code>{'#block.red'}</code>*/}
+            {/*                <code>{'   color: red;'}</code>*/}
+            {/*                <code>{'}'}</code>*/}
+            {/*            </pre>*/}
+            {/*            <span>custom.css</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code>{'.blue {'}</code>*/}
+            {/*                <code>{'  color: blue;'}</code>*/}
+            {/*                <code>{'}'}</code>*/}
+            {/*                <code>{'@media (min-width: 600px) {'}</code>*/}
+            {/*                <code>{'  [class="blue"] {'}</code>*/}
+            {/*                <code>{'    color: blue;'}</code>*/}
+            {/*                <code>{'  }'}</code>*/}
+            {/*                <code>{'}'}</code>*/}
+            {/*            </pre>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>Кратко</h2>
-                <ul>
-                    <li>Выбрать декларации, которые подходят для заданного элемента</li>
-                    <li>Выбрать из них одно, которое подходит, по заданным правилам</li>
-                    <li>Наследовать</li>
-                    <li>Отрисовать</li>
-                </ul>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Кратко</h2>*/}
+            {/*    <ul>*/}
+            {/*        <li>Выбрать декларации, которые подходят для заданного элемента</li>*/}
+            {/*        <li>Выбрать из них одно, которое подходит, по заданным правилам</li>*/}
+            {/*        <li>Наследовать</li>*/}
+            {/*        <li>Отрисовать</li>*/}
+            {/*    </ul>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>Выбрать декларации</h2>
-                <div className={'columns two'}>
-                    <div>
-                        <span>index.html</span>
-                        <pre className={'smallest'}>
-                            <code style={{opacity: 0.3}}>{'<link rel="stylesheet" href="style.css"/>'}</code>
-                            <code style={{opacity: 0.3}}>{'<div '}</code>
-                            <code style={{opacity: 0.3}}>{'   class="red blue"'}</code>
-                            <code style={{opacity: 0.3}}>{'   id="block"'}</code>
-                            <code style={{opacity: 1}}>{'   style="color: red"'}</code>
-                            <code style={{opacity: 0.3}}>{'>CSS</div>'}</code>
-                            <code style={{opacity: 0.3}}>{'<style>'}</code>
-                            <code style={{opacity: 0.3}}>{'<style>'}</code>
-                            <code style={{opacity: 1}}>{'   .red { color: red;}'}</code>
-                            <code style={{opacity: 1}}>{'   .red.blue { color: green; !important}'}</code>
-                            <code style={{opacity: 1}}>{'   .blue { color: blue !important;}'}</code>
-                            <code style={{opacity: 0.3}}>{'   @import "custom.css";'}</code>
-                            <code style={{opacity: 0.3}}>{'</style>'}</code>
-                        </pre>
-                    </div>
-                    <div>
-                        <span>style.css</span>
-                        <pre className={'smallest'}>
-                            <code style={{opacity: 0.3}}>{'#block.red'}</code>
-                            <code style={{opacity: 1}}>{'   color: red;'}</code>
-                            <code style={{opacity: 0.3}}>{'}'}</code>
-                        </pre>
-                        <span>custom.css</span>
-                        <pre className={'smallest'}>
-                            <code style={{opacity: 0.3}}>{'.blue {'}</code>
-                            <code style={{opacity: 1}}>{'  color: blue;'}</code>
-                            <code style={{opacity: 0.3}}>{'}'}</code>
-                            <code style={{opacity: 0.3}}>{'@media (min-width: 600px) {'}</code>
-                            <code style={{opacity: 0.3}}>{'  [class="blue"] {'}</code>
-                            <code style={{opacity: 1}}>{'    color: blue;'}</code>
-                            <code style={{opacity: 0.3}}>{'  }'}</code>
-                            <code style={{opacity: 0.3}}>{'}'}</code>
-                        </pre>
-                    </div>
-                </div>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Выбрать декларации</h2>*/}
+            {/*    <div className={'columns two'}>*/}
+            {/*        <div>*/}
+            {/*            <span>index.html</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<link rel="stylesheet" href="style.css"/>'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<div '}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   class="red blue"'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   id="block"'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'   style="color: red"'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'>CSS</div>'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<style>'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<style>'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'   .red { color: red;}'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'   .red.blue { color: green; !important}'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'   .blue { color: blue !important;}'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   @import "custom.css";'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'</style>'}</code>*/}
+            {/*            </pre>*/}
+            {/*        </div>*/}
+            {/*        <div>*/}
+            {/*            <span>style.css</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code style={{opacity: 0.3}}>{'#block.red'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'   color: red;'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'}'}</code>*/}
+            {/*            </pre>*/}
+            {/*            <span>custom.css</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code style={{opacity: 0.3}}>{'.blue {'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'  color: blue;'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'}'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'@media (min-width: 600px) {'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'  [class="blue"] {'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'    color: blue;'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'  }'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'}'}</code>*/}
+            {/*            </pre>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>Выбрать одну из списка</h2>
-                <div className={'columns two'}>
-                    <div>
-                        <span>index.html</span>
-                        <pre className={'smallest'}>
-                            <code style={{opacity: 0.3}}>{'<link rel="stylesheet" href="style.css"/>'}</code>
-                            <code style={{opacity: 0.3}}>{'<div '}</code>
-                            <code style={{opacity: 0.3}}>{'   class="red blue"'}</code>
-                            <code style={{opacity: 0.3}}>{'   id="block"'}</code>
-                            <code style={{opacity: 0.3}}>{'   style="color: red"'}</code>
-                            <code style={{opacity: 0.3}}>{'>CSS</div>'}</code>
-                            <code style={{opacity: 0.3}}>{'<style>'}</code>
-                            <code style={{opacity: 0.3}}>{'<style>'}</code>
-                            <code style={{opacity: 0.3}}>{'   .red { color: red;}'}</code>
-                            <code style={{opacity: 1}}>{'   .red.blue { color: green; !important}'}</code>
-                            <code style={{opacity: 0.3}}>{'   .blue { color: blue !important;}'}</code>
-                            <code style={{opacity: 0.3}}>{'   @import "custom.css";'}</code>
-                            <code style={{opacity: 0.3}}>{'</style>'}</code>
-                        </pre>
-                    </div>
-                    <div>
-                        <span>style.css</span>
-                        <pre className={'smallest'}>
-                            <code style={{opacity: 0.3}}>{'#block.red'}</code>
-                            <code style={{opacity: 0.3}}>{'   color: red;'}</code>
-                            <code style={{opacity: 0.3}}>{'}'}</code>
-                        </pre>
-                        <span>custom.css</span>
-                        <pre className={'smallest'}>
-                            <code style={{opacity: 0.3}}>{'.blue {'}</code>
-                            <code style={{opacity: 0.3}}>{'  color: blue;'}</code>
-                            <code style={{opacity: 0.3}}>{'}'}</code>
-                            <code style={{opacity: 0.3}}>{'@media (min-width: 600px) {'}</code>
-                            <code style={{opacity: 0.3}}>{'  [class="blue"] {'}</code>
-                            <code style={{opacity: 0.3}}>{'    color: blue;'}</code>
-                            <code style={{opacity: 0.3}}>{'  }'}</code>
-                            <code style={{opacity: 0.3}}>{'}'}</code>
-                        </pre>
-                    </div>
-                </div>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Выбрать одну из списка</h2>*/}
+            {/*    <div className={'columns two'}>*/}
+            {/*        <div>*/}
+            {/*            <span>index.html</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<link rel="stylesheet" href="style.css"/>'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<div '}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   class="red blue"'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   id="block"'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   style="color: red"'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'>CSS</div>'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<style>'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'<style>'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   .red { color: red;}'}</code>*/}
+            {/*                <code style={{opacity: 1}}>{'   .red.blue { color: green; !important}'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   .blue { color: blue !important;}'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   @import "custom.css";'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'</style>'}</code>*/}
+            {/*            </pre>*/}
+            {/*        </div>*/}
+            {/*        <div>*/}
+            {/*            <span>style.css</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code style={{opacity: 0.3}}>{'#block.red'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'   color: red;'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'}'}</code>*/}
+            {/*            </pre>*/}
+            {/*            <span>custom.css</span>*/}
+            {/*            <pre className={'smallest'}>*/}
+            {/*                <code style={{opacity: 0.3}}>{'.blue {'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'  color: blue;'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'}'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'@media (min-width: 600px) {'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'  [class="blue"] {'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'    color: blue;'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'  }'}</code>*/}
+            {/*                <code style={{opacity: 0.3}}>{'}'}</code>*/}
+            {/*            </pre>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>Наследовать</h2>
-                <pre>
-                    <code>color: blue;</code>
-                    <code>  ⇥  color: inherit;</code>
-                </pre>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Наследовать</h2>*/}
+            {/*    <pre>*/}
+            {/*        <code>color: blue;</code>*/}
+            {/*        <code>  ⇥  color: inherit;</code>*/}
+            {/*    </pre>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>Отрисовать</h2>
+            {/*<Slide>*/}
+            {/*    <h2>Отрисовать</h2>*/}
 
-                <p><code>color: blue;</code></p>
-                <p>* представим, что там была высота <br/><code>height: 15.9px; /* => 16px */</code></p>
+            {/*    <p><code>color: blue;</code></p>*/}
+            {/*    <p>* представим, что там была высота <br/><code>height: 15.9px; /* => 16px */}
 
-            </Slide>
+            {/*</Slide>*/}
 
             <Slide>
                 <h2>По спецификации</h2>

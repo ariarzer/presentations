@@ -10,26 +10,30 @@ export default function Transition({className}) {
 
     return (
         <form className={className}>
-            <label>
-                <input
-                    type="radio"
-                    name={'Transition__example'}
-                    value={'red'}
-                    onChange={(e) => onChange(e)}
-                    checked={textColor === 'red'}
-                />
-                red
-            </label>
-            <label>
-                <input
-                    type="radio"
-                    name={'Transition__example'}
-                    value={'green'}
-                    onChange={(e) => onChange(e)}
-                    checked={textColor === 'green'}
-                />
-                green
-            </label>
+            <div className={classes.Transition__inputBlock}>
+                <label>
+                    <input
+                        type="radio"
+                        name={'Transition__example'}
+                        className={classes.Transition__input}
+                        value={'red'}
+                        onChange={(e) => onChange(e)}
+                        checked={textColor === 'red'}
+                    />
+                    red
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name={'Transition__example'}
+                        className={classes.Transition__input}
+                        value={'green'}
+                        onChange={(e) => onChange(e)}
+                        checked={textColor === 'green'}
+                    />
+                    green
+                </label>
+            </div>
             <span className={classes['Transition__text'] + ' ' + textColorClassName}>
                 CSS
             </span>

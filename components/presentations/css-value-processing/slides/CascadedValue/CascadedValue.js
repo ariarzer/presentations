@@ -25,16 +25,34 @@ export default function CascadedValue() {
             </Slide>
             <Slide>
                 <h2>Уровни объявления</h2>
-                <ol>
-                    <li>Декларации из Transition</li>
-                    <li>!important декларации user-агента</li>
-                    <li>!important декларации пользователя</li>
-                    <li>!important декларации автора (то есть разработчика)</li>
-                    <li>Animation декларации</li>
-                    <li>Декларации автора (то есть разработчика)</li>
-                    <li>Декларации пользователя</li>
-                    <li>Декларации user-агента</li>
-                </ol>
+                <table className={classes.CascadedValue__compareTable}>
+                    <tbody>
+                    <tr>
+                        <td>Декларации из Transition</td>
+                    </tr>
+                    <tr>
+                        <td>!important декларации user-агента</td>
+                    </tr>
+                    <tr>
+                        <td>!important декларации пользователя</td>
+                    </tr>
+                    <tr>
+                        <td>!important декларации автора (то есть разработчика)</td>
+                    </tr>
+                    <tr>
+                        <td>Animation декларации</td>
+                    </tr>
+                    <tr>
+                        <td>Декларации автора (то есть разработчика)</td>
+                    </tr>
+                    <tr>
+                        <td>Декларации пользователя</td>
+                    </tr>
+                    <tr>
+                        <td>Декларации user-агента</td>
+                    </tr>
+                    </tbody>
+                </table>
             </Slide>
             <Slide>
                 <h2>Уровни объявления</h2>
@@ -79,13 +97,13 @@ export default function CascadedValue() {
             </Slide>
             <Slide>
                 <h2>Декларации user-агента</h2>
-                <CascadeLevelsList active={[6]}/>
+                <CascadeLevelsList active={[7]}/>
                 <img src="/assets/css-value-processing/user_agent.png" alt="" style={{width: '90%'}}/>
             </Slide>
 
             <Slide>
                 <h2>Декларации user-агента</h2>
-                <CascadeLevelsList active={[2]}/>
+                <CascadeLevelsList active={[1]}/>
                 <img src="/assets/css-value-processing/user_agent_important.png" alt="" style={{width: '90%'}}/>
             </Slide>
 
@@ -116,27 +134,6 @@ export default function CascadedValue() {
                         <code>{'.red {'}</code>
                         <code>    color: red !important;</code>
                         <code>}</code>
-                    </pre>
-                    <div className={classes['CascadedValue__example--author']}>CSS</div>
-                </div>
-            </Slide>
-
-            <Slide>
-                <h2>Декларации автора</h2>
-                <CascadeLevelsList active={[5, 3]}/>
-                <div className={'columns two'}>
-                    <pre lang='css' className={'smaller'}>
-                        <code>{'<div class="class" id="id">'}</code>
-                        <code>{'    CSS'}</code>
-                        <code>{'</div>'}</code>
-                        <code>{'<style>'}</code>
-                        <code>{'  .class {'}</code>
-                        <code>{'      color: red !important;'}</code>
-                        <code>{'  }'}</code>
-                        <code>{'  #id {'}</code>
-                        <code>{'      color: blue;'}</code>
-                        <code>{'  }'}</code>
-                        <code>{'</style>'}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
                 </div>
@@ -181,11 +178,11 @@ export default function CascadedValue() {
                 <CascadeLevelsList active={[0]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
+                        <code>{'.red {'}</code>
                         <code>{'    color: red;'}</code>
                         <code>{'    transition: color 1s;'}</code>
                         <code>{'}'}</code>
-                        <code>{'.red'}</code>
+                        <code>{'.green'}</code>
                         <code>{'    color: green;'}</code>
                         <code>{'}'}</code>
                     </pre>
@@ -198,11 +195,11 @@ export default function CascadedValue() {
                 <CascadeLevelsList active={[0]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
+                        <code>{'.red {'}</code>
                         <code>{'    color: red;'}</code>
                         <code>{'    transition: color 1s;'}</code>
                         <code>{'}'}</code>
-                        <code>{'.red'}</code>
+                        <code>{'.green'}</code>
                         <code>{'    color: green !important;'}</code>
                         <code>{'}'}</code>
                     </pre>
@@ -217,17 +214,34 @@ export default function CascadedValue() {
 
             <Slide>
                 <h2>Уровни объявления</h2>
-                <CascadeLevelsList className={'next'}/>
-                <ul>
-                    <li>Декларации из Transition</li>
-                    <li>!important декларации user-агента</li>
-                    <li>!important декларации пользователя</li>
-                    <li>!important декларации автора (то есть разработчика)</li>
-                    <li>Animation декларации</li>
-                    <li>Декларации автора (то есть разработчика)</li>
-                    <li>Декларации пользователя</li>
-                    <li>Декларации user-агента</li>
-                </ul>
+                <table className={classes.CascadedValue__compareTable}>
+                    <tbody>
+                    <tr>
+                        <td>Декларации из Transition</td>
+                    </tr>
+                    <tr>
+                        <td>!important декларации user-агента</td>
+                    </tr>
+                    <tr>
+                        <td>!important декларации пользователя</td>
+                    </tr>
+                    <tr>
+                        <td>!important декларации автора (то есть разработчика)</td>
+                    </tr>
+                    <tr>
+                        <td>Animation декларации</td>
+                    </tr>
+                    <tr>
+                        <td>Декларации автора (то есть разработчика)</td>
+                    </tr>
+                    <tr>
+                        <td>Декларации пользователя</td>
+                    </tr>
+                    <tr>
+                        <td>Декларации user-агента</td>
+                    </tr>
+                    </tbody>
+                </table>
             </Slide>
 
             <Slide>
@@ -237,12 +251,55 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
-                <h2>А что, если у нас две декларации на одном уровне?</h2>
+                <h2>Две декларации на одном уровне?</h2>
                 <pre>
-                    <code>{'<div class="red" id="blue">CSS</div>'}</code>
+                    <code>{'<div class="red" id="blue">'}</code>
+                    <code>{'    '}
+                        <span className={classes.CascadedValue__gradientText}
+                        > CSS</span>
+                    </code>
+                    <code>{'</div>'}</code>
                     <code>{'<style>'}</code>
                     <code>{'  #blue { color: blue; }'}</code>
                     <code>{'  .red { color: red; }'}</code>
+                    <code>{'</style>'}</code>
+                </pre>
+            </Slide>
+
+            <Slide>
+                <h2>Две декларации на одном уровне?</h2>
+                <pre>
+                    <code>{'<div class="red" id="blue">'}</code>
+                    <code>{'    '}
+                        <span  className={classes.CascadedValue__gradientText}
+                        > CSS</span>
+                    </code>
+                    <code>{'</div>'}</code>
+                    <code>{'<style>'}</code>
+                    <code>{'  #blue { color: blue !important; }'}</code>
+                    <code>{'  .red { color: red !important; }'}</code>
+                    <code>{'</style>'}</code>
+                </pre>
+            </Slide>
+
+
+            <Slide>
+                <h2>Здесь нет конфликта селекторов</h2>
+                <CascadeLevelsList active={[5, 3]}/>
+                <pre lang='css'>
+                    <code>{'<div class="red" id="blue">'}</code>
+                    <code>{'    '}
+                        <span style={{
+                            'font-size': '1.5em',
+                            'font-weight': 'bold',
+                            'color': 'red'
+                        }}
+                        > CSS</span>
+                    </code>
+                    <code>{'</div>'}</code>
+                    <code>{'<style>'}</code>
+                    <code>{'  .red { color: red !important; }'}</code>
+                    <code>{'  #id { color: blue;' }'}</code>
                     <code>{'</style>'}</code>
                 </pre>
             </Slide>
@@ -262,19 +319,19 @@ export default function CascadedValue() {
                 <table>
                     <tbody>
                     <tr>
-                        <td> #id</td>
+                        <td><code>#id</code></td>
                         <td>+1</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>.class, :hover, [name="value"]</td>
+                        <td><code>.class</code>, <code>:hover</code>,<code>[name="value"]</code></td>
                         <td>0</td>
                         <td>+1</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>::before, div</td>
+                        <td><code>::before</code>, <code>div</code></td>
                         <td>0</td>
                         <td>0</td>
                         <td>+1</td>
@@ -289,21 +346,21 @@ export default function CascadedValue() {
                 <table className={classes.CascadedValue__table}>
                     <tbody>
                     <tr>
-                        <td> #id</td>
+                        <td><code>#id</code></td>
                         <td>1 * 100</td>
                         <td>0 * 10</td>
                         <td>0 * 1</td>
                         <td>100</td>
                     </tr>
                     <tr>
-                        <td>.class, :hover, [name="value"]</td>
+                        <td><code>.class</code>, <code>:hover</code>,<code>[name="value"]</code></td>
                         <td>0 * 100</td>
                         <td>1 * 10</td>
                         <td>0 * 1</td>
                         <td>010</td>
                     </tr>
                     <tr>
-                        <td>::before, div</td>
+                        <td><code>::before</code>, <code>div</code></td>
                         <td>0 * 100</td>
                         <td>0 * 10</td>
                         <td>1 * 1</td>
@@ -362,46 +419,16 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
-                <h2 className={'shout'}>10 классов равны идентификатору???</h2>
+                <h2 className={'shout'}>11 классов больше идентификатора???</h2>
             </Slide>
 
             <Slide>
                 <h2>На самом деле чуть-чуть не так</h2>
                 <p>Используется степень двойки.</p>
                 <p style={{textDecoration: 'line-through'}}> <code>1 * 10^2</code> + <code> 1 * 10^1</code> + <code>1 * 10^0</code></p>
-                <p><code>1 * 2^32</code> + <code> 1 * 2^16</code> + <code>1 * 2^8</code></p>
+                <p><code>1 * 2^24</code> + <code> 1 * 2^16</code> + <code>1 * 2^8</code></p>
             </Slide>
-            <Slide>
-                <h2>Коэффициент специфичности</h2>
-                <table className={classes.CascadedValue__tablePlus}>
-                    <tbody>
-                    <tr>
-                        <td>span</td>
-                        <td>0 * 2^32</td>
-                        <td>0 * 2^16</td>
-                        <td>1 * 2^8</td>
-                    </tr>
-                    <tr>
-                        <td>.class #id</td>
-                        <td>1 * 2^32</td>
-                        <td>1 * 2^16</td>
-                        <td>0 * 2^8</td>
-                    </tr>
-                    <tr>
-                        <td>.class #id::before:hover</td>
-                        <td>1 * 2^32</td>
-                        <td>2 * 2^16</td>
-                        <td>1 * 2^8</td>
-                    </tr>
-                    <tr>
-                        <td>#id [name="value"]</td>
-                        <td>1 * 2^32</td>
-                        <td>1 * 2^16</td>
-                        <td>0 * 2^8</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </Slide>
+
             <Slide>
                 <h2>Коэффициент специфичности</h2>
                 <img src="/assets/css-value-processing/habr_256.png" alt="" className="picture"/>
@@ -419,14 +446,8 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
-                <h2>Семантическое версионирование</h2>
-                <p><code>1.0.0</code> > <code>1.0.1</code></p>
-                <p><code>1.1.0</code> {'<'} <code>1.0.1</code></p>
-            </Slide>
-
-            <Slide>
                 <h2>Коэффициент специфичности</h2>
-                <table className={classes.CascadedValue__table}>
+                <table>
                     <thead>
                     <tr>
                         <td>селектор</td>
@@ -470,7 +491,7 @@ export default function CascadedValue() {
             </Slide>
             <Slide>
                 <h2>Коэффициент специфичности</h2>
-                <table className={classes.CascadedValue__table}>
+                <table>
                     <thead>
                     <tr>
                         <td>селектор</td>
@@ -500,21 +521,6 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
-                <h2>Функциональные псевдоклассы</h2>
-                <p><code>:is()</code>, <code>:not()</code>, <code>:has()</code> </p>
-                <p>- специфичность равна наибольшей среди элементов списка.</p>
-                <p><code>#id:not(div, .class)</code> => <code>1.1.1</code></p>
-                <p><code>#id:not(#id, .class)</code> => <code>2.1.0</code></p>
-            </Slide>
-
-            <Slide>
-                <h2>Функциональные псевдоклассы</h2>
-                <p><code>:where()</code> - специфичность всегда равна нулю.</p>
-                <p><code>#id:where(div, .class)</code> => <code>1.0.0</code></p>
-                <p><code>#id:where(#id, .class)</code> => <code>1.0.0</code></p>
-            </Slide>
-
-            <Slide>
                 <h2><a
                     href="https://polypane.app/css-specificity-calculator/">polypane.app/css-specificity-calculator/</a>
                 </h2>
@@ -540,6 +546,22 @@ export default function CascadedValue() {
                 <p>А что, если у нас два селектора одной специфичности?</p>
                 <pre>
                     <code>{'<div class="red blue">'}
+                        CSS
+                        {'</div>'}
+                    </code>
+                    <code>{'<style>'}</code>
+                    <code>{'  .blue { color: blue; }'}</code>
+                    <code>{'  .red { color: red; }'}</code>
+                    <code>{'</style>'}</code>
+                </pre>
+                <a href="https://twitter.com/mxstbr/status/1038073603311448064" hidden={true}>https://twitter.com/mxstbr/status/1038073603311448064</a>
+            </Slide>
+
+            <Slide>
+                <h2>Порядок объявления</h2>
+                <p>Чем ближе к концу документа - тем приоритетнее</p>
+                <pre>
+                    <code>{'<div class="red blue">'}
                         <span style={{'font-style':'bold', color: 'red'}}>CSS</span>
                         {'</div>'}
                     </code>
@@ -553,7 +575,48 @@ export default function CascadedValue() {
 
             <Slide>
                 <h2>Выбрали одну декларацию</h2>
-                <error>пример с таблицей и сравнением мест и селекторов</error>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>свойство</td>
+                        <td>значение</td>
+                        <td>селектор</td>
+                        <td>место</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>height</td>
+                        <td>100px</td>
+                        <td><code>#abc</code></td>
+                        <td>index.html:12</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>10em</td>
+                        <td><code>#id</code></td>
+                        <td>style.css:14</td>
+                    </tr>
+                    <tr className={'true'}>
+                        <td>height</td>
+                        <td>calc(50% - 25px)</td>
+                        <td>-</td>
+                        <td>style=""</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>50%</td>
+                        <td><code>[n='4']</code></td>
+                        <td>style.css:6</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>1vh</td>
+                        <td><code>.a</code></td>
+                        <td>style.css:123</td>
+                    </tr>
+                    </tbody>
+                </table>
             </Slide>
         </>
     )

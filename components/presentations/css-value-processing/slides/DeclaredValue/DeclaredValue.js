@@ -44,9 +44,9 @@ export default function DeclaredValue() {
                     <pre className={'smaller'}>
                         <code>{'<div class="a">Safari IOs</div>'}</code>
                         <code>{'<style>'}</code>
-                        <code className={'next next-light false'}>{'  @media (max-width: 600px) {}'}</code>
+                        <code className={'next next-light true'}>{'  @media (max-width: 600px) {}'}</code>
                         <code className={'next next-light true'}>{'  @supports (display: flex) {}'}</code>
-                        <code className={'next next-light true'}>{'  @media (min-width: 1200px) {}'}</code>
+                        <code className={'next next-light false'}>{'  @media (min-width: 1200px) {}'}</code>
                         <code>{'</style>'}</code>
                     </pre>
                 </div>
@@ -66,7 +66,6 @@ export default function DeclaredValue() {
                         <code>{'  .a {'}</code>
                         <code className={'next next-light false'}>{'    height: 12ms;'}</code>
                         <code className={'next next-light true'}>{'    height: 12em;'}</code>
-                        <code className={'next next-light true'}>{'    height: calc(50%);'}</code>
                         <code>{'  }'}</code>
                         <code>{'</style>'}</code>
                     </pre>
@@ -74,29 +73,10 @@ export default function DeclaredValue() {
             </Slide>
             <Slide>
                 <h2>Проверка типа</h2>
-                <img src="/assets/css-value-processing/css_height.png" alt="" className="picture"/>
-            </Slide>
-            {/*<Slide>*/}
-            {/*    <h2>Value Definition Syntax</h2>*/}
-            {/*    <p></p>*/}
-            {/*</Slide>*/}
-            <Slide>
-                <h2>Проверка типа</h2>
-                <img src="/assets/css-value-processing/text_shadow.png" alt="" className="picture"/>
-            </Slide>
-            <Slide>
-                <h2>Проверка типа</h2>
-                <pre lang="vds">
-                <code>&lt;'text-shadow'> = </code>
-                <code>{'  none | [ <color>? && <length>{2,3} ]#'}</code>
-                </pre>
-                <pre lang="css">
-                    <code className="next true next-light">text-shadow: black 0.1em 0.1em 0.2em;</code>
-                    <code className="next true next-light">text-shadow: 0.1em 0.1em black;</code>
-                    <code className="next false next-light">text-shadow: 0.1em;</code>
-                </pre>
+
                 <a href="https://www.youtube.com/watch?v=o3oFkckaJGo&list=PLcXJ90eZ2bxjlewIlnsC_dQZeX7BHtnut&index=3"
                    className="next">подробнее про типы данных в CSS</a>
+                <img src="/assets/css-value-processing/css_height.png" alt="" className="picture"/>
             </Slide>
             <Slide>
                 <img src="/assets/css-value-processing/declared_value.png"
@@ -130,26 +110,12 @@ export default function DeclaredValue() {
             </Slide>
 
             <Slide>
-                <h2>Короткие свойства (shorthand)</h2>
-                <div className={'columns two'}>
-                <pre>
-                    <code><b>border-left</b>:</code>
-                    <code>    10px solid red;</code>
-                    <code><b>border-color</b>:</code>
-                    <code>    purple;</code>
-                    <code><b>border</b>:</code>
-                    <code>    5px solid;</code>
-                </pre>
-                    <div style={{
-                        'border-left': '10px dashed red',
-                        'border-color': 'purple',
-                        'border': '5px solid',
-                    }}/>
-                </div>
-            </Slide>
-
-            <Slide>
                 <h2>Вернемся к вопросу с фоном</h2>
+                <img src="/assets/css-value-processing/bg-color.png"
+                     alt=""
+                     className="picture center"
+                     style={{'border': '1px solid', width: '80%'}}
+                />
             </Slide>
             <Slide>
                 <h2>Выбрили декларации для этого блока</h2>
@@ -163,23 +129,35 @@ export default function DeclaredValue() {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
+                    <tr className={'next next-light true'}>
                         <td>border-left-color</td>
                         <td>red</td>
-                        <td>.class</td>
+                        <td><code>#abc</code></td>
                         <td>index.html:12</td>
                     </tr>
                     <tr>
                         <td>border-left-style</td>
                         <td>solid</td>
-                        <td>#id</td>
+                        <td><code>#id</code></td>
                         <td>style.css:14</td>
                     </tr>
                     <tr>
-                        <td>border-left-width</td>
+                        <td>height</td>
                         <td>10px</td>
                         <td>-</td>
                         <td>style attribute</td>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>green</td>
+                        <td><code>[attr='value']</code></td>
+                        <td>style.css:6</td>
+                    </tr>
+                    <tr className={'next next-light true'}>
+                        <td>border-left-color</td>
+                        <td>red</td>
+                        <td><code>.a</code></td>
+                        <td>style.css:123</td>
                     </tr>
                     </tbody>
                 </table>

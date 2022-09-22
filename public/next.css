@@ -11,3 +11,7 @@
 .shower.full .next.next-light {
     visibility: visible;
 }
+
+.true:not(.next-light) {
+    background-color: rgba(0, 255, 22, 0.15) !important;
+}

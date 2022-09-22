@@ -8,4 +8,39 @@
 
 .Transition__text {
     transition: color 1s;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.Transition__inputBlock {
+    display: flex;
+    gap: 1em
+}
+
+.Transition__input[value='red'] {
+    --color: red;
+}
+
+.Transition__input[value='green'] {
+    --color: green;
+}
+
+.Transition__input {
+    font-size: inherit;
+    border-radius: 50%;
+    border: 0.1em solid var(--color);
+    height: 0.8em;
+    width: 0.8em;
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    vertical-align: middle;
+}
+
+.Transition__input:hover {
+    background-color: #fff2;
+}
+
+.Transition__input:checked {
+    background-image: radial-gradient(var(--color) 50%, transparent 50%, transparent);
 }

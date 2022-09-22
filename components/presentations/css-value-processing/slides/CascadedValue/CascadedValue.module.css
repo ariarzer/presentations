@@ -56,7 +56,28 @@
     font-size: 0.9em;
 }
 
-.CascadedValue__compareTable td:last-child {
+.CascadedValue__compareTable {
+    counter-set: tr 0;
+}
+
+.CascadedValue__compareTable td:first-child::before {
+    counter-increment: tr;
+    content: counter(tr) '. ';
+    opacity: .6;
+}
+
+.CascadedValue__compareTable td:last-child:not(:first-child) {
     opacity: 0.4;
     text-align: right;
+}
+
+.CascadedValue__gradientText {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-image: linear-gradient(30deg,
+       red 55%, blue 60%
+        );
+    background-position: 70% 70%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
