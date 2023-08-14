@@ -4,7 +4,8 @@ import Link from "next/link";
 export default function home() {
     return (
         <Layout>
-            <Link href='/css-value-processing'>css-value-processing</Link>
+            <Link href='/presentations/css-value-processing'>css-value-processing</Link>
+            <Link href='/presentations/css-writing-modes'>css-writing-modes</Link>
         </Layout>
     )
 }
