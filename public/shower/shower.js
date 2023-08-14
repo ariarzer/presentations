@@ -1,5 +1,5 @@
 /**
- * Core for Shower HTML presentation engine
+ * Core for Shower HTML presentations engine
  * @shower/core v3.2.0, https://github.com/shower/core
  * @copyright 2010â€“2021 Vadim Makeev, https://pepelsbey.net
  * @license MIT

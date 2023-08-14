@@ -1,14 +1,14 @@
-import Layout from "../components/base/Layuot/Layuot";
-import Slide from "../components/base/Slide/Slide";
+import Layout from "../../components/base/Layuot/Layuot";
+import Slide from "../../components/base/Slide/Slide";
 
-import CascadedValue from "../components/presentations/css-value-processing/slides/CascadedValue/CascadedValue.js"
-import DeclaredValue from "../components/presentations/css-value-processing/slides/DeclaredValue/DeclaredValue"
-import ComputedValue from "../components/presentations/css-value-processing/slides/ComputedValue/ComputedValue.js"
-import SpecifiedValue from "../components/presentations/css-value-processing/slides/SpecifiedValue/SpecifiedValue.js"
-import UsedValue from "../components/presentations/css-value-processing/slides/UsedValue/UsedValue.js"
-import ActualValue from "../components/presentations/css-value-processing/slides/ActualValue/ActualValue.js"
-import Intro from "../components/presentations/Intro/Intro";
-import SpecialIntro from "../components/presentations/css-value-processing/slides/Intro/Intro";
+import CascadedValue from "../../components/presentations/css-value-processing/slides/CascadedValue/CascadedValue.js"
+import DeclaredValue from "../../components/presentations/css-value-processing/slides/DeclaredValue/DeclaredValue"
+import ComputedValue from "../../components/presentations/css-value-processing/slides/ComputedValue/ComputedValue.js"
+import SpecifiedValue from "../../components/presentations/css-value-processing/slides/SpecifiedValue/SpecifiedValue.js"
+import UsedValue from "../../components/presentations/css-value-processing/slides/UsedValue/UsedValue.js"
+import ActualValue from "../../components/presentations/css-value-processing/slides/ActualValue/ActualValue.js"
+import Intro from "../../components/base/Intro/Intro";
+import SpecialIntro from "../../components/presentations/css-value-processing/slides/Intro/Intro";
 
 export default function index() {
     return (
