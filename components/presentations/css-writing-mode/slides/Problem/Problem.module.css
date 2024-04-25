@@ -1,0 +1,19 @@
+.arabic {
+    direction: rtl;
+}
+
+.japanese {
+    writing-mode: vertical-rl;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex h3 {
+    border-inline-start: 3px solid;
+    padding-inline-start: 0.5em;
+    margin: 0;
+}

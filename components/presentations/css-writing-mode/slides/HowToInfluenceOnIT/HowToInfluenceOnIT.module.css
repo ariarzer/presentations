@@ -1,0 +1,46 @@
+.side_image {
+    height: 350px;
+}
+
+.activeList * {
+    opacity: 0.5;
+}
+
+.activeList .active,
+.activeList .active * {
+    opacity: initial;
+}
+
+.typo_mode {
+    display: flex;
+}
+
+.typo_mode div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.typo_mode div {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.typo_mode div .example_side {
+    font-size: 1.5em;
+    line-height: 1.2;
+    width: 200px;
+    rotate: -90deg;
+}
+
+.typo_mode div .smaller {
+    margin-top: 10px;
+    font-size: 0.7em;
+}
+
+.typo_mode div .example_vertical {
+    font-size: 1.5em;
+    line-height: 1.2;
+    writing-mode: vertical-lr;
+    inline-size: 200px;
+}

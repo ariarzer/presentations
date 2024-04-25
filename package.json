@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "next": "^12.3.0"
+  },
+  "devDependencies": {
+    "classnames": "^2.5.1"
   }
 }

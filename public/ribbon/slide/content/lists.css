@@ -2,7 +2,7 @@
 
 .slide ol,
 .slide ul {
-    padding-left: 0;
+    padding-inline-start: 0;
     margin-top: 0;
     margin-bottom: 1em;
     list-style: none;
@@ -15,7 +15,7 @@
     position: absolute;
     width: 3em;
     color: var(--color-grey);
-    text-align: right;
+    text-align: end;
     opacity: 0.75;
     transform: translateX(
         calc(-100% - 0.5em)
