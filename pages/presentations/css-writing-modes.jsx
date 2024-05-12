@@ -8,6 +8,8 @@ import Problem from "../../components/presentations/css-writing-mode/slides/Prob
 import Theory from "../../components/presentations/css-writing-mode/slides/Theory/Theory";
 import HowToInfluenceOnIT from "../../components/presentations/css-writing-mode/slides/HowToInfluenceOnIT/HowToInfluenceOnIT";
 import HowItInfluenceOnUs from "../../components/presentations/css-writing-mode/slides/HowItInfluenceOnUs/HowItInfluenceOnUs";
+import LogicalProperties
+    from "../../components/presentations/css-writing-mode/slides/LogicalProperties/LogicalProperties";
 
 export default function index() {
     return (
@@ -22,6 +24,7 @@ export default function index() {
             <Theory />
             <HowToInfluenceOnIT />
             <HowItInfluenceOnUs />
+            <LogicalProperties />
 
             <Conclusion/>
         </Layout>
