@@ -69,3 +69,8 @@ pre.no-code code::before {
     max-width: 100%;
     transform: translate(-50%, -50%);
 }
+
+.noBadge::after {
+    content: none;
+
+}

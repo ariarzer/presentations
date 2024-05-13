@@ -3,6 +3,11 @@ import Slide from "../Slide/Slide";
 import { LanguageContext } from '../LanguageContext';
 import { useContext } from 'react';
 
+import classNames from 'classnames/bind';
+
+import classes from './Intro.module.css'
+const cx = classNames.bind(classes);
+
 export default function Intro() {
     const lang = useContext(LanguageContext);
     return (

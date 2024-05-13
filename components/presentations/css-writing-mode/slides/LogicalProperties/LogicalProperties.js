@@ -267,18 +267,6 @@ export default function LogicalProperties() {
             </Slide>
 
             <Slide>
-                <h2>Позиционирование: <code>inset</code></h2>
-                <div className="columns two">
-            <pre>
-                <code>position: absolute;</code>
-                <code>inset: 0</code>
-                <span>🥳🥳🥳🥳</span>
-            </pre>
-                    <div className={cx("inset_example")}/>
-                </div>
-            </Slide>
-
-            <Slide>
                 <h2>Новые значение</h2>
                 <ol className={cx("activeList")}>
                     <li className={cx("active")}><code>caption-side</code></li>

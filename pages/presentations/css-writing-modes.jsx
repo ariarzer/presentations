@@ -10,6 +10,7 @@ import HowToInfluenceOnIT from "../../components/presentations/css-writing-mode/
 import HowItInfluenceOnUs from "../../components/presentations/css-writing-mode/slides/HowItInfluenceOnUs/HowItInfluenceOnUs";
 import LogicalProperties
     from "../../components/presentations/css-writing-mode/slides/LogicalProperties/LogicalProperties";
+import Outside from "../../components/presentations/css-writing-mode/slides/Outside/Outside";
 
 export default function index() {
     return (
@@ -17,14 +18,31 @@ export default function index() {
             lang={'ru'}
             header={'Режимы написания в CSS'}
         >
+            <Slide className={"noBadge"}>
+                <h2 className={"shout shrink"}>Режимы написания <br/>в CSS</h2>
+            </Slide>
+
             <Intro/>
 
-            <Overview />
+            <Overview/>
             <Problem />
             <Theory />
             <HowToInfluenceOnIT />
             <HowItInfluenceOnUs />
             <LogicalProperties />
+            <Outside />
+
+            <Slide>
+                <h2>Итого</h2>
+                <ul>
+                    <li>Языков много</li>
+                    <li>Физическая система координат не походит для стилизации текста</li>
+                    <li>Удобнее использовать flows relative</li>
+                    <li>Её осями можно управлять</li>
+                    <li>Лучше использовать логические свойства, чем не использовать</li>
+                    <li>Не только, потому что они зависимы от потока</li>
+                </ul>
+            </Slide>
 
             <Conclusion/>
         </Layout>
