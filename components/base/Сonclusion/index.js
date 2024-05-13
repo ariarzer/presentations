@@ -8,7 +8,7 @@ export default function Conclusion() {
     if (lang === 'ru') {
          return (
              <Slide>
-                 <h2>София Валитова из <a href="https://cube.dev/">Cube</a></h2>
+                 <h2>София Валитова из <a href="https://www.kiskolabs.com/en/">KiskoLabs</a></h2>
                  <ul className="smaller">
                      <li><a>ariarzer@gmail.com</a></li>
                      <li>Twitter – <a href="https://twitter.com/ariarzer" target="_blank">@ariarzer</a></li>
@@ -25,7 +25,7 @@ export default function Conclusion() {
     } else if (lang === 'en') {
         return (
             <Slide>
-                <h2>Sofi Valitova from <a href="https://cube.dev/">KiskoLabs</a></h2>
+                <h2>Sofi Valitova from <a href="https://www.kiskolabs.com/en/">KiskoLabs</a></h2>
                 <ul>
                     <li><a>ariarzer@gmail.com</a></li>
                     <li>Twitter – <a href="https://twitter.com/ariarzer" target="_blank">@ariarzer</a></li>
