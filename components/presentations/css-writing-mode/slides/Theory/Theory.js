@@ -9,7 +9,12 @@ export default function Theory() {
     return (
         <>
             <Slide>
-                <h2>Потому что мы используем физическую систему координат</h2>
+                <h2 className={"shout shrink"}>Потому что мы используем физическую систему координат</h2>
+            </Slide>
+
+            <Slide>
+                <img src="/assets/css-writing-mode/phisical_coord.png" alt=""
+                     className={cx("full_image")}/>
             </Slide>
 
             <Slide>
@@ -22,37 +27,37 @@ export default function Theory() {
                 <p className={"next"}>* с точки зрения блочной модели</p>
             </Slide>
 
-            <Slide>
+            <Slide className={"noBadge"}>
                 <img src="https://pbs.twimg.com/media/FahcWSqUYAA5hpp?format=png&name=large" alt=""
                      className={cx("full_image")}/>
             </Slide>
 
-            <Slide>
+            <Slide className={"noBadge"}>
                 <h2>Направление потока блоков</h2>
                 <img src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/block-flow-vertical_2024.png"
                      alt="" className={cx("full_image")}/>
             </Slide>
 
-            <Slide>
+            <Slide className={"noBadge"}>
                 <h2>Направление потока блоков</h2>
                 <img
                     src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/block-flow-horizontal_2024.png"
                     alt="" className={cx("full_image")}/>
             </Slide>
 
-            <Slide>
+            <Slide className={"noBadge"}>
                 <h2>Направление строки</h2>
                 <img src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/inline-base_2024.png"
                      alt="" className={cx("full_image")}/>
             </Slide>
 
-            <Slide>
+            <Slide className={"noBadge"}>
                 <h2>Ориентация строки</h2>
                 <img src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/line-orientation_2024.png"
                      alt="" className={cx("full_image")}/>
             </Slide>
 
-            <Slide>
+            <Slide className={"noBadge"}>
                 <img src="https://pbs.twimg.com/media/FahcWSqUYAA5hpp?format=png&name=large" alt=""
                      className={cx("full_image")}/>
             </Slide>

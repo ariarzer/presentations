@@ -18,11 +18,11 @@ export default function index() {
             lang={'ru'}
             header={'Режимы написания в CSS'}
         >
+            <Intro/>
+
             <Slide className={"noBadge"}>
                 <h2 className={"shout shrink"}>Режимы написания <br/>в CSS</h2>
             </Slide>
-
-            <Intro/>
 
             <Overview/>
             <Problem />

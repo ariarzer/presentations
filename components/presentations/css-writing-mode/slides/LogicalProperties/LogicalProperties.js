@@ -10,6 +10,10 @@ export default function LogicalProperties() {
     return (
         <>
             <Slide>
+                <h2 className={"shout shrink"}>А если все-таки нужно?</h2>
+            </Slide>
+
+            <Slide>
                 <h2>Простой пример</h2>
                 <div className={classes.flex}>
                     <div>
@@ -28,19 +32,7 @@ export default function LogicalProperties() {
             </Slide>
 
             <Slide>
-                <h2 className={"shout shrink"}>А если все-таки нужно?</h2>
-            </Slide>
-
-            <Slide>
                 <h2 className={"shout shrink"}>Логические 🥰💄🥳 <br/> 🤩🥵💅свойства</h2>
-            </Slide>
-
-            <Slide>
-                <img src="/assets/css-writing-mode/sizing-ltr-tb.svg" alt="" className="full_image"/>
-            </Slide>
-
-            <Slide>
-                <img src="/assets/css-writing-mode/sizing-ttb-rl.svg" alt="" className="full_image"/>
             </Slide>
 
             <Slide className="slide">
@@ -68,6 +60,14 @@ export default function LogicalProperties() {
             </Slide>
 
             <Slide>
+                <img src="/assets/css-writing-mode/sizing-ltr-tb.svg" alt="" className="full_image"/>
+            </Slide>
+
+            <Slide>
+                <img src="/assets/css-writing-mode/sizing-ttb-rl.svg" alt="" className="full_image"/>
+            </Slide>
+
+            <Slide>
                 <h2>Границы</h2>
                 <div className={cx("columns", "five")}>
                     <code>border</code>
@@ -89,6 +89,7 @@ export default function LogicalProperties() {
             </Slide>
 
             <Slide>
+                <h2>Границы</h2>
                 <div className={cx("columns", "five", "smaller")}>
                     <code>border</code>
                     <div className={cx("flexColumn")}>
@@ -146,10 +147,31 @@ export default function LogicalProperties() {
 
             <Slide>
                 <h2>Границы</h2>
-                <pre>
-            <code></code>
-            <code>border-inline: 0.2em solid;</code>
-        </pre>
+                <div className={cx("flexColumn")}>
+                <div className={cx("columns", "five")}>
+                    <code>border</code>
+                    <div className={cx("flexColumn")}>
+                        <code>-left</code>
+                        <code>-right</code>
+                    </div>
+                    <div>=></div>
+                    <code>border-inline</code>
+                </div>
+                <div className={cx("columns", "five")}>
+                    <code>border</code>
+                    <div className={cx("flexColumn")}>
+                        <code>-top</code>
+                        <code>-bottom</code>
+                    </div>
+                    <div>=></div>
+                    <code>border-block</code>
+                </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Границы</h2>
+                <pre><code>border-inline: 0.2em solid;</code></pre>
                 <div className={cx("flex", 'example')}>
                     <div>
                         <h3>Header</h3>
@@ -168,10 +190,7 @@ export default function LogicalProperties() {
 
             <Slide>
                 <h2>Границы</h2>
-                <pre>
-            <code></code>
-            <code>border-block: 0.2em solid;</code>
-        </pre>
+                <pre><code>border-block: 0.2em solid;</code></pre>
                 <div className={cx("flex", 'example2')}>
                     <div>
                         <h3>Header</h3>
@@ -211,13 +230,37 @@ export default function LogicalProperties() {
 
             <Slide>
                 <h2>Отступы</h2>
-                <div className={cx("columns three", "margin")}>
+                <div className={cx("flexColumn")}>
+                    <div className={cx("columns", "five")}>
+                        <code>margin</code>
+                        <div className={cx("flexColumn")}>
+                            <code>-left</code>
+                            <code>-right</code>
+                        </div>
+                        <div>=></div>
+                        <code>margin-inline</code>
+                    </div>
+                    <div className={cx("columns", "five")}>
+                        <code>margin</code>
+                        <div className={cx("flexColumn")}>
+                            <code>-top</code>
+                            <code>-bottom</code>
+                        </div>
+                        <div>=></div>
+                        <code>margin-block</code>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Отступы</h2>
+                <div className={cx("columns three", "margin", "big_emoji")}>
                     <code>margin: 0 10px;</code>
                     <span>🤔🤔🤔🤔</span>
                     <code>margin: 10px 0;</code>
                 </div>
-                <div className={cx("next", "center")}>
-                    <span>🥳<code>margin-inline: 10px 0;</code>🥳</span>
+                <div className={cx("next", "center", "big_emoji")}>
+                    <span>🥳</span><code>margin-inline: 10px 0;</code><span>🥳</span>
                 </div>
             </Slide>
 
@@ -229,6 +272,22 @@ export default function LogicalProperties() {
                         <code>right</code>
                         <code>top</code>
                         <code>bottom</code>
+                    </div>
+                    <div>=></div>
+                    <div className={cx("flexColumn")}>
+                        <code>inset-inline-start</code>
+                        <code>inset-inline-end</code>
+                        <code>inset-block-start</code>
+                        <code>inset-block-end</code>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Позиционирование</h2>
+                <div className={cx("columns three", "positioning")}>
+                    <div className={cx("flexColumn")}>
+                        <code>inset</code>
                     </div>
                     <div>=></div>
                     <div className={cx("flexColumn")}>
@@ -330,12 +389,7 @@ export default function LogicalProperties() {
             </Slide>
 
             <Slide className="slide">
-                <h2 className={"shout shrink"}>А нужно ли мне это прямо сейчас?</h2>
-            </Slide>
-
-
-            <Slide className="slide">
-                <h2 className={"shout shrink"}>Скорее всего нет.</h2>
+                <h2 className={"shout shrink"}>А что дальше?</h2>
             </Slide>
         </>
     )
