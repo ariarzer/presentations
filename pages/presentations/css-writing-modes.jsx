@@ -30,17 +30,17 @@ export default function index() {
             <HowToInfluenceOnIT />
             <HowItInfluenceOnUs />
             <LogicalProperties />
-            <Outside />
+            {/*<Outside />*/}
 
             <Slide>
                 <h2>Итого</h2>
                 <ul>
-                    <li>Языков много</li>
-                    <li>Физическая система координат не походит для стилизации текста</li>
-                    <li>Удобнее использовать flows relative</li>
-                    <li>Её осями можно управлять</li>
-                    <li>Лучше использовать логические свойства, чем не использовать</li>
-                    <li>Не только, потому что они зависимы от потока</li>
+                    <li className={"next"}>Языков много</li>
+                    <li className={"next"}>Физическая система координат не походит для стилизации текста</li>
+                    <li className={"next"}>Удобнее использовать зависимую от текста</li>
+                    <li className={"next"}>Её осями можно управлять</li>
+                    <li className={"next"}>Лучше использовать логические свойства, чем не использовать</li>
+                    <li className={"next"}>Не только, потому что они зависимы от потока</li>
                 </ul>
             </Slide>
 
