@@ -58,14 +58,19 @@ export default function Theory() {
             </Slide>
 
             <Slide className={"noBadge"}>
+                <h2>Собака в штанах</h2>
+                <img src="/assets/css-writing-mode/dog_in_pants.png"
+                     alt="" className={cx("full_image")}/>
+            </Slide>
+
+            <Slide className={"noBadge"}>
                 <img src="https://pbs.twimg.com/media/FahcWSqUYAA5hpp?format=png&name=large" alt=""
                      className={cx("full_image")}/>
             </Slide>
 
             <Slide>
-                <h2 className="shout shrink small">Как можно влиять на эти три оси?</h2>
+                <h2 className="shout shrink small">Как можно влиять <br/>на эти три оси?</h2>
             </Slide>
-
         </>
     )
 }

@@ -3,6 +3,7 @@ import Slide from "../../../../base/Slide/Slide";
 import classes from './LogicalProperties.module.css'
 
 import classNames from 'classnames/bind';
+import Sizes from "./Sizes/Sizes";
 
 const cx = classNames.bind(classes);
 
@@ -35,36 +36,12 @@ export default function LogicalProperties() {
                 <h2 className={"shout shrink"}>Логические 🥰💄🥳 <br/> 🤩🥵💅свойства</h2>
             </Slide>
 
-            <Slide className="slide">
-                <h2>Логические 🥰💄🥳 свойства 🤩🥵💅</h2>
-                <div className="columns two">
-            <pre className="smaller">
-                <code>div {"{"}</code>
-                    <code>  border-color: lavender;</code>
-                    <code>  border-width: 3px;</code>
-                    <code>{"}"}</code>
-                <code>div:dir(ltr) {"{"}</code>
-                    <code>  border-left-style: solid;</code>
-                    <code>{"}"}</code>
-                <code>div:dir(rtl) {"{"}</code>
-                    <code>  border-right-style: solid;</code>
-                    <code>{"}"}</code>
-            </pre>
-                    <pre className="small">
-                <code>div {"{"}</code>
-                    <code>  border-inline-start: </code>
-                    <code>    0.2em solid lavender;</code>
-                    <code>{"}"}</code>
-            </pre>
-                </div>
+            <Slide>
+                <img src="/assets/css-writing-mode/sizing-ltr-tb.svg" alt="" className={cx("full_image", "img")}/>
             </Slide>
 
             <Slide>
-                <img src="/assets/css-writing-mode/sizing-ltr-tb.svg" alt="" className="full_image"/>
-            </Slide>
-
-            <Slide>
-                <img src="/assets/css-writing-mode/sizing-ttb-rl.svg" alt="" className="full_image"/>
+                <img src="/assets/css-writing-mode/sizing-ttb-rl.svg" alt="" className={cx("full_image", "img")}/>
             </Slide>
 
             <Slide>
@@ -145,27 +122,71 @@ export default function LogicalProperties() {
                 </div>
             </Slide>
 
+            {/*<Slide className="slide">*/}
+            {/*    <h2>Логические 🥰💄🥳 свойства 🤩🥵💅</h2>*/}
+            {/*    <div className="columns two">*/}
+            {/*<pre className="smaller">*/}
+            {/*    <code>div {"{"}</code>*/}
+            {/*        <code>  border-color: lavender;</code>*/}
+            {/*        <code>  border-width: 3px;</code>*/}
+            {/*        <code>{"}"}</code>*/}
+            {/*    <code>div:dir(ltr) {"{"}</code>*/}
+            {/*        <code>  border-left-style: solid;</code>*/}
+            {/*        <code>{"}"}</code>*/}
+            {/*    <code>div:dir(rtl) {"{"}</code>*/}
+            {/*        <code>  border-right-style: solid;</code>*/}
+            {/*        <code>{"}"}</code>*/}
+            {/*</pre>*/}
+            {/*        <pre className="small">*/}
+            {/*    <code>div {"{"}</code>*/}
+            {/*        <code>  border-inline-start: </code>*/}
+            {/*        <code>    0.2em solid lavender;</code>*/}
+            {/*        <code>{"}"}</code>*/}
+            {/*</pre>*/}
+            {/*    </div>*/}
+            {/*</Slide>*/}
+
+
+            <Slide>
+                <h2>Границы</h2>
+                <pre><code>border-inline-start: 0.2em solid;</code></pre>
+                <div className={cx("flex", 'example1')}>
+                    <div>
+                        <h3>Header</h3>
+                        <span>Small text text text</span>
+                    </div>
+                    <div className={classes.japanese}>
+                        <h3>タイトル</h3>
+                        <span>小さい 文章 文章 文章</span>
+                    </div>
+                    <div className={classes.arabic}>
+                        <h3>عنوان</h3>
+                        <span>نص نص صغير</span>
+                    </div>
+                </div>
+            </Slide>
+
             <Slide>
                 <h2>Границы</h2>
                 <div className={cx("flexColumn")}>
-                <div className={cx("columns", "five")}>
-                    <code>border</code>
-                    <div className={cx("flexColumn")}>
-                        <code>-left</code>
-                        <code>-right</code>
+                    <div className={cx("columns", "five")}>
+                        <code>border</code>
+                        <div className={cx("flexColumn")}>
+                            <code>-left</code>
+                            <code>-right</code>
+                        </div>
+                        <div>=></div>
+                        <code>border-inline</code>
                     </div>
-                    <div>=></div>
-                    <code>border-inline</code>
-                </div>
-                <div className={cx("columns", "five")}>
-                    <code>border</code>
-                    <div className={cx("flexColumn")}>
-                        <code>-top</code>
-                        <code>-bottom</code>
+                    <div className={cx("columns", "five")}>
+                        <code>border</code>
+                        <div className={cx("flexColumn")}>
+                            <code>-top</code>
+                            <code>-bottom</code>
+                        </div>
+                        <div>=></div>
+                        <code>border-block</code>
                     </div>
-                    <div>=></div>
-                    <code>border-block</code>
-                </div>
                 </div>
             </Slide>
 
@@ -260,7 +281,7 @@ export default function LogicalProperties() {
                     <code>margin: 10px 0;</code>
                 </div>
                 <div className={cx("next", "center", "big_emoji")}>
-                    <span>🥳</span><code>margin-inline: 10px 0;</code><span>🥳</span>
+                    <span>🥳</span><code>margin-inline: 10px;</code><span>🥳</span>
                 </div>
             </Slide>
 
@@ -325,10 +346,12 @@ export default function LogicalProperties() {
                 </div>
             </Slide>
 
+            {/*<Sizes />*/}
+
             <Slide>
                 <h2>Новые значение</h2>
                 <ol className={cx("activeList")}>
-                    <li className={cx("active")}><code>caption-side</code></li>
+                <li className={cx("active")}><code>caption-side</code></li>
                     <li><code>float, clear</code></li>
                     <li><code>text-align</code></li>
                 </ol>
@@ -385,11 +408,23 @@ export default function LogicalProperties() {
                 <h3>Всё про box sizing</h3>
                 <p> Размеры, отступы, границы</p>
                 <h3>Всё про box model</h3>
-                <p> Розиционирование, обтекание</p>
+                <p> Позиционирование, обтекание</p>
             </Slide>
 
             <Slide className="slide">
                 <h2 className={"shout shrink"}>А что дальше?</h2>
+            </Slide>
+
+            <Slide className="slide">
+                <h2 className={"shout shrink"}>Нужно ли бежать переписывать старый код?</h2>
+            </Slide>
+
+            <Slide className="slide">
+                <h2 className={"shout shrink"}>Нужно ли писать новый по-новому?</h2>
+            </Slide>
+
+            <Slide className="slide">
+                <h2 className={"shout shrink"}>Листья всегда падают сверху</h2>
             </Slide>
         </>
     )

@@ -13,7 +13,7 @@
         var(--slide-width) / var(--slide-ratio)
     );
 
-    --color-blue: #6897BB;
+    --color-blue: green;
     --color-blue-lighter: #6799cb;
     --color-red: #cc0000;
     --color-yellow: #fafaa2;

@@ -79,54 +79,47 @@ export default function Overview() {
 
             <Slide>
                 <h2>Контролы</h2>
-                <div className={classes.eng}>
-                    <input type="text" placeholder={"enter text"}/>
-                    <input type="range" min={"0"} max={"100"}/>
-                    <textarea name="" id="" cols="25" rows="10" placeholder={"enter text"}/>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>cell 1</td>
-                            <td>cell 2</td>
-                        </tr>
-                        <tr>
-                            <td>cell 3</td>
-                            <td>cell 4</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </Slide>
-
-            <Slide>
-                <h2>Контролы</h2>
-                <div className={classes.arabic}>
-                    <input type="text" placeholder={"كتب النص"}/>
-                    <input type="range" min={"0"} max={"100"}/>
-                    <textarea name="" id="" cols="25" rows="10" placeholder={"كتب النص"}/>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>خلية 1</td>
-                            <td>خلية 2</td>
-                        </tr>
-                        <tr>
-                            <td>خلية 3</td>
-                            <td>خلية 4</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </Slide>
-
-            <Slide>
-                <h2>Контролы</h2>
-                <div className={classes.japanese}>
-                    <input type="text" placeholder={"テキストを書く"}/>
-                    <input type="range" min={"0"} max={"100"}/>
-                    <textarea name="" id="" cols="25" rows="10" placeholder={"テキストを書く"}/>
-                    <table>
-                        <tbody>
+                <div className={cx("columns", "three", "controls")}>
+                    <div className={classes.eng}>
+                        <input type="text" placeholder={"enter text"}/>
+                        <input type="range" min={"0"} max={"100"}/>
+                        <textarea name="" id="" cols="25" rows="10" placeholder={"enter text"}/>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>cell 1</td>
+                                <td>cell 2</td>
+                            </tr>
+                            <tr>
+                                <td>cell 3</td>
+                                <td>cell 4</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className={classes.arabic}>
+                        <input type="text" placeholder={"كتب النص"}/>
+                        <input type="range" min={"0"} max={"100"}/>
+                        <textarea name="" id="" cols="25" rows="10" placeholder={"كتب النص"}/>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>خلية 1</td>
+                                <td>خلية 2</td>
+                            </tr>
+                            <tr>
+                                <td>خلية 3</td>
+                                <td>خلية 4</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className={classes.japanese}>
+                        <input type="text" placeholder={"テキストを書く"}/>
+                        <input type="range" min={"0"} max={"100"}/>
+                        <textarea name="" id="" cols="25" rows="10" placeholder={"テキストを書く"}/>
+                        <table>
+                            <tbody>
                             <tr>
                                 <td>セル 1</td>
                                 <td>セル 2</td>
@@ -135,11 +128,11 @@ export default function Overview() {
                                 <td>セル 3</td>
                                 <td>セル 4</td>
                             </tr>
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </Slide>
-
         </>
     )
 }

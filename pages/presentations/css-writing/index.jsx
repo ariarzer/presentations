@@ -1,16 +1,16 @@
-import Layout from "../../components/base/Layuot/Layuot";
-import Slide from "../../components/base/Slide/Slide";
+import Layout from "../../../components/base/Layuot/Layuot";
+import Slide from "../../../components/base/Slide/Slide";
 
-import Intro from "../../components/base/Intro/Intro";
-import Conclusion from '../../components/base/Сonclusion';
-import Overview from "../../components/presentations/css-writing-mode/slides/Overview/Overview";
-import Problem from "../../components/presentations/css-writing-mode/slides/Problem/Problem";
-import Theory from "../../components/presentations/css-writing-mode/slides/Theory/Theory";
-import HowToInfluenceOnIT from "../../components/presentations/css-writing-mode/slides/HowToInfluenceOnIT/HowToInfluenceOnIT";
-import HowItInfluenceOnUs from "../../components/presentations/css-writing-mode/slides/HowItInfluenceOnUs/HowItInfluenceOnUs";
+import Intro from "../../../components/base/Intro/Intro";
+import Conclusion from '../../../components/base/Сonclusion';
+import Overview from "../../../components/presentations/css-writing-mode/slides/Overview/Overview";
+import Problem from "../../../components/presentations/css-writing-mode/slides/Problem/Problem";
+import Theory from "../../../components/presentations/css-writing-mode/slides/Theory/Theory";
+import HowToInfluenceOnIT from "../../../components/presentations/css-writing-mode/slides/HowToInfluenceOnIT/HowToInfluenceOnIT";
+import HowItInfluenceOnUs from "../../../components/presentations/css-writing-mode/slides/HowItInfluenceOnUs/HowItInfluenceOnUs";
 import LogicalProperties
-    from "../../components/presentations/css-writing-mode/slides/LogicalProperties/LogicalProperties";
-import Outside from "../../components/presentations/css-writing-mode/slides/Outside/Outside";
+    from "../../../components/presentations/css-writing-mode/slides/LogicalProperties/LogicalProperties";
+import Outside from "../../../components/presentations/css-writing-mode/slides/Outside/Outside";
 
 export default function index() {
     return (
@@ -42,6 +42,11 @@ export default function index() {
                     <li className={"next"}>Лучше использовать логические свойства, чем не использовать</li>
                     <li className={"next"}>Не только, потому что они зависимы от потока</li>
                 </ul>
+            </Slide>
+
+            <Slide>
+                <h2>Ваше мнение очень важно для нас:</h2>
+                <img src="/assets/css-writing-mode/CodeFest%20Feedback.gif" alt=""/>
             </Slide>
 
             <Conclusion/>

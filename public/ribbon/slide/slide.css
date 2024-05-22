@@ -51,7 +51,13 @@
     padding-top: 15px;
     width: var(--ribbon-size);
     height: calc(var(--ribbon-size) * 2);
-    background-image: url('ribbon.svg');
+
+
+    /*background-image: url('ribbon.svg');*/
+    background-color: green;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
     background-size: cover;
     color: white;
     counter-increment: slide;

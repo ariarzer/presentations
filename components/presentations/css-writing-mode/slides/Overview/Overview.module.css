@@ -46,3 +46,8 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.controls {
+    gap: 2em;
+    margin-left: -2em;
+}

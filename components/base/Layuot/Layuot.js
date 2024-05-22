@@ -2,7 +2,6 @@ import Script from "next/script";
 import { LanguageContext } from '../LanguageContext';
 
 export default function Layout({children, header, lang}) {
-
     return (
         <main className={'shower list'}>
             <LanguageContext.Provider value={lang}>
