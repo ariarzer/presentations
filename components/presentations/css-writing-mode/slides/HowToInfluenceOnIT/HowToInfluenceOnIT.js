@@ -89,16 +89,15 @@ export default function HowToInfluenceOnIT() {
                 <p>Это концепция, отличающая вертикальный набор текста от горизонтального набора с поворотом.</p>
             </Slide>
 
-
             <Slide>
                 <h2>Типографический режим</h2>
                 <div className={cx("columns two", 'typo_mode')}>
                     <div>
-                        <p className={cx("example_side")}>Этот текст просто повернут на бок.</p>
+                        <p className={cx("example_side", "next", "next_style")}>Этот текст просто повернут на бок.</p>
                         <p className={cx("smaller")}>Этот текст просто повернут на бок</p>
                     </div>
                     <div>
-                        <p className={cx("example_vertical")}>
+                        <p className={cx("example_vertical", "next", "next_style")}>
                             Этот текст написан в вертикальном режиме письма.</p>
                         <p className={cx("smaller")}>Этот текст написан в вертикальном режиме</p>
                     </div>

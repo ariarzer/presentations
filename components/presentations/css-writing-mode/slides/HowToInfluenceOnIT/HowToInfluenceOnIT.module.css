@@ -44,3 +44,15 @@
     writing-mode: vertical-lr;
     inline-size: 200px;
 }
+
+.example_side:global(.active),
+.example_side:global(.visited) {
+    rotate: 0deg !important;
+    transition: rotate 1s;
+}
+
+.example_vertical:global(.active),
+.example_vertical:global(.visited) {
+    rotate: -90deg;
+    transition: rotate 1s;
+}

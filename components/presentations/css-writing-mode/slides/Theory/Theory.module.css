@@ -1,3 +1,17 @@
-/*.full_image {*/
-/*    width: 80%;*/
-/*}*/
+.japanese {
+    writing-mode: vertical-rl;
+    max-height: 300px;
+}
+
+.japanese.upright {
+    text-combine-upright: all;
+}
+
+.columns {
+    display: flex;
+    gap: 2em;
+}
+
+.japanese.sideways {
+    text-orientation: sideways;
+}

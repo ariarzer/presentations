@@ -37,6 +37,10 @@
 
 .japanese {
     writing-mode: vertical-rl;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
 }
 
 table.japanese,

@@ -190,6 +190,27 @@ export default function HowItInfluenceOnUs() {
             </Slide>
 
             <Slide>
+                <h2>Контролы</h2>
+                <div className={cx("columns", "three", "controls")}>
+                    <div className={classes.eng}>
+                        <input type="text" placeholder={"enter text"}/>
+                        <input type="range" min={"0"} max={"100"}/>
+                        <textarea name="" id="" cols="25" rows="10" placeholder={"enter text"}/>
+                    </div>
+                    <div className={classes.arabic}>
+                        <input type="text" placeholder={"كتب النص"}/>
+                        <input type="range" min={"0"} max={"100"}/>
+                        <textarea name="" id="" cols="25" rows="10" placeholder={"كتب النص"}/>
+                    </div>
+                    <div className={classes.japanese}>
+                        <input type="text" placeholder={"テキストを書く"}/>
+                        <input type="range" min={"0"} max={"100"}/>
+                        <textarea name="" id="" cols="25" rows="10" placeholder={"テキストを書く"}/>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
                 <h2>Таблицы</h2>
                 <div className={"columns three"}>
                     <table className={cx("eng")}>
