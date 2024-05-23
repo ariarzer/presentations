@@ -18,7 +18,6 @@
     margin: 0;
 }
 
-
 .columns.five {
     display: grid;
     column-gap: 30px;
@@ -29,15 +28,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.example.flex h3{
-    border-inline: 3px solid;;
-}
-
-.example2.flex h3{
-    border-inline: none;
-    border-block: 3px solid;
 }
 
 .margin {
@@ -68,13 +58,6 @@
     flex-direction: column;
 }
 
-.inset_example {
-    border: 3px solid;
-    height: 300px;
-    width: 400px;
-    box-shadow: inset 0 0 0 3px red;
-}
-
 .flexColumn {
     display: flex;
     flex-direction: column;
@@ -82,21 +65,50 @@
     align-items: flex-start;
 }
 
-.activeList * {
-    opacity: 0.5;
+.example {
+    gap: 2em;
 }
 
-.activeList .active,
-.activeList .active * {
-    opacity: initial;
+.example > div {
+    border: 2px dashed;
 }
 
-.big_emoji>span {
-    font-size: 2em;
-    padding: 0.5em;
-    line-height: 1;
+.example1 > div {
+    width: 300px;
+    border-bottom: green solid 5px;
 }
 
-.img {
-    width: 80%;
+.example2 > div {
+    inline-size: 300px;
+    border-inline-end: green solid 5px;
 }
+
+.example3 .rotate {
+    rotate: 90deg;
+    margin-top: 90px;
+    border-top: green solid 5px;
+}
+
+.example3 .writing {
+    writing-mode: vertical-rl;
+    border-inline-end: green solid 5px;
+}
+
+.example3 > div {
+    width: 300px;
+}
+
+.example4 .rotate {
+    rotate: 90deg;
+    border-top: green solid 5px;
+}
+
+.example4 .writing {
+    writing-mode: vertical-rl;
+    border-inline-end: green solid 5px;
+}
+
+.example4 > div {
+    inline-size: 300px;
+}
+

@@ -346,7 +346,7 @@ export default function LogicalProperties() {
                 </div>
             </Slide>
 
-            {/*<Sizes />*/}
+            <Sizes />
 
             <Slide>
                 <h2>Новые значение</h2>
