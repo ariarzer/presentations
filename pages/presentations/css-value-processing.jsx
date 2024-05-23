@@ -24,7 +24,7 @@ export default function index() {
             <Slide>
                 <h2 className={'shout'}>Теперь у свойства точно есть значение</h2>
             </Slide>
-            <ComputedValue/>
+            {/*<ComputedValue/>*/}
             <UsedValue/>
             <ActualValue/>
 
