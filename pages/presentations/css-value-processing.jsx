@@ -13,58 +13,58 @@ import SpecialIntro from "../../components/presentations/css-value-processing/sl
 export default function index() {
     return (
         <Layout header={'От декларации до отображения'}>
-            <Intro/>
+            {/*<Intro/>*/}
 
-            <SpecialIntro/>
+            {/*<SpecialIntro/>*/}
 
-            <DeclaredValue/>
-            <CascadedValue/>
-            <SpecifiedValue/>
+            {/*<DeclaredValue/>*/}
+            {/*<CascadedValue/>*/}
+            {/*<SpecifiedValue/>*/}
 
-            <Slide>
-                <h2 className={'shout'}>Теперь у свойства точно есть значение</h2>
-            </Slide>
-            {/*<ComputedValue/>*/}
-            <UsedValue/>
-            <ActualValue/>
+            {/*<Slide>*/}
+            {/*    <h2 className={'shout'}>Теперь у свойства точно есть значение</h2>*/}
+            {/*</Slide>*/}
+            {/*/!*<ComputedValue/>*!/*/}
+            {/*<UsedValue/>*/}
+            {/*<ActualValue/>*/}
 
-            <Slide>
-                <h2>Итого</h2>
-                <ul>
-                    <li>Отбираем декларации</li>
-                    <li>Выбираем одну</li>
-                    <li>Наследуем её</li>
-                    <li>Вычисляем</li>
-                    <li>Отрисовываем на устройстве</li>
-                </ul>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Итого</h2>*/}
+            {/*    <ul>*/}
+            {/*        <li>Отбираем декларации</li>*/}
+            {/*        <li>Выбираем одну</li>*/}
+            {/*        <li>Наследуем её</li>*/}
+            {/*        <li>Вычисляем</li>*/}
+            {/*        <li>Отрисовываем на устройстве</li>*/}
+            {/*    </ul>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>Источники</h2>
-                <ul>
-                    <ul>
-                        <li>Спецификация <a target="_blank" href="https://www.w3.org/TR/css-cascade-4/">css-cascade-4</a></li>
-                        <li><a href="https://ru.ariarzer.dev/articles/2021/value-definition-syntax.html">Про Value Definition Syntax</a></li>
-                        <li><a href="https://ru.ariarzer.dev/articles/2020/css-value-processing.html">Про Value Processing</a></li>
-                        <li><a target="_blank" href="https://lists.w3.org/Archives/Public/www-style/">Почтовая рассылка</a> www-style</li>
-                    </ul>
-                </ul>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Источники</h2>*/}
+            {/*    <ul>*/}
+            {/*        <ul>*/}
+            {/*            <li>Спецификация <a target="_blank" href="https://www.w3.org/TR/css-cascade-4/">css-cascade-4</a></li>*/}
+            {/*            <li><a href="https://ru.ariarzer.dev/articles/2021/value-definition-syntax.html">Про Value Definition Syntax</a></li>*/}
+            {/*            <li><a href="https://ru.ariarzer.dev/articles/2020/css-value-processing.html">Про Value Processing</a></li>*/}
+            {/*            <li><a target="_blank" href="https://lists.w3.org/Archives/Public/www-style/">Почтовая рассылка</a> www-style</li>*/}
+            {/*        </ul>*/}
+            {/*    </ul>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>София Валитова из <a href="https://cube.dev/">Cube</a></h2>
-                <ul className="smaller">
-                    <li><a>ariarzer@gmail.com</a></li>
-                    <li>Twitter – <a href="https://twitter.com/ariarzer" target="_blank">@ariarzer</a></li>
-                    <li>ВКонтакте – <a href="https://vk.com/ariarzer" target="_blank">@ariarzer</a></li>
-                    <li>Telegram – <a href="https://t.me/ariarzer" target="_blank">@ariarzer</a></li>
-                    <li>Мой канал про css – <a href="https://t.me/css_mind" target="_blank">@css_mind</a></li>
-                    <li>Мой блог про css – <a href="https://ru.ariarzer.dev" target="_blank">ariarzer.dev</a></li>
-                    <li>Patreon – <a href="https://www.patreon.com/ariarzer" target="_blank">@ariarzer</a></li>
-                </ul>
+            {/*<Slide>*/}
+            {/*    <h2>София Валитова из <a href="https://cube.dev/">Cube</a></h2>*/}
+            {/*    <ul className="smaller">*/}
+            {/*        <li><a>ariarzer@gmail.com</a></li>*/}
+            {/*        <li>Twitter – <a href="https://twitter.com/ariarzer" target="_blank">@ariarzer</a></li>*/}
+            {/*        <li>ВКонтакте – <a href="https://vk.com/ariarzer" target="_blank">@ariarzer</a></li>*/}
+            {/*        <li>Telegram – <a href="https://t.me/ariarzer" target="_blank">@ariarzer</a></li>*/}
+            {/*        <li>Мой канал про css – <a href="https://t.me/css_mind" target="_blank">@css_mind</a></li>*/}
+            {/*        <li>Мой блог про css – <a href="https://ru.ariarzer.dev" target="_blank">ariarzer.dev</a></li>*/}
+            {/*        <li>Patreon – <a href="https://www.patreon.com/ariarzer" target="_blank">@ariarzer</a></li>*/}
+            {/*    </ul>*/}
 
-                <p className="small">Презентация сделана с помощью <a href="https://shwr.me/">Shower</a>.</p>
-            </Slide>
+            {/*    <p className="small">Презентация сделана с помощью <a href="https://shwr.me/">Shower</a>.</p>*/}
+            {/*</Slide>*/}
         </Layout>
 );
 }
