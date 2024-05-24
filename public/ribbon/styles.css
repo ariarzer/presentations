@@ -6,3 +6,14 @@
 @import './blocks/progress.css';
 @import './blocks/region.css';
 @import './slide/slide.css';
+
+:root {
+    --accent: #058105;
+
+    --text-h1-color: var(--accent);
+    --text-link: var(--accent);
+    --text-list-marker: var(--text-h1-color);
+    --bg-slide: black;
+    --text-primary: #aec4b4;
+    --color-fill: rgba(88, 90, 94, 0.4);
+}

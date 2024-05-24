@@ -4,7 +4,7 @@ body {
 }
 
 html:has(.shower.full) {
-    background-color: black;
+    background-color: #515b50;
 }
 
 main.shower.list {

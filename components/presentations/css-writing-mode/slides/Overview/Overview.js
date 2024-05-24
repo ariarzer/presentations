@@ -79,7 +79,7 @@ export default function Overview() {
 
             <Slide>
                 <h2>Контролы</h2>
-                <div className={cx("columns", "three", "controls")}>
+                <div className={cx("columns", "three", "controls")} >
                     <div className={classes.eng}>
                         <input type="text" placeholder={"enter text"}/>
                         <input type="range" min={"0"} max={"100"}/>

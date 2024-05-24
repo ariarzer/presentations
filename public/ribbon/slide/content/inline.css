@@ -7,7 +7,7 @@
         transparent 0.09em
     );
     background-repeat: repeat-x;
-    color: var(--color-blue);
+    color: var(--text-link);
     text-decoration: none;
 }
 

@@ -14,7 +14,7 @@
 .slide li::before {
     position: absolute;
     width: 3em;
-    color: var(--color-grey);
+    color: var(--text-list-marker);
     text-align: end;
     opacity: 0.75;
     transform: translateX(

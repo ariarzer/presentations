@@ -38,25 +38,22 @@
     padding: 75px 100px 0;
     width: var(--slide-width);
     height: var(--slide-height);
-    background: #ffffff;
+    background: var(--bg-slide);
+    color: var(--text-primary);
 }
 
 /* Number */
 
 .slide::after {
     position: absolute;
-    top: 0;
-    left: 875px;
+    top: var(--ribbon-size);
+    left: calc(100% - var(--ribbon-size) * 2);
     box-sizing: border-box;
-    padding-top: 15px;
     width: var(--ribbon-size);
-    height: calc(var(--ribbon-size) * 2);
+    height: var(--ribbon-size);
 
-
-    /*background-image: url('ribbon.svg');*/
-    background-color: green;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    background-color: var(--accent);
+    border-radius: 50%;
 
     background-size: cover;
     color: white;

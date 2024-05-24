@@ -67,6 +67,7 @@ export default function LogicalProperties() {
 
             <Slide>
                 <h2>Границы</h2>
+                <div className={cx("flexColumn")}>
                 <div className={cx("columns", "five", "smaller")}>
                     <code>border</code>
                     <div className={cx("flexColumn")}>
@@ -119,6 +120,7 @@ export default function LogicalProperties() {
                         <code>-block-start-color</code>
                         <code>-block-end-color</code>
                     </div>
+                </div>
                 </div>
             </Slide>
 
@@ -337,7 +339,7 @@ export default function LogicalProperties() {
             <Slide>
                 <h2>Позиционирование: <code>inset</code></h2>
                 <div className="columns two">
-            <pre>
+            <pre className={cx("big_emoji")}>
                 <code>position: absolute;</code>
                 <code>inset: 0</code>
                 <span>🥳🥳🥳🥳</span>
