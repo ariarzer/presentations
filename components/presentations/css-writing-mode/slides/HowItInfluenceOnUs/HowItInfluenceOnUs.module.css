@@ -58,3 +58,28 @@ table.arabic  td {
     border: 1px solid;
     background-image: none !important;
 }
+
+
+.controls {
+    gap: 2em;
+}
+
+.controls input,
+.controls textarea {
+    background-color: var(--color-fill);
+    color: var(--text-primary);
+    accent-color: var(--accent);
+}
+
+.controls ::placeholder {
+    color: var(--text-primary);
+}
+
+.controls ::-moz-range-track {
+    background-color: var(--color-fill);
+}
+
+.controls ::-webkit-slider-runnable-track {
+    background-color: var(--color-fill);
+}
+

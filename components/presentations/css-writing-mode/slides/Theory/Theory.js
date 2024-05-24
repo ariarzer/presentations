@@ -14,7 +14,7 @@ export default function Theory() {
             </Slide>
 
             <Slide>
-                <img src="/assets/css-writing-mode/phisical_coord.png" alt=""
+                <img src="/assets/css-writing-mode/phisical_coord.svg" alt=""
                      className={cx("full_image")}/>
             </Slide>
 
@@ -61,38 +61,33 @@ export default function Theory() {
             </Slide>
 
             <Slide className={"noBadge"}>
-                <img src="https://pbs.twimg.com/media/FahcWSqUYAA5hpp?format=png&name=large" alt=""
+                <img src="/assets/css-writing-mode/preview.svg" alt=""
                      className={cx("full_image")}/>
             </Slide>
 
             <Slide className={"noBadge"}>
-                <h2>Направление потока блоков</h2>
-                <img src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/block-flow-vertical_2024.png"
+                <img src="/assets/css-writing-mode/block-flow-vertical.svg"
                      alt="" className={cx("full_image")}/>
             </Slide>
 
             <Slide className={"noBadge"}>
-                <h2>Направление потока блоков</h2>
                 <img
-                    src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/block-flow-horizontal_2024.png"
+                    src="/assets/css-writing-mode/block-flow-horisontal.svg"
                     alt="" className={cx("full_image")}/>
             </Slide>
 
             <Slide className={"noBadge"}>
-                <h2>Направление строки</h2>
-                <img src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/inline-base_2024.png"
+                <img src="/assets/css-writing-mode/inline-base-horisontal.svg"
                      alt="" className={cx("full_image")}/>
             </Slide>
 
             <Slide className={"noBadge"}>
-                <h2>Ориентация строки</h2>
-                <img src="/assets/css-writing-mode/inline-base_%20jap.png"
+                <img src="/assets/css-writing-mode/inline-base-vertical.svg"
                      alt="" className={cx("full_image")}/>
             </Slide>
 
             <Slide className={"noBadge"}>
-                <h2>Ориентация строки</h2>
-                <img src="https://ru.ariarzer.dev/articles/2022/img/css-coordinate-system/line-orientation_2024.png"
+                <img src="/assets/css-writing-mode/line-orientation.svg"
                      alt="" className={cx("full_image")}/>
             </Slide>
 
@@ -103,7 +98,7 @@ export default function Theory() {
             </Slide>
 
             <Slide className={"noBadge"}>
-                <img src="https://pbs.twimg.com/media/FahcWSqUYAA5hpp?format=png&name=large" alt=""
+                <img src="/assets/css-writing-mode/preview.svg" alt=""
                      className={cx("full_image")}/>
             </Slide>
 
