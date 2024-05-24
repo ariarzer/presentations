@@ -15,7 +15,7 @@ export default function HowToInfluenceOnIT() {
                         <li className={cx("active")}>ltr</li>
                         <li>rtl</li>
                     </ul>
-                    <img src="/assets/css-writing-mode/ltr_eng.png" alt="" className={cx("side_image")}/>
+                    <img src="/assets/css-writing-mode/ltr.svg" alt="" className={cx("side_image")}/>
                 </div>
             </Slide>
             <Slide>
@@ -25,7 +25,7 @@ export default function HowToInfluenceOnIT() {
                         <li>ltr</li>
                         <li className={cx("active")}>rtl</li>
                     </ul>
-                    <img src="/assets/css-writing-mode/rtl_eng.png" alt="" className={cx("side_image")}/>
+                    <img src="/assets/css-writing-mode/rtl.svg" alt="" className={cx("side_image")}/>
                 </div>
             </Slide>
 
@@ -39,7 +39,7 @@ export default function HowToInfluenceOnIT() {
                         <li>sideways-rl</li>
                         <li>sideways-lr</li>
                     </ul>
-                    <img src="/assets/css-writing-mode/horisontal-tb_ltr.png" alt="" className={cx("side_image")}/>
+                    <img src="/assets/css-writing-mode/horisontal-tb.svg" alt="" className={cx("side_image")}/>
                 </div>
             </Slide>
 
@@ -53,7 +53,7 @@ export default function HowToInfluenceOnIT() {
                         <li>sideways-rl</li>
                         <li>sideways-lr</li>
                     </ul>
-                    <img src="/assets/css-writing-mode/vertical-lr_ltr.png" alt="" className={cx("side_image")}/>
+                    <img src="/assets/css-writing-mode/vertical-lr.svg" alt="" className={cx("side_image")}/>
                 </div>
             </Slide>
 
@@ -67,7 +67,7 @@ export default function HowToInfluenceOnIT() {
                         <li>sideways-rl</li>
                         <li>sideways-lr</li>
                     </ul>
-                    <img src="/assets/css-writing-mode/vertical-rl_ltr.png" alt="" className={cx("side_image")}/>
+                    <img src="/assets/css-writing-mode/vertical-rl.svg" alt="" className={cx("side_image")}/>
                 </div>
             </Slide>
 
@@ -114,7 +114,7 @@ export default function HowToInfluenceOnIT() {
                         <li className={cx("active")}>sideways-rl</li>
                         <li>sideways-lr</li>
                     </ul>
-                    <img src="/assets/css-writing-mode/sideways-rl_ltr.png" alt="" className={cx("side_image")}/>
+                    <img src="/assets/css-writing-mode/sideways-rl.svg" alt="" className={cx("side_image")}/>
                 </div>
             </Slide>
 
@@ -128,7 +128,7 @@ export default function HowToInfluenceOnIT() {
                         <li>sideways-rl</li>
                         <li className={cx("active")}>sideways-lr</li>
                     </ul>
-                    <img src="/assets/css-writing-mode/sideways-lr_ltr.png" alt="" className={cx("side_image")}/>
+                    <img src="/assets/css-writing-mode/sideways-lr.svg" alt="" className={cx("side_image")}/>
                 </div>
             </Slide>
 

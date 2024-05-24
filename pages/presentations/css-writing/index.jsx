@@ -50,6 +50,7 @@ export default function index() {
             </Slide>
 
             <Conclusion/>
+
         </Layout>
     );
 }
