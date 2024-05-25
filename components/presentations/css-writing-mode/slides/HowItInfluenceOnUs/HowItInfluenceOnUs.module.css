@@ -12,7 +12,8 @@
     gap: 1em;
 }
 
-.grid_demo {
+.grid_demo,
+.grid_demo.japanese {
     display: grid;
     grid-template-columns: repeat(auto-fill, 2em);
     grid-template-rows: repeat(auto-fill, 2em);
