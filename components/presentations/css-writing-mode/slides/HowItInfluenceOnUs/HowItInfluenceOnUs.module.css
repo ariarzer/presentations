@@ -79,8 +79,3 @@ table.arabic  td {
 .controls ::-moz-range-track {
     background-color: var(--color-fill);
 }
-
-.controls ::-webkit-slider-runnable-track {
-    background-color: var(--color-fill);
-}
-

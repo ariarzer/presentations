@@ -44,11 +44,6 @@ export default function index() {
                 </ul>
             </Slide>
 
-            <Slide>
-                <h2>Ваше мнение очень важно для нас:</h2>
-                <img src="/assets/css-writing-mode/CodeFest%20Feedback.gif" alt=""/>
-            </Slide>
-
             <Conclusion/>
 
         </Layout>

@@ -426,7 +426,28 @@ export default function LogicalProperties() {
             </Slide>
 
             <Slide className="slide">
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
                 <h2 className={"shout shrink"}>Листья всегда падают сверху</h2>
+            </Slide>
+
+            <Slide className={cx("slide")}>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <span className={cx("leaf")}></span>
+                <h2 className={cx("shout shrink", "japanese", "japan_leaf")}>葉っぱはいつも上から落ちてくる</h2>
             </Slide>
         </>
     )

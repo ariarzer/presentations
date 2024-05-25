@@ -104,3 +104,104 @@
 .leaf {
     width: 50px;
 }
+
+.japan_leaf {
+    font-size: 80px !important;
+    height: 90%;
+    top: 0;
+    width: min-content !important;
+    left: 50% !important;
+    transform: translate(-100%, -50%) !important;
+    margin-top: 0 !important;
+}
+
+.leaf {
+    background-color: var(--accent);
+    border-radius: 0 100% 0 100%;
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    opacity: 0.7;
+
+    animation-name: fall, rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 5s, 0.5s;
+    animation-composition: add;
+    animation-direction: normal, alternate-reverse;
+    animation-timing-function: cubic-bezier(0.48, 0.62, 0.69, 0.27);
+
+    rotate: 45deg;
+}
+
+@keyframes fall {
+    from {
+        top: -100px
+    }
+    to {
+        top: calc(100% + 100px)
+    }
+}
+
+@keyframes rotate {
+    from {
+        rotate: 20deg;
+    }
+    to {
+        rotate: -20deg;
+    }
+}
+
+.leaf:nth-child(1) {
+    left: 10%;
+    animation-delay: -4s;
+}
+.leaf:nth-child(2) {
+    left: 20%;
+    animation-delay: -2.8s;
+}
+.leaf:nth-child(3) {
+    left: 30%;
+    animation-delay: -2.3s;
+}
+.leaf:nth-child(4) {
+    left: 40%;
+    animation-delay: -4s;
+}
+.leaf:nth-child(5) {
+    left: 50%;
+    animation-delay: -5s;
+}
+.leaf:nth-child(6) {
+    left: 60%;
+    animation-delay: -3.5s;
+}
+.leaf:nth-child(7) {
+    left: 70%;
+    animation-delay: -1.9s;
+}
+.leaf:nth-child(8) {
+    left: 80%;
+    animation-delay: -3.2s;
+}
+.leaf:nth-child(9) {
+    left: 90%;
+    animation-delay: -2.3s;
+}
+
+@keyframes fall_side {
+    from {
+        left: -100px
+    }
+    to {
+        left: calc(100% + 100px)
+    }
+}
+
+@keyframes rotate_side {
+    from {
+        rotate: 20deg;
+    }
+    to {
+        rotate: -20deg;
+    }
+}
