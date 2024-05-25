@@ -43,6 +43,7 @@
 .margin {
     white-space: nowrap;
     align-items: center;
+    gap: 1em;
 }
 
 .margin span {
