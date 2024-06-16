@@ -133,7 +133,7 @@ export default function DeclaredValue() {
                         <td>border-left-color</td>
                         <td>red</td>
                         <td><code>#abc</code></td>
-                        <td>index.html:12</td>
+                        <td>cssWritingModes.html:12</td>
                     </tr>
                     <tr>
                         <td>border-left-style</td>

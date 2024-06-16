@@ -1,0 +1,19 @@
+/* Basic */
+
+.slide h2 {
+    margin-top: 6px;
+    margin-bottom: 34px;
+    color: var(--text-h1-color);
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.slide * + h2 {
+    margin-top: 41px;
+}
+
+.slide p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
