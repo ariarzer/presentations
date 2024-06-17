@@ -1,0 +1,114 @@
+.arabic {
+    direction: rtl;
+}
+
+.japanese {
+    writing-mode: vertical-rl;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex h3 {
+    border-inline-start: 3px solid;
+    padding-inline-start: 0.5em;
+    margin: 0;
+}
+
+.columns.five {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.columns.five > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margin {
+    white-space: nowrap;
+    align-items: center;
+}
+
+.margin span {
+    font-size: 2em;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.columns {
+    display: flex;
+}
+
+.positioning {
+    grid-template-columns: auto min-content auto !important;
+}
+
+.positioning .block {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    align-items: flex-start;
+}
+
+.example {
+    gap: 2em;
+}
+
+.example > div {
+    border: 2px dashed;
+}
+
+.example1 > div {
+    width: 300px;
+    border-bottom: green solid 5px;
+}
+
+.example2 > div {
+    inline-size: 300px;
+    border-inline-end: green solid 5px;
+}
+
+.example3 .rotate {
+    rotate: 90deg;
+    margin-top: 90px;
+    border-top: green solid 5px;
+}
+
+.example3 .writing {
+    writing-mode: vertical-rl;
+    border-inline-end: green solid 5px;
+}
+
+.example3 > div {
+    width: 300px;
+}
+
+.example4 .rotate {
+    rotate: 90deg;
+    border-top: green solid 5px;
+}
+
+.example4 .writing {
+    writing-mode: vertical-rl;
+    border-inline-end: green solid 5px;
+}
+
+.example4 > div {
+    inline-size: 300px;
+}
+

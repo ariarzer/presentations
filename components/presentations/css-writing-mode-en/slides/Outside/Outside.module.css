@@ -1,0 +1,7 @@
+.arabic {
+    direction: rtl;
+}
+
+.japanese {
+    writing-mode: vertical-rl;
+}
