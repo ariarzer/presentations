@@ -10,19 +10,23 @@ export default function CascadedValue() {
             <Slide>
                 <h2 className={'shout'}>Что такое каскад?</h2>
             </Slide>
+
             <Slide>
                 <h2>Cascaded value</h2>
                 <p>Каскад принимает неупорядоченный список объявленных значений, сортирует их по приоритету их
                     объявления, и выводит одно значение.</p>
             </Slide>
+
             <Slide>
                 <h2>Cascaded value</h2>
                 <ul>
                     <li>Уровни объявления</li>
+                    <li style={{opacity: 0.5}}>Слои <code>@layer</code></li>
                     <li>Специфичность селекторов</li>
                     <li>Порядок объявления</li>
                 </ul>
             </Slide>
+
             <Slide>
                 <h2>Уровни объявления</h2>
                 <table className={classes.CascadedValue__compareTable}>
@@ -54,6 +58,7 @@ export default function CascadedValue() {
                     </tbody>
                 </table>
             </Slide>
+
             <Slide>
                 <h2>Уровни объявления</h2>
                 <table className={classes.CascadedValue__compareTable}>
@@ -95,6 +100,7 @@ export default function CascadedValue() {
                     </tbody>
                 </table>
             </Slide>
+
             <Slide>
                 <h2>Декларации user-агента</h2>
                 <CascadeLevelsList active={[7]}/>
@@ -104,7 +110,7 @@ export default function CascadedValue() {
             <Slide>
                 <h2>Декларации user-агента</h2>
                 <CascadeLevelsList active={[1]}/>
-                <img src="/assets/css-value-processing/user_agent_important.png" alt="" style={{width: '90%'}}/>
+                <img src="/assets/css-value-processing/important_user_agent.png" alt="" style={{width: '90%'}}/>
             </Slide>
 
             <Slide>
@@ -114,10 +120,10 @@ export default function CascadedValue() {
                     <pre lang='css'>
                         <code>{'.blue {'}</code>
                         <code>    color: blue;</code>
-                        <code>}</code>
+                        <code>{"}"}</code>
                         <code>{'.red {'}</code>
                         <code>    color: red;</code>
-                        <code>}</code>
+                        <code>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
                 </div>
@@ -130,10 +136,10 @@ export default function CascadedValue() {
                     <pre lang='css'>
                         <code>{'.blue {'}</code>
                         <code>    color: blue;</code>
-                        <code>}</code>
+                        <code>{"}"}</code>
                         <code>{'.red {'}</code>
                         <code>    color: red !important;</code>
-                        <code>}</code>
+                        <code>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
                 </div>
@@ -150,14 +156,14 @@ export default function CascadedValue() {
                         <code>{'}'}</code>
                         <code>{'@keyframes anim {'}</code>
                         <code>{'    50% {color: green;}'}</code>
-                        <code>}</code>
+                        <code>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--animation']}>CSS</div>
                 </div>
             </Slide>
 
             <Slide id='animation_declaration'>
-                <h2>Вернемся к вопросу про анимации</h2>
+                <h2>Декларации анимаций</h2>
                 <CascadeLevelsList active={[4, 3]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
@@ -167,7 +173,7 @@ export default function CascadedValue() {
                         <code>{'}'}</code>
                         <code>{'@keyframes anim {'}</code>
                         <code>{'    50% {color: green;}'}</code>
-                        <code>}</code>
+                        <code>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--animationImportant']}>CSS</div>
                 </div>
@@ -245,6 +251,83 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
+                <h2 className={"shout"}>История</h2>
+            </Slide>
+
+            <Slide id='animation_declaration'>
+                <h2>Декларации анимаций в 2020</h2>
+                <div className={'columns two'}>
+                    <pre lang='css'>
+                        <code>{'.blue {'}</code>
+                        <code>{'    color: red !important;'}</code>
+                        <code>{'    animation: anim 3s infinite;'}</code>
+                        <code>{'}'}</code>
+                        <code>{'@keyframes anim {'}</code>
+                        <code>{'    50% {color: green;}'}</code>
+                        <code>{"}"}</code>
+                    </pre>
+                    <div className={classes['CascadedValue__example--animation']}>CSS</div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <img src="/assets/css-value-processing/chrome_bug.png" alt="" className={"full_image"}/>
+            </Slide>
+
+            <Slide>
+
+                <iframe id="twitter-widget-0" scrolling="no" frameBorder="0" allowTransparency="true"
+                        allowFullScreen="true" className="centerAbsolute" title="X Post"
+                        src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1230055869234188289&amp;lang=en&amp;origin=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2Faria_rzer%2Fstatus%2F1230055869234188289%23&amp;sessionId=96e004792d400269fc4c38c3990fceec822faede&amp;theme=light&amp;widgetsVersion=2615f7e52b7e0%3A1702314776716&amp;width=550px"
+                        style={{width: '550px', height: '400px'}}
+                        data-tweet-id="1230055869234188289"></iframe>
+            </Slide>
+
+            <Slide>
+                <img src="/assets/css-value-processing/chrome_bug_comment.png"
+                     alt=""
+                     className={"full_image"}/>
+            </Slide>
+
+            <Slide>
+                <img src="/assets/css-value-processing/chrome_bug_fixed.png"
+                     alt=""
+                     className={"full_image"}/>
+            </Slide>
+
+            <Slide>
+                <h2>Cascaded value</h2>
+                <ul>
+                    <li>Уровни объявления</li>
+                    <li style={{opacity: 0.5}}>Слои <code>@layer</code></li>
+                    <li>Специфичность селекторов</li>
+                    <li>Порядок объявления</li>
+                </ul>
+            </Slide>
+
+            <Slide>
+                <h2>
+                    Слои <code>@layer</code>
+                </h2>
+                <p>Способ создать уровни объявления внутри стилей автора.</p>
+            </Slide>
+
+            <Slide>
+                <pre>
+                    <code>@layer default, components, theme;</code>
+                    <code>{"@layer default {"}</code>
+                    <code>{"   button {  color: red; }"}</code>
+                    <code>{"}"}</code>
+                    <code>{"@import url('theme.css') layer(theme); }"}</code>
+                    <code>{"@layer components {"}</code>
+                    <code>{"   button { color: green; }"}</code>
+                    <code>{"}"}</code>
+            </pre>
+            </Slide>
+
+            <Slide>ссылка на доклад</Slide>
+
+            <Slide>
                 <h2 className={'shout'} style={{'font-size': '90px'}}>
                     А что, если у нас две декларации на одном уровне?
                 </h2>
@@ -271,7 +354,7 @@ export default function CascadedValue() {
                 <pre>
                     <code>{'<div class="red" id="blue">'}</code>
                     <code>{'    '}
-                        <span  className={classes.CascadedValue__gradientText}
+                        <span className={classes.CascadedValue__gradientText}
                         > CSS</span>
                     </code>
                     <code>{'</div>'}</code>
@@ -281,7 +364,6 @@ export default function CascadedValue() {
                     <code>{'</style>'}</code>
                 </pre>
             </Slide>
-
 
             <Slide>
                 <h2>Здесь нет конфликта селекторов</h2>
@@ -299,7 +381,7 @@ export default function CascadedValue() {
                     <code>{'</div>'}</code>
                     <code>{'<style>'}</code>
                     <code>{'  .red { color: red !important; }'}</code>
-                    <code>{'  #id { color: blue;' }'}</code>
+                    <code>{"  #id { color: blue; }"}</code>
                     <code>{'</style>'}</code>
                 </pre>
             </Slide>
@@ -413,9 +495,11 @@ export default function CascadedValue() {
             <Slide>
                 <h2>А почему это плохо?</h2>
                 <p>Сравним 11 классов и один идентификатор:</p>
-                <p><code>#id</code> = <code>1 * 10^2</code> + <code>0 * 10^1</code> + <code>0 * 10^0</code> = <code>100</code></p>
+                <p><code>#id</code> = <code>1 * 10^2</code> + <code>0 * 10^1</code> + <code>0 *
+                    10^0</code> = <code>100</code></p>
                 <p><code>.a.b.c.d.e.f.e.r.g.t.h</code> =
-                    <br/> = <code>0 * 10^2</code> + <code>11 * 10^1</code> + <code>0 * 10^0</code> = <code>110</code></p>
+                    <br/> = <code>0 * 10^2</code> + <code>11 * 10^1</code> + <code>0 * 10^0</code> = <code>110</code>
+                </p>
             </Slide>
 
             <Slide>
@@ -425,7 +509,8 @@ export default function CascadedValue() {
             <Slide>
                 <h2>На самом деле чуть-чуть не так</h2>
                 <p>Используется степень двойки.</p>
-                <p style={{textDecoration: 'line-through'}}> <code>1 * 10^2</code> + <code> 1 * 10^1</code> + <code>1 * 10^0</code></p>
+                <p style={{textDecoration: 'line-through'}}><code>1 * 10^2</code> + <code> 1 * 10^1</code> + <code>1 *
+                    10^0</code></p>
                 <p><code>1 * 2^24</code> + <code> 1 * 2^16</code> + <code>1 * 2^8</code></p>
             </Slide>
 
@@ -436,12 +521,18 @@ export default function CascadedValue() {
 
             <Slide className={classes.CascadedValue__ruby}>
                 <h2>Семантическое версионирование</h2>
-                <code className={'shout'} >
-                    <ruby>1<rt>major</rt></ruby>
+                <code className={'shout'}>
+                    <ruby>1
+                        <rt>major</rt>
+                    </ruby>
                     .
-                    <ruby>0<rt>minor</rt></ruby>
+                    <ruby>0
+                        <rt>minor</rt>
+                    </ruby>
                     .
-                    <ruby>2<rt>path</rt></ruby>
+                    <ruby>2
+                        <rt>path</rt>
+                    </ruby>
                 </code>
             </Slide>
 
@@ -460,7 +551,7 @@ export default function CascadedValue() {
                     <tbody>
                     <tr>
                         <td>span</td>
-                        <td>0 </td>
+                        <td>0</td>
                         <td>0</td>
                         <td>1</td>
                         <td>0.0.1</td>
@@ -533,7 +624,7 @@ export default function CascadedValue() {
                 <p>Считается специфичнее всего для целей этого этапа.</p>
                 <pre>
                     <code>{'<div id="id" style="color:red">'}
-                        <span style={{'font-style':'bold', color: 'red'}}>CSS</span>
+                        <span style={{'font-style': 'bold', color: 'red'}}>CSS</span>
                         {'</div>'}</code>
                     <code>{'<style>'}</code>
                     <code>{'  #id { color: blue; }'}</code>
@@ -554,7 +645,8 @@ export default function CascadedValue() {
                     <code>{'  .red { color: red; }'}</code>
                     <code>{'</style>'}</code>
                 </pre>
-                <a href="https://twitter.com/mxstbr/status/1038073603311448064" hidden={true}>https://twitter.com/mxstbr/status/1038073603311448064</a>
+                <a href="https://twitter.com/mxstbr/status/1038073603311448064"
+                   hidden={true}>https://twitter.com/mxstbr/status/1038073603311448064</a>
             </Slide>
 
             <Slide>
@@ -562,7 +654,7 @@ export default function CascadedValue() {
                 <p>Чем ближе к концу документа - тем приоритетнее</p>
                 <pre>
                     <code>{'<div class="red blue">'}
-                        <span style={{'font-style':'bold', color: 'red'}}>CSS</span>
+                        <span style={{'font-style': 'bold', color: 'red'}}>CSS</span>
                         {'</div>'}
                     </code>
                     <code>{'<style>'}</code>
@@ -570,7 +662,8 @@ export default function CascadedValue() {
                     <code>{'  .red { color: red; }'}</code>
                     <code>{'</style>'}</code>
                 </pre>
-                <a href="https://twitter.com/mxstbr/status/1038073603311448064" hidden={true}>https://twitter.com/mxstbr/status/1038073603311448064</a>
+                <a href="https://twitter.com/mxstbr/status/1038073603311448064"
+                   hidden={true}>https://twitter.com/mxstbr/status/1038073603311448064</a>
             </Slide>
 
             <Slide>

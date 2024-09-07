@@ -79,3 +79,7 @@ pre.no-code code::before {
 .shower.full .next.next_style {
     visibility: visible;
 }
+
+.noMargin {
+    margin: 0;
+}

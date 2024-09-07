@@ -12,21 +12,24 @@ import SpecialValues from "../../../components/presentations/css-value-processin
 import SpecialIntro from "../../../components/presentations/css-value-processing/slides/Intro/Intro";
 
 import classNames from 'classnames/bind';
-
-import classes from '../../../components/base/Intro/Intro.module.css'
+import classes from './css-value-processing.module.css';
 
 const cx = classNames.bind(classes);
 
 export default function index() {
     return (
         <Layout header={'От декларации до отображения'}>
-            <Slide id="myself" className={'noBadge'}>
-                <center>
-                    <div>
-                        <h2>Меня зовут София. Я - CSS инженер.</h2>
-                        <img src="/assets/logo_dark.svg" alt="" className={cx("logo")}/>
-                    </div>
-                </center>
+            {/*<Slide id="myself" className={'noBadge'}>*/}
+            {/*    <center>*/}
+            {/*        <div>*/}
+            {/*            <h2>Меня зовут София. Я - CSS инженер.</h2>*/}
+            {/*            <img src="/assets/logo_dark.svg" alt="" className={cx("logo")}/>*/}
+            {/*        </div>*/}
+            {/*    </center>*/}
+            {/*</Slide>*/}
+            <Slide className={cx('myself','noBadge')}>
+                <h3>Валитова София</h3>
+                <h2>От декларации <br/>до отображения.</h2>
             </Slide>
 
             <SpecialIntro/>

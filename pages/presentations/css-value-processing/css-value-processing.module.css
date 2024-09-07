@@ -1,0 +1,16 @@
+.myself {
+    background-image: url("/assets/frontend_conf/main_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 2em;
+}
+
+.myself h3 {
+    font-size: 2em;
+    line-height: 1;
+}
+
+.myself h2 {
+    font-size: 3em;
+}

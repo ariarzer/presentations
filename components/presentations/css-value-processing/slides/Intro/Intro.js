@@ -1,5 +1,10 @@
 import Slide from "../../../../base/Slide/Slide";
 
+import classNames from 'classnames/bind';
+import classes from './Intro.module.css';
+
+const cx = classNames.bind(classes);
+
 export default function SpecialIntro() {
     return (
         <>
@@ -56,7 +61,7 @@ export default function SpecialIntro() {
                         <code>{':root { color: yellow;}'}</code>
                         <code>{'div { color: 40px;}'}</code>
                         <code>{'.class { color: gold !important;}'}</code>
-                        <code>{'#id { color: olive;}'}</code>
+                        <code>{'#id { color: 1ms;}'}</code>
                         <code>{'@keyframes color {'}</code>
                         <code>{'  from { color: fuchsia; }'}</code>
                         <code>{'  to { color: tomato; }'}</code>
@@ -72,8 +77,26 @@ export default function SpecialIntro() {
             </Slide>
 
             <Slide>
-                <h2>По спецификации</h2>
-                <p>6 последовательных значений:</p>
+                <h2>Самый важный слайд</h2>
+                <ol>
+                    <li>Отбираем декларации</li>
+                    <li>Выбираем одну</li>
+                    <li>Наследуем её</li>
+                    <li>Вычисляем</li>
+                    <li>Отрисовываем на устройстве</li>
+                </ol>
+            </Slide>
+            
+            <Slide>
+                <img src="/assets/css-value-processing/swim.png" alt="" className={"full_image"}/>
+            </Slide>
+
+            <Slide>
+                <h2>Плывём!</h2>
+            </Slide>
+
+            <Slide>
+                <h2>Value processing</h2>
                 <ol>
                     <li>Declared value</li>
                     <li>Cascaded value</li>
