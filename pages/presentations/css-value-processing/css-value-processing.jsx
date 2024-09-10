@@ -29,7 +29,7 @@ export default function index() {
             {/*</Slide>*/}
             <Slide className={cx('myself','noBadge')}>
                 <h3>Валитова София</h3>
-                <h2>От декларации <br/>до отображения.</h2>
+                <h2>От декларации <br/>до отображения</h2>
             </Slide>
 
             <SpecialIntro/>

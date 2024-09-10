@@ -620,7 +620,7 @@ export default function CascadedValue() {
 
 
             <Slide>
-                <h2>Аттрибут style</h2>
+                <h2>Атрибут style</h2>
                 <p>Считается специфичнее всего для целей этого этапа.</p>
                 <pre>
                     <code>{'<div id="id" style="color:red">'}

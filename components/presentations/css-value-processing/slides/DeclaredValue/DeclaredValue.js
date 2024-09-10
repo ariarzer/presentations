@@ -133,7 +133,7 @@ export default function DeclaredValue() {
                 />
             </Slide>
             <Slide>
-                <h2>Выбрили декларации</h2>
+                <h2>Выбрали декларации</h2>
                 <table>
                     <thead>
                     <tr>
