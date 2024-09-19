@@ -1,9 +1,14 @@
 import Script from "next/script";
 import { LanguageContext } from '../LanguageContext';
 
-export default function Layout({children, header, lang}) {
+import classNames from 'classnames/bind';
+import classes from './Layout.module.css';
+
+const cx = classNames.bind(classes);
+
+export default function Layout({children, header, lang, appearance = '', theme = ''}) {
     return (
-        <main className={'shower list'}>
+        <main className={cx('shower','list', theme, appearance)}>
             <LanguageContext.Provider value={lang}>
                 <div className="caption">
                     <h1>{header}</h1>

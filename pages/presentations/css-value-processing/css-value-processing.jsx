@@ -18,7 +18,7 @@ const cx = classNames.bind(classes);
 
 export default function index() {
     return (
-        <Layout header={'От декларации до отображения'}>
+        <Layout header={'От декларации до отображения'} theme={'frontendConf24'} appearance={'dark'}>
             {/*<Slide id="myself" className={'noBadge'}>*/}
             {/*    <center>*/}
             {/*        <div>*/}

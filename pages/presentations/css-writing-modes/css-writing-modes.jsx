@@ -17,6 +17,7 @@ export default function index() {
         <Layout
             lang={'ru'}
             header={'Режимы написания в CSS'}
+            theme={"codeFest24"}
         >
             <Intro/>
 
