@@ -1,0 +1,32 @@
+.webStorm {
+    --GREEN: #8DB740;
+    --DARK_GREEN: #6A8759;
+    --PURPLE: #9876AA;
+    --DARK_ORANGE: #CC7832;
+    --ORANGE: #E6AE48;
+    --BLUE: #6897BB;
+    --GREY: #A9B7C6;
+    --DARK: #2B2B2B;
+
+    --accent: var(--ORANGE);
+    --accent2: var(--BLUE);
+
+    --text-h1-color: var(--GREY);
+    --text-link: var(--BLUE);
+    --text-list-marker: var(--text-h1-color);
+    --bg-slide: var(--DARK);
+    --text-primary: var(--GREY);
+    --color-fill: rgba(88, 90, 94, 0.4);
+}
+
+.webStorm .slide::after {
+    --ribbon-size: 50px;
+    width: var(--ribbon-size);
+    height: calc(var(--ribbon-size)* 2);
+    padding-top: 1em;
+    text-align: center;
+    top: 0;
+    background-color: var(--accent);
+    color: var(--DARK);
+    clip-path: path('M0 0h50v100L25 80 0 100');
+}

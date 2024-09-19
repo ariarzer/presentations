@@ -1,5 +1,5 @@
 .ComputedValue__border {
-    border: 2px solid;
+    border: 2px solid var(--accent);
     padding: 1em;
 }
 

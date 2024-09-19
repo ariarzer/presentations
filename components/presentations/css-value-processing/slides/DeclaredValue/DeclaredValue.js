@@ -1,5 +1,10 @@
 import Slide from "../../../../base/Slide/Slide";
 
+import classes from './DeclaredValue.module.css'
+
+import classNames from 'classnames/bind';
+const cx = classNames.bind(classes);
+
 export default function DeclaredValue() {
     return (
         <>
@@ -86,12 +91,15 @@ export default function DeclaredValue() {
                 </pre>
             </Slide>
 
-            <Slide>
-                <h2>Проверка типа</h2>
+            <Slide className={"noBadge"}>
+                <img src="/assets/css-value-processing/css_height.png" alt="" className={cx('full_image')}/>
+            </Slide>
 
-                <a href="https://www.youtube.com/watch?v=o3oFkckaJGo&list=PLcXJ90eZ2bxjlewIlnsC_dQZeX7BHtnut&index=3"
-                   className="next">подробнее про типы данных в CSS</a>
-                <img src="/assets/css-value-processing/css_height.png" alt="" className="picture"/>
+            <Slide>
+                <iframe className={cx('DeclaredValue__iframe')} src="https://www.youtube.com/embed/PoWpkLeJnBA?si=1URQe5z9hjwoE40N"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </Slide>
 
             <Slide>

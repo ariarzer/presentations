@@ -3,6 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    --text-primary: black;
+    --text-h1-color: black;
+
     padding: 2em;
 }
 
@@ -13,4 +16,10 @@
 
 .myself h2 {
     font-size: 3em;
+}
+
+.qr {
+    position: absolute;
+    right: 2em;
+    top: 7em
 }

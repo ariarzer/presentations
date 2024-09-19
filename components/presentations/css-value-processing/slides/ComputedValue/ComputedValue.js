@@ -8,8 +8,7 @@ export default function ComputedValue() {
                 <h2>Computed value</h2>
                 <p>Значение, которое наследуется.</p>
             </Slide>
-            <Slide>
-                <h2>Computed value</h2>
+            <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
                         <code>height: 100px;<span className="next"> // => 100px</span></code>
@@ -21,8 +20,7 @@ export default function ComputedValue() {
                     </div>
                 </div>
             </Slide>
-            <Slide>
-                <h2>Computed value</h2>
+            <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
                         <code>height: 100px; <span className="next">// => 100px</span></code>
@@ -40,8 +38,7 @@ export default function ComputedValue() {
                     </div>
                 </div>
             </Slide>
-            <Slide>
-                <h2>Computed value</h2>
+            <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
                         <code>font-size: 10px;</code>
@@ -66,8 +63,7 @@ export default function ComputedValue() {
                     <li>Проценты не вычисляются. Остальные зависимые величины да.</li>
                 </ol>
             </Slide>
-            <Slide>
-                <h2>Computed value</h2>
+            <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
                         <code>--c: tomato;</code>
@@ -87,8 +83,7 @@ export default function ComputedValue() {
                     </div>
                 </div>
             </Slide>
-            <Slide>
-                <h2>Computed value</h2>
+            <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
                         <code>--h: 100px;</code>
@@ -117,10 +112,6 @@ export default function ComputedValue() {
 
                 <p className={'next'}>После этого этапа у нас есть значение, в котором посчитано все, что можно
                     посчитать без отрисовки документа.</p>
-            </Slide>
-
-            <Slide>
-                здесь будет про кальк, если у меня есть время
             </Slide>
         </>);
 }

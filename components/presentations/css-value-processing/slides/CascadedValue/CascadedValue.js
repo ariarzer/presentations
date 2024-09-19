@@ -4,11 +4,18 @@ import CascadeLevelsList from "./CascadeLevelsList/CascadeLevelsList";
 import classes from './CascadedValue.module.css'
 import Transition from "../../demos/Transition/Transition";
 
+import classNames from 'classnames/bind';
+const cx = classNames.bind(classes);
+
 export default function CascadedValue() {
     return (
         <>
             <Slide>
                 <h2 className={'shout'}>Что такое каскад?</h2>
+            </Slide>
+
+            <Slide>
+                <h2 className={'shout'}>Cascading <br/>Style <br/>Sheets</h2>
             </Slide>
 
             <Slide>
@@ -296,6 +303,13 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
+                <h3>Выводы из истории:</h3>
+                <h2 className={'shout'} style={{'font-size': '70px'}}>
+                    Не молчите о проблеме
+                </h2>
+            </Slide>
+
+            <Slide>
                 <h2>Cascaded value</h2>
                 <ul>
                     <li>Уровни объявления</li>
@@ -325,7 +339,12 @@ export default function CascadedValue() {
             </pre>
             </Slide>
 
-            <Slide>ссылка на доклад</Slide>
+            <Slide>
+                <iframe className={cx("CascadedValue__iframe")} src="https://www.youtube.com/embed/TDQMI03MOFI?si=aR1_izN_FLng90gb"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </Slide>
 
             <Slide>
                 <h2 className={'shout'} style={{'font-size': '90px'}}>
@@ -521,7 +540,7 @@ export default function CascadedValue() {
 
             <Slide className={classes.CascadedValue__ruby}>
                 <h2>Семантическое версионирование</h2>
-                <code className={'shout'}>
+                <code className={cx('shout', 'CascadedValue__rubyCode')}>
                     <ruby>1
                         <rt>major</rt>
                     </ruby>
@@ -531,7 +550,7 @@ export default function CascadedValue() {
                     </ruby>
                     .
                     <ruby>2
-                        <rt>path</rt>
+                        <rt>patch</rt>
                     </ruby>
                 </code>
             </Slide>
