@@ -304,7 +304,7 @@ export default function CascadedValue() {
 
             <Slide>
                 <h3>Выводы из истории:</h3>
-                <h2 className={'shout'} style={{'font-size': '70px'}}>
+                <h2 className={cx('shout', 'shrink')}>
                     Не молчите о проблеме
                 </h2>
             </Slide>
@@ -533,9 +533,16 @@ export default function CascadedValue() {
                 <p><code>1 * 2^24</code> + <code> 1 * 2^16</code> + <code>1 * 2^8</code></p>
             </Slide>
 
-            <Slide>
-                <h2>Коэффициент специфичности</h2>
-                <img src="/assets/css-value-processing/habr_256.png" alt="" className="picture"/>
+            <Slide className={"noBadge"}>
+                <img src="/assets/css-value-processing/habr_256.png"
+                     alt="" className="full_image"
+                     style={{width: '90%', "objectFit": "cover", "object-position" : "right top;"}}
+                />
+            </Slide>
+
+
+            <Slide className={"noBadge"}>
+                <h2 className={cx("shout", "shrink")}>????</h2>
             </Slide>
 
             <Slide className={classes.CascadedValue__ruby}>
@@ -637,6 +644,9 @@ export default function CascadedValue() {
                 <img src="/assets/css-value-processing/polypane.png" alt="" className='picture' style={{}}/>
             </Slide>
 
+            <Slide>
+                <img src="/assets/css-value-processing/specify_in_chrome.jpg" alt="" className='picture' style={{}}/>
+            </Slide>
 
             <Slide>
                 <h2>Атрибут style</h2>

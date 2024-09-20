@@ -63,26 +63,26 @@ export default function ComputedValue() {
                     <li>Проценты не вычисляются. Остальные зависимые величины да.</li>
                 </ol>
             </Slide>
-            <Slide className={"noBadge"}>
-                <div className={classes.ComputedValue__border}>
-                    <pre lang="css">
-                        <code>--c: tomato;</code>
-                    </pre>
-                    <div className={classes.ComputedValue__border}>
-                        <pre lang="css">
-                            <code>color: var(--c);<span className="next"> // => tomato <span
-                                className="next"> CV=tomato </span></span></code>
-                        </pre>
-                        <div className={classes.ComputedValue__border}>
-                            <pre lang="css" className="no-code" style={{'margin-bottom': '0 !important'}}>
-                                <code>--c: gold;</code>
-                                <code>color: inherit;<span className="next"> // => tomato <span
-                                    className="next"> CV=tomato </span></span> </code>
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-            </Slide>
+            {/*<Slide className={"noBadge"}>*/}
+            {/*    <div className={classes.ComputedValue__border}>*/}
+            {/*        <pre lang="css">*/}
+            {/*            <code>--c: tomato;</code>*/}
+            {/*        </pre>*/}
+            {/*        <div className={classes.ComputedValue__border}>*/}
+            {/*            <pre lang="css">*/}
+            {/*                <code>color: var(--c);<span className="next"> // => tomato <span*/}
+            {/*                    className="next"> CV=tomato </span></span></code>*/}
+            {/*            </pre>*/}
+            {/*            <div className={classes.ComputedValue__border}>*/}
+            {/*                <pre lang="css" className="no-code" style={{'margin-bottom': '0 !important'}}>*/}
+            {/*                    <code>--c: gold;</code>*/}
+            {/*                    <code>color: inherit;<span className="next"> // => tomato <span*/}
+            {/*                        className="next"> CV=tomato </span></span> </code>*/}
+            {/*                </pre>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</Slide>*/}
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
