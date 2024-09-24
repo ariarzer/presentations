@@ -305,7 +305,7 @@ export default function CascadedValue() {
             <Slide>
                 <h3>Выводы из истории:</h3>
                 <h2 className={cx('shout', 'shrink')}>
-                    Не молчите о проблеме
+                    Не молчите <br/>о проблеме
                 </h2>
             </Slide>
 
@@ -680,7 +680,7 @@ export default function CascadedValue() {
 
             <Slide>
                 <h2>Порядок объявления</h2>
-                <p>Чем ближе к концу документа - тем приоритетнее</p>
+                <p>Чем ближе к концу документа, тем приоритетнее</p>
                 <pre>
                     <code>{'<div class="red blue">'}
                         <span style={{'font-style': 'bold', color: 'red'}}>CSS</span>

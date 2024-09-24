@@ -20,7 +20,7 @@ export default function SpecialIntro() {
                         <code>{'  to { color: tomato; }'}</code>
                         <code>{'}'}</code>
                         <code>{':has(.class, #id) { '}</code>
-                        <code>{'  color: purple !important;}'}</code>
+                        <code>{'  color: purple !important;'}</code>
                         <code>{'}'}</code>
                         <code>{'* { animation: color 2s infinite; }'}</code>
                     </pre>

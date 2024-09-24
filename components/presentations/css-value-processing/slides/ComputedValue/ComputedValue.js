@@ -60,7 +60,7 @@ export default function ComputedValue() {
             <Slide>
                 <h2>Computed value</h2>
                 <ol>
-                    <li>Проценты не вычисляются. Остальные зависимые величины да.</li>
+                    <li>Проценты не вычисляются. Но остальные зависимые величины вычисляются.</li>
                 </ol>
             </Slide>
             {/*<Slide className={"noBadge"}>*/}
@@ -106,7 +106,7 @@ export default function ComputedValue() {
             <Slide>
                 <h2>Computed value</h2>
                 <ol>
-                    <li>Проценты не вычисляются. Остальные зависимые величины да.</li>
+                    <li>Проценты не вычисляются. Но остальные зависимые величины вычисляются.</li>
                     <li>Подставляются переменные.</li>
                 </ol>
 
