@@ -1,4 +1,5 @@
 import Slide from "../../../../base/Slide/Slide";
+import classes from "../ComputedValue/ComputedValue.module.css";
 
 
 export default function UsedValue() {
@@ -27,12 +28,79 @@ export default function UsedValue() {
             </Slide>
 
             <Slide>
+                <h2>Немного про <code>calc()</code></h2>
+                <pre>
+                    <code className={"true next next-light"}>width: calc(-50px); </code>
+                    <code className={"false next next-light"}>width: calc(2s); </code>
+                    <code className={"true next next-light"}>width: calc(50% - 50px); </code>
+                </pre>
+            </Slide>
+
+            <Slide className={"noBadge"}>
+                <div className={classes.ComputedValue__border}>
+                    <pre lang="css">
+                        <code>width: 100px; <span className="next">// => 100px</span></code>
+                    </pre>
+                    <div className={classes.ComputedValue__border}>
+                        <pre lang="css">
+                            <code>width: calc(50% - 25px); <span className="next"> UV = 25px</span></code>
+                        </pre>
+                        <div className={classes.ComputedValue__border}>
+                            <pre lang="css">
+                                <code>width: inherit;<span className="next"> // => -12.5px ???</span> </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Range Checking (Проверка диапазона)</h2>
+                <p>Приводим к ближайшему допустимому.</p>
+            </Slide>
+
+            <Slide className={"noBadge"}>
+                <div className={classes.ComputedValue__border}>
+                    <pre lang="css">
+                        <code>width: 100px; <span className="">// => 100px</span></code>
+                    </pre>
+                    <div className={classes.ComputedValue__border}>
+                        <pre lang="css">
+                            <code>width: calc(50% - 25px); <span className="">UV = 25px</span></code>
+                        </pre>
+                        <div className={classes.ComputedValue__border}>
+                            <pre lang="css">
+                                <code>width: inherit;<span className="next"> // => 0px</span> </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <img src="/assets/css-value-processing/width_range.png"
+                     alt=""
+                     className={"full_image"}/>
+            </Slide>
+
+            <Slide>
                 <h2>Считаем <code>calc-size()</code></h2>
                 <pre>
                     <code>height: calc-size(auto, size - 50%);</code>
-                    <code>    /* CV = calc-size(auto, size - 50%);</code>
+                    <code>    /* CV = calc-size(auto, size - 50%) */</code>
                     <code>    /* UV = 25px */</code>
                 </pre>
+            </Slide>
+
+            <Slide>
+                <h2>Справка про <code>calc-size()</code></h2>
+                <pre>
+                    <code>calc-size( &lt;calc-size-basis>, &lt;calc-sum> )</code>
+                </pre>
+                <ol>
+                    <li>Базис</li>
+                    <li>Выражение для вычисления</li>
+                </ol>
             </Slide>
         </>
     )

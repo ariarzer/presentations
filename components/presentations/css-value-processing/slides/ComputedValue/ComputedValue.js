@@ -6,7 +6,7 @@ export default function ComputedValue() {
     return (<>
             <Slide>
                 <h2>Computed value</h2>
-                <p>Значение, которое наследуется.</p>
+                <p className={"next"}>Значение, которое наследуется.</p>
             </Slide>
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
@@ -17,24 +17,6 @@ export default function ComputedValue() {
                             <pre lang="css">
                                 <code>height: inherit<span className="next"> // => 100px </span></code>
                             </pre>
-                    </div>
-                </div>
-            </Slide>
-            <Slide className={"noBadge"}>
-                <div className={classes.ComputedValue__border}>
-                    <pre lang="css">
-                        <code>height: 100px; <span className="next">// => 100px</span></code>
-                    </pre>
-                    <div className={classes.ComputedValue__border}>
-                            <pre lang="css">
-                                <code>height: 50%; <span className="next">// => 50px<span
-                                    className="next"> CV = 50%</span></span></code>
-                            </pre>
-                        <div className={classes.ComputedValue__border}>
-                                <pre lang="css">
-                                    <code>height: inherit;<span className="next"> // => 25px<span className="next"> CV = 50%</span></span> </code>
-                                </pre>
-                        </div>
                     </div>
                 </div>
             </Slide>
@@ -60,29 +42,33 @@ export default function ComputedValue() {
             <Slide>
                 <h2>Computed value</h2>
                 <ol>
-                    <li>Проценты не вычисляются. Но остальные зависимые величины вычисляются.</li>
+                    <li>Вычисляются зависимые величины.</li>
                 </ol>
             </Slide>
-            {/*<Slide className={"noBadge"}>*/}
-            {/*    <div className={classes.ComputedValue__border}>*/}
-            {/*        <pre lang="css">*/}
-            {/*            <code>--c: tomato;</code>*/}
-            {/*        </pre>*/}
-            {/*        <div className={classes.ComputedValue__border}>*/}
-            {/*            <pre lang="css">*/}
-            {/*                <code>color: var(--c);<span className="next"> // => tomato <span*/}
-            {/*                    className="next"> CV=tomato </span></span></code>*/}
-            {/*            </pre>*/}
-            {/*            <div className={classes.ComputedValue__border}>*/}
-            {/*                <pre lang="css" className="no-code" style={{'margin-bottom': '0 !important'}}>*/}
-            {/*                    <code>--c: gold;</code>*/}
-            {/*                    <code>color: inherit;<span className="next"> // => tomato <span*/}
-            {/*                        className="next"> CV=tomato </span></span> </code>*/}
-            {/*                </pre>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</Slide>*/}
+            <Slide className={"noBadge"}>
+                <div className={classes.ComputedValue__border}>
+                        <pre lang="css">
+                            <code>height: 100px; <span className="next">// => 100px</span></code>
+                        </pre>
+                    <div className={classes.ComputedValue__border}>
+                                <pre lang="css">
+                                    <code>height: 50%; <span className="next">// => 50px<span
+                                        className="next"> CV = 50%</span></span></code>
+                                </pre>
+                        <div className={classes.ComputedValue__border}>
+                                    <pre lang="css">
+                                        <code>height: inherit;<span className="next"> // => 25px<span className="next"> CV = 50%</span></span> </code>
+                                    </pre>
+                        </div>
+                    </div>
+                </div>
+            </Slide>
+            <Slide>
+                <h2>Computed value</h2>
+                <ol>
+                    <li>Вычисляются зависимые величины. <b>Кроме процентов!</b></li>
+                </ol>
+            </Slide>
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
