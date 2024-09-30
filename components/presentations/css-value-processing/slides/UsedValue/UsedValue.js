@@ -1,6 +1,9 @@
 import Slide from "../../../../base/Slide/Slide";
-import classes from "../ComputedValue/ComputedValue.module.css";
 
+import classes from './UsedValue.module.css'
+
+import classNames from 'classnames/bind';
+const cx = classNames.bind(classes);
 
 export default function UsedValue() {
     return (
@@ -21,7 +24,7 @@ export default function UsedValue() {
             <Slide>
                 <h2>Считаем <code>calc()</code></h2>
                 <pre>
-                    <code>width: calc(100px - 50%); /* UV = 25px */</code>
+                    <code>width: calc(100px - 50%); </code>
                     <code>    /* CV = calc(100px - 50%) */</code>
                     <code>    /* UV = 25px */</code>
                 </pre>
@@ -60,6 +63,12 @@ export default function UsedValue() {
             </Slide>
 
             <Slide className={"noBadge"}>
+                <img src="/assets/css-value-processing/width_range.png"
+                     alt=""
+                     className={"full_image"}/>
+            </Slide>
+
+            <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
                         <code>width: 100px; <span className="">// => 100px</span></code>
@@ -75,12 +84,6 @@ export default function UsedValue() {
                         </div>
                     </div>
                 </div>
-            </Slide>
-
-            <Slide>
-                <img src="/assets/css-value-processing/width_range.png"
-                     alt=""
-                     className={"full_image"}/>
             </Slide>
 
             <Slide>
@@ -101,6 +104,26 @@ export default function UsedValue() {
                     <li>Базис</li>
                     <li>Выражение для вычисления</li>
                 </ol>
+            </Slide>
+
+            <Slide>
+                <h2>Справка про <code>calc-size()</code></h2>
+                <pre>
+                    <code>width: calc-size(max-content, size / 2);</code>
+                </pre>
+                <div className={cx('demo')}><span></span></div>
+            </Slide>
+
+            <Slide>
+                <iframe src="https://ru.ariarzer.dev/2024/notes/calc-size-2024/"
+                        frameborder="0"
+                        style={{"width": '70%', "height": '80%'}}
+                        className={"full_image"}
+                ></iframe>
+                {/*<img src="/assets/css-value-processing/article_calc_size.png"*/}
+                {/*     alt=""*/}
+                {/*     className={"full_image"}*/}
+                {/*/>*/}
             </Slide>
         </>
     )

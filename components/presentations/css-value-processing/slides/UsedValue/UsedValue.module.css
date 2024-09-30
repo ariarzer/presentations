@@ -1,0 +1,17 @@
+.demo {
+    margin-top: 100px;
+
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+
+    border: 3px solid var(--accent);
+}
+
+.demo span {
+    background-color: var(--accent2);
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    width: 50%;
+}
