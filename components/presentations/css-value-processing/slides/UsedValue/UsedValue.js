@@ -46,7 +46,7 @@ export default function UsedValue() {
                     </pre>
                     <div className={classes.UsedValue__border}>
                         <pre lang="css">
-                            <code>width: calc(50% - 25px); <span className="next"> UV = 25px</span></code>
+                            <code>width: calc(50% - 25px); <span className="next"> // => UV = 25px</span></code>
                         </pre>
                         <div className={classes.UsedValue__border}>
                             <pre lang="css">
@@ -75,7 +75,7 @@ export default function UsedValue() {
                     </pre>
                     <div className={classes.UsedValue__border}>
                         <pre lang="css">
-                            <code>width: calc(50% - 25px); <span className="">UV = 25px</span></code>
+                            <code>width: calc(50% - 25px); <span className="">// => UV = 25px</span></code>
                         </pre>
                         <div className={classes.UsedValue__border}>
                             <pre lang="css">
