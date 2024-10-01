@@ -29,6 +29,17 @@ export default function index() {
             <Slide className={cx('myself','noBadge')}>
                 <h3>Валитова София</h3>
                 <h2>От декларации <br/>до отображения</h2>
+                <div className={cx("tags")}>
+                    <span className={"next"}>🇫🇮</span>
+                    <span className={"next"}>
+                        <img src="/assets/kisko_logo.png"/>
+                    </span>
+                    <span className={"next"}>
+                        <img src="/assets/logo.svg"/>
+                    </span>
+                    <span className={"next"}>🏊🏻‍🧊</span>
+                    <span className={"next"}>🎌</span>
+                </div>
             </Slide>
 
             <SpecialIntro/>
