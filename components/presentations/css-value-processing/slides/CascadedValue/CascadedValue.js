@@ -526,26 +526,6 @@ export default function CascadedValue() {
                 </p>
             </Slide>
 
-            <Slide>
-                <h2 className={'shout'}>11 классов больше идентификатора???</h2>
-            </Slide>
-
-            <Slide>
-                <h2>На самом деле чуть-чуть не так</h2>
-                <p>Используется степень двойки.</p>
-                <p style={{textDecoration: 'line-through'}}><code>1 * 10^2</code> + <code> 1 * 10^1</code> + <code>1 *
-                    10^0</code></p>
-                <p><code>1 * 2^24</code> + <code> 1 * 2^16</code> + <code>1 * 2^8</code></p>
-            </Slide>
-
-            <Slide className={"noBadge"}>
-                <img src="/assets/css-value-processing/habr_256.png"
-                     alt="" className="full_image"
-                     style={{width: '90%', "objectFit": "cover", "object-position" : "right top;"}}
-                />
-            </Slide>
-
-
             <Slide className={cx("noBadge", "ruby")}>
                 <h2 className={cx("shout", "shrink")}>
                     <ruby>⁕
@@ -585,6 +565,25 @@ export default function CascadedValue() {
                     </ruby>
                     ?????
                 </h2>
+            </Slide>
+
+            <Slide>
+                <h2 className={'shout'}>11 классов больше идентификатора???</h2>
+            </Slide>
+
+            <Slide>
+                <h2>На самом деле чуть-чуть не так</h2>
+                <p>Используется степень двойки.</p>
+                <p style={{textDecoration: 'line-through'}}><code>1 * 10^2</code> + <code> 1 * 10^1</code> + <code>1 *
+                    10^0</code></p>
+                <p><code>1 * 2^24</code> + <code> 1 * 2^16</code> + <code>1 * 2^8</code></p>
+            </Slide>
+
+            <Slide className={"noBadge"}>
+                <img src="/assets/css-value-processing/habr_256.png"
+                     alt="" className="full_image"
+                     style={{width: '90%', "objectFit": "cover", "object-position" : "right top;"}}
+                />
             </Slide>
 
             <Slide className={classes.CascadedValue__ruby}>

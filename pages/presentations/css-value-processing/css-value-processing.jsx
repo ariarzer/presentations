@@ -87,11 +87,9 @@ export default function index() {
                 <ul className="smaller">
                     <li><a>ariarzer@gmail.com</a></li>
                     <li>Twitter – <a href="https://twitter.com/ariarzer" target="_blank">@ariarzer</a></li>
-                    <li>ВКонтакте – <a href="https://vk.com/ariarzer" target="_blank">@ariarzer</a></li>
                     <li>Telegram – <a href="https://t.me/ariarzer" target="_blank">@ariarzer</a></li>
                     <li>Мой канал про css – <a href="https://t.me/css_mind" target="_blank">@css_mind</a></li>
                     <li>Мой блог про css – <a href="https://ru.ariarzer.dev" target="_blank">ariarzer.dev</a></li>
-                    <li>Patreon – <a href="https://www.patreon.com/ariarzer" target="_blank">@ariarzer</a></li>
                 </ul>
 
                 <svg width="300" height="300" fill="none" xmlns="http://www.w3.org/2000/svg" className={cx("qr")}>
