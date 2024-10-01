@@ -517,7 +517,7 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
-                <h2>А почему это плохо?</h2>
+                <h2>А минусы где?</h2>
                 <p>Сравним 11 классов и один идентификатор:</p>
                 <p><code>#id</code> = <code>1 * 10^2</code> + <code>0 * 10^1</code> + <code>0 *
                     10^0</code> = <code>100</code></p>
