@@ -28,7 +28,7 @@ export default function CascadedValue() {
                 <h2>Cascaded value</h2>
                 <ul>
                     <li>Уровни объявления</li>
-                    <li style={{opacity: 0.5}}>Слои <code>@layer</code></li>
+                    <li>Слои <code>@layer</code></li>
                     <li>Специфичность селекторов</li>
                     <li>Порядок объявления</li>
                 </ul>
@@ -318,7 +318,7 @@ export default function CascadedValue() {
                 <h2>Cascaded value</h2>
                 <ul>
                     <li>Уровни объявления</li>
-                    <li style={{opacity: 0.5}}>Слои <code>@layer</code></li>
+                    <li>Слои <code>@layer</code></li>
                     <li>Специфичность селекторов</li>
                     <li>Порядок объявления</li>
                 </ul>
