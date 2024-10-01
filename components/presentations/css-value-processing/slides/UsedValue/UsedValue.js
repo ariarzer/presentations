@@ -40,15 +40,15 @@ export default function UsedValue() {
             </Slide>
 
             <Slide className={"noBadge"}>
-                <div className={classes.ComputedValue__border}>
+                <div className={classes.UsedValue__border}>
                     <pre lang="css">
                         <code>width: 100px; <span className="next">// => 100px</span></code>
                     </pre>
-                    <div className={classes.ComputedValue__border}>
+                    <div className={classes.UsedValue__border}>
                         <pre lang="css">
                             <code>width: calc(50% - 25px); <span className="next"> UV = 25px</span></code>
                         </pre>
-                        <div className={classes.ComputedValue__border}>
+                        <div className={classes.UsedValue__border}>
                             <pre lang="css">
                                 <code>width: inherit;<span className="next"> // => -12.5px ???</span> </code>
                             </pre>
@@ -69,15 +69,15 @@ export default function UsedValue() {
             </Slide>
 
             <Slide className={"noBadge"}>
-                <div className={classes.ComputedValue__border}>
+                <div className={classes.UsedValue__border}>
                     <pre lang="css">
                         <code>width: 100px; <span className="">// => 100px</span></code>
                     </pre>
-                    <div className={classes.ComputedValue__border}>
+                    <div className={classes.UsedValue__border}>
                         <pre lang="css">
                             <code>width: calc(50% - 25px); <span className="">UV = 25px</span></code>
                         </pre>
-                        <div className={classes.ComputedValue__border}>
+                        <div className={classes.UsedValue__border}>
                             <pre lang="css">
                                 <code>width: inherit;<span className="next"> // => 0px</span> </code>
                             </pre>

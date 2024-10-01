@@ -546,8 +546,45 @@ export default function CascadedValue() {
             </Slide>
 
 
-            <Slide className={"noBadge"}>
-                <h2 className={cx("shout", "shrink")}>????</h2>
+            <Slide className={cx("noBadge", "ruby")}>
+                <h2 className={cx("shout", "shrink")}>
+                    <ruby>⁕
+                        <rt>ч</rt>
+                    </ruby>
+                    <ruby>⁕
+                        <rt>т</rt>
+                    </ruby>
+                    <ruby>⁕
+                        <rt>о</rt>
+                    </ruby>
+
+                    <span>  </span>
+
+                    <ruby>⁕
+                        <rt>ж</rt>
+                    </ruby>
+                    <ruby>⁕
+                        <rt>е</rt>
+                    </ruby>
+
+                    <br/>
+                    <ruby>⁕
+                        <rt>т</rt>
+                    </ruby>
+                    <ruby>⁕
+                        <rt>а</rt>
+                    </ruby>
+                    <ruby>⁕
+                        <rt>к</rt>
+                    </ruby>
+                    <ruby>⁕
+                        <rt>о</rt>
+                    </ruby>
+                    <ruby>⁕
+                        <rt>е</rt>
+                    </ruby>
+                    ?????
+                </h2>
             </Slide>
 
             <Slide className={classes.CascadedValue__ruby}>

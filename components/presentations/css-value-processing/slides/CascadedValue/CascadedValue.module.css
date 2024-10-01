@@ -91,3 +91,11 @@
     width: 100%;
     height: 80%;
 }
+
+.ruby rt {
+    font-size: 30px;
+}
+
+.ruby ruby {
+    /*font-size: 200px;*/
+}
