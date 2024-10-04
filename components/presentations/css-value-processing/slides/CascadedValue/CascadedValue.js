@@ -345,6 +345,13 @@ export default function CascadedValue() {
             </Slide>
 
             <Slide>
+
+                {/*<img src="/assets/css-value-processing/youtube_layers.png"*/}
+                {/*     alt=""*/}
+                {/*     className="full_image"*/}
+                {/*     style={{'width': '700px', 'z-index': -3}}*/}
+                {/*/>*/}
+
                 <iframe className={cx("CascadedValue__iframe")} src="https://www.youtube.com/embed/TDQMI03MOFI?si=aR1_izN_FLng90gb"
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -515,7 +522,6 @@ export default function CascadedValue() {
                 <h2>Коэффициент специфичности</h2>
                 <img src="/assets/css-value-processing/selectors.png" alt="" className="picture"/>
             </Slide>
-
             <Slide>
                 <h2>А минусы где?</h2>
                 <p>Сравним 11 классов и один идентификатор:</p>

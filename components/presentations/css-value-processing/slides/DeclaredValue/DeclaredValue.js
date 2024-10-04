@@ -96,10 +96,20 @@ export default function DeclaredValue() {
             </Slide>
 
             <Slide>
-                <iframe className={cx('DeclaredValue__iframe')} src="https://www.youtube.com/embed/PoWpkLeJnBA?si=1URQe5z9hjwoE40N"
+
+                {/*<img src="/assets/css-value-processing/youtube_types.png"*/}
+                {/*     alt=""*/}
+                {/*     className="full_image"*/}
+                {/*     style={{'width': '700px', 'z-index': -3}}*/}
+                {/*/>*/}
+
+                <iframe className={cx('DeclaredValue__iframe')}
+                        src="https://www.youtube.com/embed/PoWpkLeJnBA?si=1URQe5z9hjwoE40N"
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen
+                        style={{'z-index': '2'}}
+                ></iframe>
             </Slide>
 
             <Slide>
