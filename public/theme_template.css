@@ -1,6 +1,7 @@
 :root {
     /* headers, control, list views hover */
     --accent: #058105;
+    --accent2: #058105;
 
     --text-h1-color: var(--accent);
     --text-link: var(--accent);
@@ -8,4 +9,16 @@
     --bg-slide: black;
     --text-primary: #aec4b4;
     --color-fill: rgba(88, 90, 94, 0.4);
+}
+
+.slide::after {
+    --ribbon-size: 50px;
+    width: var(--ribbon-size);
+    height: calc(var(--ribbon-size)* 2);
+    padding-top: 1em;
+    text-align: center;
+    top: 0;
+    background-color: var(--accent);
+    color: var(--DARK);
+    clip-path: path('M0 0h50v100L25 80 0 100');
 }

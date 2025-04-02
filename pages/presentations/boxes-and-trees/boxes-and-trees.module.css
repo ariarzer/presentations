@@ -1,0 +1,54 @@
+
+.tags span {
+  position: absolute;
+  top: 0;
+}
+
+.tags {
+  position: absolute;
+  inset: 0;
+}
+
+.tags span {
+  font-size: 100px;
+  background-color: white;
+  border-radius: 30px;
+  line-height: 1;
+  padding: 0.2em 0.2em 0.1em  0.2em;
+  vertical-align: middle;
+}
+
+.tags img {
+  height: 80px;
+  margin-bottom: -0.05em;
+}
+
+.tags span:nth-child(1) {
+  top: 30%;
+  left: 80%;
+  rotate: 20deg;
+}
+
+.tags span:nth-child(2) {
+  top: 40%;
+  right: 30%;
+  rotate: -10deg;
+}
+
+.tags span:nth-child(4) {
+  top: 70%;
+  rotate: -20deg;
+  right: 20%;
+}
+
+.tags span:nth-child(5) {
+  top: 70%;
+  rotate: 10deg;
+  left: 10%;
+}
+
+.tags span:nth-child(3) {
+  top: 10%;
+  rotate: 10deg;
+  left: 20%;
+}
