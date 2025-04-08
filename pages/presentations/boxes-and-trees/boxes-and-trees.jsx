@@ -2,6 +2,7 @@ import Layout from "../../../components/base/Layuot/Layuot";
 import Slide from "../../../components/base/Slide/Slide";
 
 import classNames from 'classnames/bind';
+import Into from "../../../components/presentations/boxes-and-trees/slides/intro/Into";
 import classes from './boxes-and-trees.module.css';
 
 const cx = classNames.bind(classes);
@@ -25,7 +26,7 @@ export default function index() {
                 </div>
             </Slide>
 
-
+            <Into />
             <Slide>
                 <h2>Источники</h2>
                 <ul>
