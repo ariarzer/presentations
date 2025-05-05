@@ -46,6 +46,7 @@ export default function Into() {
 
             <Slide>
             <h2>Пытались ли вы когда-нибудь обратится к псевдоэлементу из JavaScript ?</h2>
+                <error>пример про квери селектор</error>
             </Slide>
 
             <Slide>

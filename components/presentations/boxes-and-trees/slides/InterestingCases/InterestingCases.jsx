@@ -19,7 +19,11 @@ export default function InterestingCases() {
 
             <Slide>
                 <h2>Синтаксис</h2>
-                <code>display = [ ＜display-outside> || ＜display-inside> ] | ＜display-listitem> | ＜display-internal> | ＜display-box> | ＜display-legacy></code>
+                <pre>
+                    <code>display = [ ＜display-outside> || ＜display-inside> ] </code>
+                    <code>    | ＜display-listitem> | ＜display-internal></code>
+                    <code>    | ＜display-box> | ＜display-legacy></code>
+                </pre>
             </Slide>
 
             <Slide>

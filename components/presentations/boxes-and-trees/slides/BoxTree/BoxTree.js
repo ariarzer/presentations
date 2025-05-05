@@ -56,7 +56,7 @@ export default function BoxTree() {
             </Slide>
 
             <Slide>
-                <h2><code>display: content</code></h2>
+                <h2><code>display: contents</code></h2>
                 <div className="columns two">
                     <pre className={''}>
                         <code>＜div></code>
@@ -74,7 +74,7 @@ export default function BoxTree() {
             </Slide>
 
             <Slide>
-                <h2><code>display: content</code></h2>
+                <h2><code>display: contents</code></h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
                         <code>＜div></code>
@@ -94,6 +94,10 @@ export default function BoxTree() {
                         </span>
                     </center>
                 </div>
+            </Slide>
+
+            <Slide>
+                <error>это так же верно для его псевдо</error>
             </Slide>
 
             <Slide>
@@ -147,7 +151,7 @@ export default function BoxTree() {
                 <div className="columns two">
                     <div>
                         <pre className={''}>
-                            <code>＜li>котики＜/li></code>
+                            <code>＜li>＜span>котики＜/span>＜/li></code>
                         </pre>
                         <li>котики</li>
                     </div>
@@ -165,7 +169,7 @@ export default function BoxTree() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                            <code>＜li>котики＜/li></code>
+                            <code>＜li>＜span>котики＜/span>＜/li></code>
                             <code>＜style></code>
                             <code>  li::marker {'{'}</code>
                             <code>    color: green;</code>
@@ -188,7 +192,7 @@ export default function BoxTree() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                            <code>＜li>котики＜/li></code>
+                            <code>＜li>＜span>котики＜/span>＜/li></code>
                             <code>＜style></code>
                             <code>  li::after {'{'}</code>
                             <code>    content: '123';</code>
