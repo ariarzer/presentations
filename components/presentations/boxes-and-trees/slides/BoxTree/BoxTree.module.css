@@ -1,0 +1,69 @@
+.example {
+  border: 5px solid;
+  min-width: 100px;
+  min-height: 20px;
+  padding: 20px;
+  margin: 25px;
+  line-height: 1;
+  font-size: 20px;
+  display: block;
+  color: red;
+  position: relative;
+}
+
+.example::before {
+  position: absolute;
+  top: -25px;
+  font-size: 17px;
+  left: -5px;
+}
+
+.example.principal {
+  color: var(--DARK_ORANGE);
+}
+.example.principal::before {
+  content: 'principal';
+}
+
+.example.content {
+  color: var(--DARK_GREEN);
+}
+.example.content::before {
+  content: 'content';
+}
+
+.example.before,
+.example.after {
+  color: var(--PURPLE);
+}
+.example.before::before {
+  content: 'before';
+}
+.example.after::before {
+  content: 'after';
+}
+
+.example.marker {
+  color: var(--BLUE);
+}
+.example.marker::before {
+  content: 'marker';
+}
+
+.markerExample::marker {
+  color: var(--GREEN);
+}
+
+.afterMarker::after {
+  content: '123';
+  color: var(--GREEN);
+}
+
+.marketAfter::after {
+  content: '';
+}
+
+.marketAfter::after::marker {
+  content: '123';
+  color: red;
+}

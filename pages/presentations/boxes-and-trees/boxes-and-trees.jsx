@@ -2,7 +2,11 @@ import Layout from "../../../components/base/Layuot/Layuot";
 import Slide from "../../../components/base/Slide/Slide";
 
 import classNames from 'classnames/bind';
+import BoxTree from "../../../components/presentations/boxes-and-trees/slides/BoxTree/BoxTree";
+import InterestingCases
+    from "../../../components/presentations/boxes-and-trees/slides/InterestingCases/InterestingCases";
 import Into from "../../../components/presentations/boxes-and-trees/slides/intro/Into";
+import Values from "../../../components/presentations/boxes-and-trees/slides/Values/Values";
 import classes from './boxes-and-trees.module.css';
 
 const cx = classNames.bind(classes);
@@ -27,6 +31,10 @@ export default function index() {
             </Slide>
 
             <Into />
+            <Values />
+            <BoxTree />
+            <InterestingCases />
+
             <Slide>
                 <h2>Источники</h2>
                 <ul>

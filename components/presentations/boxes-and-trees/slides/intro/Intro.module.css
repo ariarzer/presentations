@@ -1,0 +1,10 @@
+.picture {
+  float: right;
+  margin-top: 100px;
+  width: 300px;
+}
+
+.example {
+  color: red;
+  font-size: 2em;
+}
