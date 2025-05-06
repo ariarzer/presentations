@@ -36,10 +36,15 @@ export default function index() {
             <InterestingCases />
 
             <Slide>
+                <h2>Выводы</h2>
+                <p>CSS оперирует не блоками, которые вы видите в html, но боксами, сгенерированными на их основе.</p>
+            </Slide>
+
+            <Slide>
                 <h2>Источники</h2>
                 <ul>
                     <li>Спецификация <a target="_blank"
-                                        href="https://www.w3.org/TR/css-cascade-4/">css-cascade-4</a></li>
+                                        href="https://www.w3.org/TR/css-display-3/">css-display-3</a></li>
                     <li><a href="https://ru.ariarzer.dev/articles/2021/value-definition-syntax.html">Про Value
                         Definition Syntax</a></li>
                     <li><a href="https://ru.ariarzer.dev/articles/2020/css-value-processing.html">Про Value

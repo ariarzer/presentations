@@ -1,20 +1,20 @@
 import Slide from "../../../../base/Slide/Slide";
 
 import classes from './InterestingCases.module.css'
+import classes2 from '../BoxTree/BoxTree.module.css'
 
 import classNames from 'classnames/bind';
-const cx = classNames.bind(classes);
+const cx = classNames.bind({...classes, ...classes2});
 
 export default function InterestingCases() {
     return (
         <>
             <Slide>
-                <h2>Переходим к интересным случаям</h2>
+                <h2 className={'shout smaller'}>Переходим к интересным случаям</h2>
             </Slide>
 
             <Slide>
-                <h2>У свойства display есть два значения</h2>
-                <error>поднимите руки кто знал</error>
+                <h2 className={'shout'}>У свойства display есть два значения</h2>
             </Slide>
 
             <Slide>
@@ -27,11 +27,14 @@ export default function InterestingCases() {
             </Slide>
 
             <Slide>
-                <error>ссылка на мою статью и кратко про синтаксис</error>
+                <img src="/assets/boxes-and-trees/value-definition-screen.png" alt="" className={cx('screen')}/>
+                <p className={cx('article_link')}>Почитать можно {' '}
+                    <a href="https://ru.ariarzer.dev/articles/2021/value-definition-syntax.html">тут</a>.</p>
             </Slide>
 
             <Slide>
-                <error>вообще интересно как это описано в спеке, вот скрин и ссылка</error>
+                <h2>Как это описано в спецификации:</h2>
+                <img src="/assets/boxes-and-trees/display-screen-spec.png" alt="" className={cx('spec_screen')}/>
             </Slide>
 
             <Slide>
@@ -61,7 +64,31 @@ export default function InterestingCases() {
 
             <Slide>
                 <h2>Про позиционирование</h2>
-                <error>примеры</error>
+                <div className="columns two">
+                    <div>
+                        <pre className={'smaller'}>
+                            <code>＜div class=class1></code>
+                            <code>    content1</code>
+                            <code>    ＜div class=class2></code>
+                            <code>        content2</code>
+                            <code>    ＜/div></code>
+                            <code>＜/div></code>
+                        </pre>
+                    </div>
+                    <center>
+                         <span className={cx('example', 'principal')}>
+                            <span className={cx('example', 'principal')}>
+                                content1
+                                <span className={cx('example', 'principal')}>content2</span>
+                            </span>
+                        </span>
+                    </center>
+                </div>
+            </Slide>
+
+            <Slide>
+                <error>про содержащий блок</error>
+                <error>что на самом деле проценты чаще всего считаются не от родителя, а от него</error>
             </Slide>
         </>
     )

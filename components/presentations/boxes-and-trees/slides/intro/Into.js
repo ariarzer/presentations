@@ -16,7 +16,7 @@ export default function Into() {
                         <code>＜div>color＜/div></code>
                         <code>＜style></code>
                         <code>  div {'{'}</code>
-                        <code>    color: red;</code>
+                        <code>    color: orange;</code>
                         <code>  {'}'}</code>
                         <code>＜/style></code>
                     </pre>
@@ -32,9 +32,9 @@ export default function Into() {
                     <pre className={'smaller'}>
                         <code>＜div>＜/div></code>
                         <code>＜style></code>
-                        <code>  div {'{'}</code>
+                        <code>  div::after {'{'}</code>
                         <code>    content: 'color';</code>
-                        <code>    color: red;</code>
+                        <code>    color: orange;</code>
                         <code>  {'}'}</code>
                         <code>＜/style></code>
                     </pre>
@@ -45,8 +45,11 @@ export default function Into() {
             </Slide>
 
             <Slide>
-            <h2>Пытались ли вы когда-нибудь обратится к псевдоэлементу из JavaScript ?</h2>
-                <error>пример про квери селектор</error>
+                <h2 className={cx('smallHeader', 'shout', 'shrink')}>Пытались ли вы когда-нибудь обратится к псевдоэлементу из JavaScript ?</h2>
+            </Slide>
+
+            <Slide>
+                <h2 className={cx('querySelector', 'shout')}><code>document.querySelector("div::before");</code></h2>
             </Slide>
 
             <Slide>
@@ -55,34 +58,39 @@ export default function Into() {
             </Slide>
 
             <Slide>
-                <h2>На самом деле, CSS стилизует на HTML</h2>
+                <h2 className={'shout'}>На самом деле, CSS <br/>стилизует нe HTML</h2>
             </Slide>
 
             <Slide className={'center'}>
                     <blockquote style={{width: '60%'}}>CSS берет исходный html-документ, организованный как <b>дерево
                         элементов и текстовых узлов</b>, и отображает его на холсте.
-                        <error>добавить снизу ссылку для красивости</error></blockquote>
-
+                    </blockquote>
+                    <div className={cx('spec_link')}>Источник: <a href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>
             </Slide>
 
             <Slide className={'center'}>
-                <blockquote style={{width: '50%'}}>Для этого он генерирует промежуточную структуру - <b>дерево боксов</b>.
-               <error>добавить снизу ссылку для красивости</error></blockquote>
+                <blockquote style={{width: '60%'}}>Для этого он генерирует промежуточную структуру - <b>дерево
+                    боксов</b>.</blockquote>
 
+                <div className={cx('spec_link')}>Источник: <a
+                    href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>
             </Slide>
 
             <Slide className={'center'}>
-                <blockquote style={{width: '50%'}}>Для создания <b>дерева боксов</b> CSS сначала использует
-                    каскадирование и наследование, чтобы назначить вычисленное значение для каждого свойства CSS
+                <blockquote style={{width: '60%'}}>Для создания <b>дерева боксов</b> CSS сначала использует
+                    каскадирование и наследование, чтобы назначить <b>вычисленное значение</b> для каждого свойства CSS
                     каждому элементу и текстовому узлу в исходном дереве.
-               <error>добавить снизу ссылку для красивости</error></blockquote>
-
+                </blockquote>
+                <div className={cx('spec_link')}>Источник: <a
+                    href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>
             </Slide>
 
             <Slide className={'center'}>
-                <blockquote style={{width: '50%'}}>Затем для каждого элемента CSS генерирует ноль или более боксов,
+                <blockquote style={{width: '60%'}}>Затем для каждого элемента CSS генерирует ноль или более боксов,
                     как указано в свойстве <code>display</code> этого элемента.
-               <error>добавить снизу ссылку для красивости</error></blockquote>
+                </blockquote>
+                <div className={cx('spec_link')}>Источник: <a
+                    href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>
             </Slide>
 
         </>

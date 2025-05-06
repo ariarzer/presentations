@@ -5,6 +5,22 @@
 }
 
 .example {
-  color: red;
+  color: var(--DARK_ORANGE);
   font-size: 2em;
+}
+
+.smallHeader {
+  font-size: 50px !important;
+}
+
+.querySelector {
+  font-size: 40px !important;
+}
+
+.spec_link {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-size: 20px;
+  opacity: 0.7;
 }

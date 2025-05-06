@@ -97,16 +97,12 @@ export default function BoxTree() {
             </Slide>
 
             <Slide>
-                <error>это так же верно для его псевдо</error>
-            </Slide>
-
-            <Slide>
                 <h2>Зачем это нужно?</h2>
                 <error>для мобильного меню часто, тут будет примерно про сайдбар на мобилке и шапку на десктопе</error>
             </Slide>
 
             <Slide>
-                <h2>Иногда больше одного блока</h2>
+                <h2>Иногда больше одного бокса</h2>
                 <div className="columns two">
                     <pre className={''}>
                         <code>＜div>＜/div></code>
@@ -125,14 +121,14 @@ export default function BoxTree() {
             </Slide>
 
             <Slide>
-                <h2>Иногда больше одного блока</h2>
+                <h2>Иногда больше одного бокса</h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
                         <code>＜div></code>
                         <code>  ＜span>котики＜/span></code>
                         <code>＜/div></code>
                         <code>＜style></code>
-                        <code>  div::after {'{'}</code>
+                        <code>  div::before {'{'}</code>
                         <code>    content: '';</code>
                         <code>  {'}'}</code>
                         <code>＜/style></code>
@@ -146,12 +142,39 @@ export default function BoxTree() {
                 </div>
             </Slide>
 
+
             <Slide>
-                <h2>Иногда больше одного блока</h2>
+                <h2><code>display: contents</code></h2>
+                <div className="columns two">
+                    <pre className={'smaller'}>
+                        <code>＜div></code>
+                        <code>  ＜span>котики＜/span></code>
+                        <code>＜/div></code>
+                        <code>＜style></code>
+                        <code>  div {'{ display: contents; }'}</code>
+                        <code>  div::after {'{'}</code>
+                        <code>    content: '';</code>
+                        <code>  {'}'}</code>
+                        <code>＜/style></code>
+                    </pre>
+                    <center>
+                        <span>
+                            <span className={cx('example', 'principal')}>котики</span>
+                        </span>
+                    </center>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Иногда больше одного бокса</h2>
                 <div className="columns two">
                     <div>
-                        <pre className={''}>
-                            <code>＜li>＜span>котики＜/span>＜/li></code>
+                        <pre className={'smaller'}>
+                            <code>＜li></code>
+                            <code>    ＜span></code>
+                            <code>         котики</code>
+                            <code>    ＜/span></code>
+                            <code>＜/li></code>
                         </pre>
                         <li>котики</li>
                     </div>
@@ -165,7 +188,7 @@ export default function BoxTree() {
             </Slide>
 
             <Slide>
-                <h2>Иногда больше одного блока</h2>
+                <h2>Иногда больше одного бокса</h2>
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
@@ -188,7 +211,7 @@ export default function BoxTree() {
             </Slide>
 
             <Slide>
-                <h2>Иногда больше одного блока</h2>
+                <h2>Иногда больше одного бокса</h2>
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
@@ -211,15 +234,15 @@ export default function BoxTree() {
                 </div>
             </Slide>
 
-            <Slide>
-                <h2>Таблицы</h2>
-                <error>вы можно подумали что я скажу здесь что-то про таблицы, но нет</error>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Таблицы</h2>*/}
+            {/*    <error>вы можно подумали что я скажу здесь что-то про таблицы, но нет</error>*/}
+            {/*</Slide>*/}
 
-            <Slide>
-                <h2>Анонимные блоки</h2>
-                <error>пример</error>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <h2>Анонимные блоки</h2>*/}
+            {/*    <error>пример</error>*/}
+            {/*</Slide>*/}
 
             {/*<Slide>*/}
             {/*    <h2>фрагментация</h2>*/}

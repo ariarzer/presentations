@@ -1,0 +1,17 @@
+.screen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.article_link {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+.spec_screen {
+  filter: invert(1);
+}
