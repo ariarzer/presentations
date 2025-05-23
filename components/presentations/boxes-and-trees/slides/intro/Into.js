@@ -61,8 +61,39 @@ export default function Into() {
                 <h2 className={'shout'}>На самом деле, CSS <br/>стилизует нe HTML</h2>
             </Slide>
 
+            <Slide>
+                <h2>Позиционирование</h2>
+                <div className={cx('example', 'principal')}>
+                    <div className={cx('example', 'principal')}>
+                        <div className={cx('example', 'principal')}></div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Позиционирование</h2>
+                <div className={cx('example', 'relative')}>
+                    <div className={cx('example', 'principal')} style={{width:'70%'}}>
+                        <div className={cx('example', 'absolute')}></div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Позиционирование</h2>
+                <div className={cx('example', 'relative')}>
+                    <div className={cx('example', 'principal')} style={{width: '70%'}}>
+                        <div className={cx('example', 'absolute')} style={{width: '120%'}}>width: 100%;</div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2 className={'shout'}>Существует какой-то еще порядок вложенности <br/>блоков чем как в DOM</h2>
+            </Slide>
+
             <Slide className={'center'}>
-                    <blockquote style={{width: '60%'}}>CSS берет исходный html-документ, организованный как <b>дерево
+                <blockquote style={{width: '60%'}}>CSS берет исходный html-документ, организованный как <b>дерево
                         элементов и текстовых узлов</b>, и отображает его на холсте.
                     </blockquote>
                     <div className={cx('spec_link')}>Источник: <a href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>

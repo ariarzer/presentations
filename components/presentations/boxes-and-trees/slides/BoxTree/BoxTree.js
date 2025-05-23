@@ -8,10 +8,22 @@ const cx = classNames.bind(classes);
 export default function BoxTree() {
     return (
         <>
-            <Slide>
-                <h2>Дерево боксов</h2>
-                    <blockquote style={{width: '50%'}}>Для каждого элемента CSS генерирует ноль или более боксов,
-                        как указано в свойстве <code>display</code> этого элемента.</blockquote>
+
+            <Slide className={'center'}>
+                <blockquote style={{width: '60%'}}>Для создания <b>дерева боксов</b> CSS сначала использует
+                    каскадирование и наследование, чтобы назначить <b>вычисленное значение</b> для каждого свойства CSS
+                    каждому элементу и текстовому узлу в исходном дереве.
+                </blockquote>
+                <div className={cx('spec_link')}>Источник: <a
+                    href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>
+            </Slide>
+
+            <Slide className={'center'}>
+                <blockquote style={{width: '60%'}}>Затем для каждого элемента CSS генерирует ноль или более боксов,
+                    как указано в свойстве <code>display</code> этого элемента.
+                </blockquote>
+                <div className={cx('spec_link')}>Источник: <a
+                    href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>
             </Slide>
 
             <Slide>
@@ -98,7 +110,7 @@ export default function BoxTree() {
 
             <Slide>
                 <h2>Зачем это нужно?</h2>
-                <error>для мобильного меню часто, тут будет примерно про сайдбар на мобилке и шапку на десктопе</error>
+
             </Slide>
 
             <Slide>

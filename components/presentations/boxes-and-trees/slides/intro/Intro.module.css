@@ -24,3 +24,42 @@
   font-size: 20px;
   opacity: 0.7;
 }
+
+.example {
+  border: 5px solid;
+  min-width: 100px;
+  min-height: 20px;
+  padding: 10px;
+  margin: 15px;
+  line-height: 1;
+  font-size: 20px;
+  display: block;
+  color: red;
+  position: relative;
+}
+
+.example::before {
+  position: absolute;
+  top: -25px;
+  font-size: 17px;
+  left: -5px;
+}
+
+.example.principal {
+  color: var(--DARK_ORANGE);
+}
+
+.example.absolute {
+  color: var(--DARK_GREEN);
+}
+.example.absolute::before {
+  content: 'absolute';
+}
+
+.example.relative {
+  color: var(--BLUE);
+}
+.example.relative::before {
+  content: 'relative';
+}
+

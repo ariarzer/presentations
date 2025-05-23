@@ -59,7 +59,7 @@ export default function InterestingCases() {
                 <pre>
                     <code className={'true'}>display: inline flex</code>
                 </pre>
-                <error>про поддержку https://web-platform-dx.github.io/web-features-explorer/features/two-value-display/</error>
+                <error style={{display: 'none'}}>про поддержку https://web-platform-dx.github.io/web-features-explorer/features/two-value-display/</error>
             </Slide>
 
             <Slide>

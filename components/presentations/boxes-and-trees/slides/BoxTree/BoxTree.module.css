@@ -67,3 +67,11 @@
   content: '123';
   color: red;
 }
+
+.spec_link {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-size: 20px;
+  opacity: 0.7;
+}
