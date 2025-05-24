@@ -64,11 +64,15 @@ export default function Values() {
             </Slide>
 
             <Slide>
-                <h2 className={'shout'}>Cascading <br/>Style <br/>Sheets</h2>
+                <h2>Cascaded value</h2>
             </Slide>
 
             <Slide>
-                <h2 className={'shout'}>Что такое каскад?</h2>
+                <h2 className={cx('shout', 'shrink')}>Cascading <br/>Style <br/>Sheets</h2>
+            </Slide>
+
+            <Slide>
+                <h2 className={cx('shout', 'shrink')}>Что такое каскад?</h2>
             </Slide>
 
             <Slide>
@@ -323,6 +327,24 @@ export default function Values() {
                         </div>
                     </div>
                 </div>
+            </Slide>
+
+            <Slide className={"noBadge"}>
+                <div className={classes.ComputedValue__border}>
+                    <pre lang="css">
+                        <code>display: block;<span className="next"> // => block</span></code>
+                    </pre>
+                    <div className={classes.ComputedValue__border}>
+                            <pre lang="css">
+                                <code>display: inherit<span className="next"> // => blocks </span></code>
+                            </pre>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Used value</h2>
+                <h3>Считаем все, что осталось</h3>
             </Slide>
 
             <Slide>

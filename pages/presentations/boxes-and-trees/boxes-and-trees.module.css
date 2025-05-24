@@ -25,13 +25,13 @@
 
 .tags span:nth-child(1) {
   top: 30%;
-  left: 80%;
+  left: 75%;
   rotate: 20deg;
 }
 
 .tags span:nth-child(2) {
   top: 40%;
-  right: 30%;
+  right: 40%;
   rotate: -10deg;
 }
 
@@ -49,6 +49,17 @@
 
 .tags span:nth-child(3) {
   top: 10%;
-  rotate: 10deg;
+  rotate: -10deg;
   left: 20%;
+  color: #0158a1;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.1em;
+  padding-right: 0.2em;
+}
+
+.tags span:nth-child(3) svg {
+  height: 1em;
 }

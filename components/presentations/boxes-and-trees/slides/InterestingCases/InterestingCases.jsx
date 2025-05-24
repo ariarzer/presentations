@@ -10,7 +10,15 @@ export default function InterestingCases() {
     return (
         <>
             <Slide>
-                <h2 className={'shout smaller'}>Переходим к интересным случаям</h2>
+                <h2 className={'shout'}>Переходим к интересным случаям</h2>
+            </Slide>
+
+            <Slide>
+                <h2 className={'shout'}>Сколько значений у свойства display?</h2>
+            </Slide>
+
+            <Slide>
+                <h2 className={cx('shout', 'shrink')}>28</h2>
             </Slide>
 
             <Slide>
@@ -67,19 +75,25 @@ export default function InterestingCases() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                            <code>＜div class=class1></code>
-                            <code>    content1</code>
-                            <code>    ＜div class=class2></code>
-                            <code>        content2</code>
-                            <code>    ＜/div></code>
+                           <code>＜div class=class1></code>
+                            <code>  content1</code>
+                            <code>  ＜div class=class2></code>
+                            <code>    content2</code>
+                            <code>    ＜div class=class3></code>
+                            <code>       content3</code>
+                            <code>       ＜/div></code>
+                            <code>  ＜/div></code>
                             <code>＜/div></code>
                         </pre>
                     </div>
                     <center>
-                         <span className={cx('example', 'principal')}>
-                            <span className={cx('example', 'principal')}>
+                        <span className={cx('example', 'principal')}>
                                 content1
-                                <span className={cx('example', 'principal')}>content2</span>
+                            <span className={cx('example', 'principal')}>
+                                content2
+                                <span className={cx('example', 'principal')}>
+                                  content3
+                                </span>
                             </span>
                         </span>
                     </center>
@@ -87,8 +101,94 @@ export default function InterestingCases() {
             </Slide>
 
             <Slide>
-                <error>про содержащий блок</error>
-                <error>что на самом деле проценты чаще всего считаются не от родителя, а от него</error>
+                <div className="columns two">
+                    <div>
+                        <pre className={'smaller'}>
+                            <code>＜div class=class1></code>
+                            <code>    content1</code>
+                            <code>    ＜div class=class2></code>
+                            <code>        content2</code>
+                            <code>        ＜div class=class3></code>
+                            <code>          content3</code>
+                            <code>        ＜/div></code>
+                            <code>    ＜/div></code>
+                            <code>＜/div></code>
+                        </pre>
+
+                        <pre className={'smaller'}>
+                            <code>.class1 {'{ position: relative;}'}</code>
+                            <code>.class3 {'{ position: absolute;}'}</code>
+                        </pre>
+                    </div>
+                    <div>
+
+                        <center>
+                        <span className={cx('example', 'relative', 'relative_big')}>
+                                content1
+                            <span className={cx('example', 'principal')}>
+                                content2
+                                <span className={cx('example', 'absolute', 'absolute_small')}>
+                                  content3
+                                </span>
+                            </span>
+                        </span>
+                        </center>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <div className="columns two">
+                    <pre className={'smaller'}>
+                        <code>.class1 {'{ position: relative;}'}</code>
+                        <code>.class1 {'{ '}</code>
+                        <code>  position: absolute;</code>
+                        <code>  top: 0;</code>
+                        <code>  left: 0;</code>
+                        <code> {'}'}</code>
+                    </pre>
+
+                    <center>
+                        <span className={cx('example', 'relative', 'relative_big')}>
+                                content1
+                            <span className={cx('example', 'principal')}>
+                                content2
+                                <span className={cx('example', 'absolute', 'absolute_small', 'absolute_positioned')}>
+                                  content3
+                                </span>
+                            </span>
+                        </span>
+                    </center>
+                </div>
+            </Slide>
+
+            <Slide>
+                <div className="columns two">
+                    <pre className={'smaller'}>
+                        <code>.class1 {'{ position: relative;}'}</code>
+                        <code>.class1 {'{ '}</code>
+                        <code>  position: absolute;</code>
+                        <code>  top: 0;</code>
+                        <code>  height: 100%;</code>
+                        <code> {'}'}</code>
+                    </pre>
+
+                    <center>
+                        <span className={cx('example', 'relative', 'relative_big')}>
+                                content1
+                            <span className={cx('example', 'principal')}>
+                                content2
+                                <span className={cx('example', 'absolute', 'absolute_small', 'absolute_positioned','absolute_sized')}>
+                                  content3
+                                </span>
+                            </span>
+                        </span>
+                    </center>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Содержащий бокс</h2>
             </Slide>
         </>
     )

@@ -34,7 +34,7 @@
   line-height: 1;
   font-size: 20px;
   display: block;
-  color: red;
+  color: var(--DARK_ORANGE);
   position: relative;
 }
 

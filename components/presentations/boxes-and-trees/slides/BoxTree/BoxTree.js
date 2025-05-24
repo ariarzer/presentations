@@ -1,3 +1,4 @@
+import React from "react";
 import Slide from "../../../../base/Slide/Slide";
 
 import classes from './BoxTree.module.css'
@@ -6,6 +7,8 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(classes);
 
 export default function BoxTree() {
+    const [isOpen, setIsOpen] = React.useState(false);
+
     return (
         <>
 
@@ -46,8 +49,33 @@ export default function BoxTree() {
             </Slide>
 
             <Slide>
-                <h2>Иногда 0 боксов</h2>
-                <error>вопрос в аудиторию а вы как думаете когда так</error>
+                <h2>Обычно один бокс</h2>
+                <div className="columns two">
+                    <ul>
+                        <li><code>inline</code></li>
+                        <li><code>block</code></li>
+                        <li><code>inline-block</code></li>
+                        <li><code>flex</code></li>
+                        <li><code>.......</code></li>
+                    </ul>
+                    <center>
+                        <span className={cx('example', 'principal')}></span>
+                    </center>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Обычно один бокс</h2>
+                <div className="columns two">
+                   <p>Главный бокс</p>
+                    <center>
+                        <span className={cx('example', 'principal')}></span>
+                    </center>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2 className={cx('shout', 'shrink')}>Иногда 0 боксов</h2>
             </Slide>
 
             <Slide>
@@ -65,6 +93,10 @@ export default function BoxTree() {
                         <span></span>
                     </center>
                 </div>
+            </Slide>
+
+            <Slide>
+                <h2 className={cx('shout', 'shrink')}>Иногда 0 боксов для себя</h2>
             </Slide>
 
             <Slide>
@@ -110,7 +142,165 @@ export default function BoxTree() {
 
             <Slide>
                 <h2>Зачем это нужно?</h2>
+                <div className={cx('menuExample')}>
+                    <div className={cx('menuExample__List')}>
+                        <div className={cx('menuExample__item', 'menuExample__item--logo')}>logo</div>
+                        <div className={cx('menuExample__item')}>link</div>
+                        <div className={cx('menuExample__item')}>link</div>
+                        <div className={cx('menuExample__item')}>link</div>
+                        <div className={cx('menuExample__item', 'menuExample__item--sign')}>sign in</div>
+                    </div>
+                </div>
+            </Slide>
 
+            <Slide>
+                <h2>Зачем это нужно?</h2>
+                <div className={cx('mobileExample')}>
+                    <div className={cx('menuExample__List')}>
+                        <div className={cx('menuExample__item', 'menuExample__item--logo')}>logo</div>
+                        <button className={cx('burger', {
+                            'closed': !isOpen,
+                            'opened': isOpen
+                        })} onClick={() => setIsOpen(!isOpen)}></button>
+                        <div className={cx('mobileExample__menu')}>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item', 'menuExample__item--sign')}>sign in</div>
+                        </div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide className={'noBadge'}>
+                <div className={'columns two'}>
+                    <pre className={'smaller'}>
+                        <code>＜div class='menu'></code>
+                        <code>  ＜div class='logo'> logo ＜/div></code>
+                        <code>  ＜div class='link'> link ＜/div></code>
+                        <code>  ＜div class='link'> link ＜/div></code>
+                        <code>  ＜div class='link'> link ＜/div></code>
+                        <code>  ＜div class='signIn'> sign in ＜/div></code>
+                        <code>＜/div></code>
+                    </pre>
+                    <div className={cx('menuExample')} style={{'zoom': '0.5'}}>
+                        <div className={cx('menuExample__List')}>
+                            <div className={cx('menuExample__item', 'menuExample__item--logo')}>logo</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item', 'menuExample__item--sign')}>sign in</div>
+                        </div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide className={'noBadge'}>
+
+                <div className={'columns two'}>
+                    <pre className={'smaller'}>
+                        <code>＜div class='menu'></code>
+                        <code>  ＜div class='logo'> logo ＜/div></code>
+                        <code>  ＜div class='burger'>＜/div></code>
+                        <code>＜/div></code>
+                        <code>＜div class='mobile-menu'></code>
+                        <code>  ＜div class='link'> link ＜/div></code>
+                        <code>  ＜div class='link'> link ＜/div></code>
+                        <code>  ＜div class='link'> link ＜/div></code>
+                        <code>  ＜div class='signIn'> sign in ＜/div></code>
+                        <code>＜/div></code>
+                    </pre>
+
+                    <div className={cx('mobileExample')} style={{'zoom': 0.5}}>
+                        <div className={cx('menuExample__List')}>
+                            <div className={cx('menuExample__item', 'menuExample__item--logo')}>logo</div>
+                            <button className={cx('burger', {
+                                'closed': !isOpen,
+                                'opened': isOpen
+                            })} onClick={() => setIsOpen(!isOpen)}></button>
+                            <div className={cx('mobileExample__menu')}>
+                                <div className={cx('menuExample__item')}>link</div>
+                                <div className={cx('menuExample__item')}>link</div>
+                                <div className={cx('menuExample__item')}>link</div>
+                                <div className={cx('menuExample__item', 'menuExample__item--sign')}>sign in</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <pre className={'smaller'}>
+                    <code>＜div class='menu'></code>
+                    <code>  ＜div class='logo'> logo ＜/div></code>
+                    <code>  ＜div class='burger'>＜/div></code>
+                    <code>  ＜div class='mobile-menu'></code>
+                    <code>    ＜div class='link'> link ＜/div></code>
+                    <code>    ＜div class='link'> link ＜/div></code>
+                    <code>    ＜div class='link'> link ＜/div></code>
+                    <code>    ＜div class='signIn'> sign in ＜/div></code>
+                    <code>  ＜/div></code>
+                    <code>＜/div></code>
+                </pre>
+            </Slide>
+
+            <Slide>
+                <div className={'columns two'}>
+                    <pre className={'smaller'}>
+                        <code>.menu {'{'}</code>
+                        <code>  position: relative;</code>
+                        <code>{'}'}</code>
+                        <code>.mobile-menu {'{'}</code>
+                        <code>    position: absolute;</code>
+                        <code>    top: 60px;</code>
+                        <code>    left: 200px;</code>
+                        <code>{'}'}</code>
+                        <code>.open .mobile-menu {'{'}</code>
+                        <code>    transform: translateX(-200px);</code>
+                        <code>{'}'}</code>
+                    </pre>
+
+                    <div className={cx('mobileExample')} style={{'zoom': 0.5}}>
+                        <div className={cx('menuExample__List')}>
+                            <div className={cx('menuExample__item', 'menuExample__item--logo')}>logo</div>
+                            <button className={cx('burger', {
+                                'closed': !isOpen,
+                                'opened': isOpen
+                            })} onClick={() => setIsOpen(!isOpen)}></button>
+                            <div className={cx('mobileExample__menu')}>
+                                <div className={cx('menuExample__item')}>link</div>
+                                <div className={cx('menuExample__item')}>link</div>
+                                <div className={cx('menuExample__item')}>link</div>
+                                <div className={cx('menuExample__item', 'menuExample__item--sign')}>sign in</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide  className={'noBadge'}>
+                <div className={'columns two'}>
+                    <pre className={'smaller'}>
+                        <code>.burger {'{display: none}'}</code>
+                        <code>.menu {'{'}</code>
+                        <code>  display: grid;</code>
+                        <code>  grid-template-columns: </code>
+                        <code>    1fr 100px 100px 100px 1fr;</code>
+                        <code>{'}'}</code>
+                        <code> .mobile-menu {'{'}</code>
+                        <code>    display: contents;</code>
+                        <code>{'}'}</code>
+                    </pre>
+                    <div className={cx('menuExample')} style={{'zoom': '0.5'}}>
+                        <div className={cx('menuExample__List')}>
+                            <div className={cx('menuExample__item', 'menuExample__item--logo')}>logo</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item')}>link</div>
+                            <div className={cx('menuExample__item', 'menuExample__item--sign')}>sign in</div>
+                        </div>
+                    </div>
+                </div>
             </Slide>
 
             <Slide>
@@ -125,7 +315,7 @@ export default function BoxTree() {
                         <code>＜/style></code>
                     </pre>
                     <center>
-                        <span className={cx('example','principal')}>
+                        <span className={cx('example', 'principal')}>
                             <span className={cx('example', 'before')}></span>
                         </span>
                     </center>

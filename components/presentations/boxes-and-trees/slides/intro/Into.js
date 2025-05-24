@@ -45,7 +45,8 @@ export default function Into() {
             </Slide>
 
             <Slide>
-                <h2 className={cx('smallHeader', 'shout', 'shrink')}>Пытались ли вы когда-нибудь обратится к псевдоэлементу из JavaScript ?</h2>
+                <h2 className={cx('smallHeader', 'shout', 'shrink')}>Пытались ли вы когда-нибудь <br/>обратится к
+                    псевдоэлементу <br/>из JavaScript ?</h2>
             </Slide>
 
             <Slide>
@@ -90,6 +91,10 @@ export default function Into() {
 
             <Slide>
                 <h2 className={'shout'}>Существует какой-то еще порядок вложенности <br/>блоков чем как в DOM</h2>
+            </Slide>
+
+            <Slide>
+                <h2 className={'shout'}>Идём в спецификацию</h2>
             </Slide>
 
             <Slide className={'center'}>

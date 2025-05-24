@@ -15,3 +15,22 @@
 .spec_screen {
   filter: invert(1);
 }
+
+.relative_big {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.absolute_small {
+  position: absolute;
+}
+
+.absolute_positioned {
+  top: -73px;
+  left: -90px;
+}
+
+.absolute_sized {
+  height: 258px;
+}
