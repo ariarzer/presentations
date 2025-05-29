@@ -36,7 +36,7 @@ export default function BoxTree() {
                         <code>＜div>＜/div></code>
                         <code>＜style></code>
                         <code>  div {'{'}</code>
-                        <code>    border: 10px solid green;</code>
+                        <code>    border: 10px solid orange;</code>
                         <code>    width: 100px;</code>
                         <code>    height: 100px;</code>
                         <code>  {'}'}</code>
@@ -67,7 +67,7 @@ export default function BoxTree() {
             <Slide>
                 <h2>Обычно один бокс</h2>
                 <div className="columns two">
-                   <p>Главный бокс</p>
+                   <p>Principal box - главный бокс</p>
                     <center>
                         <span className={cx('example', 'principal')}></span>
                     </center>
