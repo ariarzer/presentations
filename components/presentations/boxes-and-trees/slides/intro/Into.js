@@ -13,12 +13,12 @@ export default function Into() {
                 <p>CSS придает внешний вид HTML-элементам</p>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>＜div>color＜/div></code>
-                        <code>＜style></code>
-                        <code>  div {'{'}</code>
-                        <code>    color: orange;</code>
-                        <code>  {'}'}</code>
-                        <code>＜/style></code>
+                        <code>{'＜div&gt;color＜/div&gt;'}</code>
+                        <code>{'＜style&gt;'}</code>
+                        <code>{'  div {'}</code>
+                        <code>{'    color: orange;'}</code>
+                        <code>{'  }'}</code>
+                        <code>{'＜/style&gt;'}</code>
                     </pre>
                     <center>
                         <span className={cx('example')}>color</span>
@@ -30,13 +30,13 @@ export default function Into() {
                 <h2>А что на счет псевдоэлементов?</h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>＜div>＜/div></code>
-                        <code>＜style></code>
-                        <code>  div::after {'{'}</code>
-                        <code>    content: 'color';</code>
-                        <code>    color: orange;</code>
-                        <code>  {'}'}</code>
-                        <code>＜/style></code>
+                        <code>{'＜div>＜/div>'}</code>
+                        <code>{'＜style>'}</code>
+                        <code>{'  div::after {'}</code>
+                        <code>{"    content: 'color';"}</code>
+                        <code>{'    color: orange;'}</code>
+                        <code>{'  }'}</code>
+                        <code>{'＜/style>'}</code>
                     </pre>
                     <center>
                         <span className={cx('example')}>color</span>
@@ -50,7 +50,7 @@ export default function Into() {
             </Slide>
 
             <Slide>
-                <h2 className={cx('querySelector', 'shout')}><code>document.querySelector("div::before");</code></h2>
+                <h2 className={cx('querySelector', 'shout')}><code>{'document.querySelector("div::before");'}</code></h2>
             </Slide>
 
             <Slide>
@@ -123,7 +123,7 @@ export default function Into() {
 
             <Slide className={'center'}>
                 <blockquote style={{width: '60%'}}>Затем для каждого элемента CSS генерирует ноль или более боксов,
-                    как указано в свойстве <code>display</code> этого элемента.
+                    как указано в свойстве <code>{'display'}</code> этого элемента.
                 </blockquote>
                 <div className={cx('spec_link')}>Источник: <a
                     href="https://www.w3.org/TR/css-display-3/#intro">css-display-3</a></div>

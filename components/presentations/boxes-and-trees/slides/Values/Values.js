@@ -1,4 +1,6 @@
 import Slide from "../../../../base/Slide/Slide";
+import Transition from "../../../css-value-processing/demos/Transition/Transition";
+import CascadeLevelsList from "../../../css-value-processing/slides/CascadedValue/CascadeLevelsList/CascadeLevelsList";
 
 import classes from './Values.module.css'
 
@@ -121,6 +123,101 @@ export default function Values() {
                     </tr>
                     </tbody>
                 </table>
+            </Slide>
+
+            <Slide>
+                <h2>Декларации user-агента</h2>
+                <CascadeLevelsList active={[7]}/>
+                <img src="/assets/css-value-processing/user_agent.png" alt="" style={{width: '90%'}}/>
+            </Slide>
+
+            <Slide>
+                <h2>Декларации user-агента</h2>
+                <CascadeLevelsList active={[1]}/>
+                <img src="/assets/css-value-processing/important_user_agent.png" alt="" style={{width: '90%'}}/>
+            </Slide>
+
+            <Slide>
+                <h2>Декларации автора</h2>
+                <CascadeLevelsList active={[5]}/>
+                <div className={'columns two'}>
+                    <pre lang='css'>
+                        <code>{'.blue {'}</code>
+                        <code>    color: blue;</code>
+                        <code>{"}"}</code>
+                        <code>{'.red {'}</code>
+                        <code>    color: red;</code>
+                        <code>{"}"}</code>
+                    </pre>
+                    <div className={classes['CascadedValue__example--author']}>CSS</div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Декларации автора</h2>
+                <CascadeLevelsList active={[5, 3]}/>
+                <div className={'columns two'}>
+                    <pre lang='css'>
+                        <code>{'.blue {'}</code>
+                        <code>    color: blue;</code>
+                        <code>{"}"}</code>
+                        <code>{'.red {'}</code>
+                        <code>    color: red !important;</code>
+                        <code>{"}"}</code>
+                    </pre>
+                    <div className={classes['CascadedValue__example--author']}>CSS</div>
+                </div>
+            </Slide>
+
+            <Slide id='animation_declaration'>
+                <h2>Декларации анимаций</h2>
+                <CascadeLevelsList active={[4]}/>
+                <div className={'columns two'}>
+                    <pre lang='css'>
+                        <code>{'.blue {'}</code>
+                        <code>{'    color: red;'}</code>
+                        <code>{'    animation: anim 3s infinite;'}</code>
+                        <code>{'}'}</code>
+                        <code>{'@keyframes anim {'}</code>
+                        <code>{'    50% {color: green;}'}</code>
+                        <code>{"}"}</code>
+                    </pre>
+                    <div className={classes['CascadedValue__example--animation']}>CSS</div>
+                </div>
+            </Slide>
+
+            <Slide id='animation_declaration'>
+                <h2>Декларации анимаций</h2>
+                <CascadeLevelsList active={[4, 3]}/>
+                <div className={'columns two'}>
+                    <pre lang='css'>
+                        <code>{'.blue {'}</code>
+                        <code>{'    color: red !important;'}</code>
+                        <code>{'    animation: anim 3s infinite;'}</code>
+                        <code>{'}'}</code>
+                        <code>{'@keyframes anim {'}</code>
+                        <code>{'    50% {color: green;}'}</code>
+                        <code>{"}"}</code>
+                    </pre>
+                    <div className={classes['CascadedValue__example--animationImportant']}>CSS</div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Декларации переходов</h2>
+                <CascadeLevelsList active={[0]}/>
+                <div className={'columns two'}>
+                    <pre lang='css'>
+                        <code>{'.red {'}</code>
+                        <code>{'    color: red;'}</code>
+                        <code>{'    transition: color 1s;'}</code>
+                        <code>{'}'}</code>
+                        <code>{'.green'}</code>
+                        <code>{'    color: green;'}</code>
+                        <code>{'}'}</code>
+                    </pre>
+                    <Transition className={classes.CascadedValue__example}/>
+                </div>
             </Slide>
 
             <Slide>
@@ -258,11 +355,11 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
-                        <code>height: 100px;<span className="next"> // => 100px</span></code>
+                        <code>height: 100px;<span className="next">{" // => 100px"}</span></code>
                     </pre>
                     <div className={classes.ComputedValue__border}>
                             <pre lang="css">
-                                <code>height: inherit<span className="next"> // => 100px </span></code>
+                                <code>height: inherit<span className="next">{" // => 100px "}</span></code>
                             </pre>
                     </div>
                 </div>
@@ -275,12 +372,12 @@ export default function Values() {
                     </pre>
                     <div className={classes.ComputedValue__border}>
                         <pre lang="css">
-                            <code>height: 5em;<span className="next"> // => 50px<span className="next"> CV=50px </span></span></code>
+                            <code>height: 5em;<span className="next">{" // => 50px"}<span className="next"> CV=50px </span></span></code>
                         </pre>
                         <div className={classes.ComputedValue__border}>
                             <pre lang="css" className="no-code" style={{'margin-bottom': '0 !important'}}>
                                 <code>font-size: 20px;</code>
-                                <code>height: inherit;<span className="next"> // => 50px <span
+                                <code>height: inherit;<span className="next">{" // => 50px "}<span
                                     className="next"> CV=50px </span></span> </code>
                             </pre>
                         </div>
@@ -292,16 +389,16 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                         <pre lang="css">
-                            <code>height: 100px; <span className="next">// => 100px</span></code>
+                            <code>height: 100px; <span className="next">{"// => 100px"}</span></code>
                         </pre>
                     <div className={classes.ComputedValue__border}>
                                 <pre lang="css">
-                                    <code>height: 50%; <span className="next">// => 50px<span
+                                    <code>height: 50%; <span className="next">{"// => 50px"}<span
                                         className="next"> CV = 50%</span></span></code>
                                 </pre>
                         <div className={classes.ComputedValue__border}>
                                     <pre lang="css">
-                                        <code>height: inherit;<span className="next"> // => 25px<span className="next"> CV = 50%</span></span> </code>
+                                        <code>height: inherit;<span className="next">{" // => 25px"}<span className="next"> CV = 50%</span></span> </code>
                                     </pre>
                         </div>
                     </div>
@@ -315,13 +412,13 @@ export default function Values() {
                     </pre>
                     <div className={classes.ComputedValue__border}>
                         <pre lang="css">
-                            <code>height: var(--h);<span className="next"> // => 100px <span
+                            <code>height: var(--h);<span className="next">{" // => 100px "}<span
                                 className="next"> CV=100px </span></span></code>
                         </pre>
                         <div className={classes.ComputedValue__border}>
                             <pre lang="css" className="no-code" style={{'margin-bottom': '0 !important'}}>
                                 <code>--h: 10px;</code>
-                                <code>height: inherit;<span className="next"> // => 100px <span
+                                <code>height: inherit;<span className="next">{" // => 100px "}<span
                                     className="next"> CV=100px </span></span> </code>
                             </pre>
                         </div>
@@ -332,11 +429,11 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
-                        <code>display: block;<span className="next"> // => block</span></code>
+                        <code>display: block;<span className="next">{" // => block"}</span></code>
                     </pre>
                     <div className={classes.ComputedValue__border}>
                             <pre lang="css">
-                                <code>display: inherit<span className="next"> // => blocks </span></code>
+                                <code>display: inherit<span className="next">{" // => blocks "}</span></code>
                             </pre>
                     </div>
                 </div>
