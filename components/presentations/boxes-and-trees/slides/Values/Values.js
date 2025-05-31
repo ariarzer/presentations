@@ -233,7 +233,7 @@ export default function Values() {
                     <code className={`language-css`}>{"@layer default {"}</code>
                     <code className={`language-css`}>{"   button {  color: red; }"}</code>
                     <code className={`language-css`}>{"}"}</code>
-                    <code className={`language-css`}>{"@import url('theme.css') layer(theme); }"}</code>
+                    <code className={`language-css`}>{"@import url('theme.css') layer(theme);"}</code>
                     <code className={`language-css`}>{"@layer components {"}</code>
                     <code className={`language-css`}>{"   button { color: green; }"}</code>
                     <code className={`language-css`}>{"}"}</code>

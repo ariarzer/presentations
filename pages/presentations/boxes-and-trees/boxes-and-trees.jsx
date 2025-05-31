@@ -10,7 +10,6 @@ import Values from "../../../components/presentations/boxes-and-trees/slides/Val
 import classes from './boxes-and-trees.module.css';
 import { useEffect } from "react";
 import Prism from "prismjs";
-import 'prismjs/themes/prism-twilight.css';
 
 const cx = classNames.bind(classes);
 

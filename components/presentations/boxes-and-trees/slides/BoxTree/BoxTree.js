@@ -287,7 +287,7 @@ export default function BoxTree() {
                         <code className={`language-css`}>{"  grid-template-columns: "}</code>
                         <code className={`language-css`}>{"    1fr 100px 100px 100px 1fr;"}</code>
                         <code className={`language-css`}>{"}"}</code>
-                        <code className={`language-css`}>{" .mobile-menu {'{'}"}</code>
+                        <code className={`language-css`}>{" .mobile-menu {"}</code>
                         <code className={`language-css`}>{"    display: contents;"}</code>
                         <code className={`language-css`}>{"}"}</code>
                     </pre>

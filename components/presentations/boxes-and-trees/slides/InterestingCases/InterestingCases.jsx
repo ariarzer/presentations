@@ -116,8 +116,8 @@ export default function InterestingCases() {
                         </pre>
 
                         <pre className={'smaller'}>
-                            <code>{".class1 { position: relative;}"}</code>
-                            <code>{".class3 { position: absolute;}"}</code>
+                            <code className={`language-css`}>{".class1 { position: relative;}"}</code>
+                            <code className={`language-css`}>{".class3 { position: absolute;}"}</code>
                         </pre>
                     </div>
                     <div>
@@ -207,7 +207,7 @@ export default function InterestingCases() {
             <Slide>
                 <h3><code>position: absolute</code> {"=>"} </h3>
                 <p><code>transform | perspective !: none</code></p>
-                <p><code>will-change:transform | perspective.</code> </p>
+                <p><code>will-change: transform | perspective.</code> </p>
                 <p><code>contain: paint</code></p>
             </Slide>
 
@@ -215,16 +215,16 @@ export default function InterestingCases() {
                 <h2>Анонимные блоки</h2>
                 <div className={"columns two"}>
                     <pre>
-                        <code>{"<div>"}</code>
-                        <code>{"  <div>text</div>"}</code>
-                        <code>{"  text"}</code>
-                        <code>{"  <div>text</div>"}</code>
-                        <code>{"</div>"}</code>
+                        <code className={`language-html`}>{"<div>"}</code>
+                        <code className={`language-html`}>{"  <div>text</div>"}</code>
+                        <code className={`language-html`}>{"  text"}</code>
+                        <code className={`language-html`}>{"  <div>text</div>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
                     </pre>
                     <pre className={'next'}>
-                        <code>{"div > * {"}</code>
-                        <code>{"  color: orange"}</code>
-                        <code>{"}"}</code>
+                        <code className={`language-css`}>{"div > * {"}</code>
+                        <code className={`language-css`}>{"  color: orange"}</code>
+                        <code className={`language-css`}>{"}"}</code>
                     </pre>
                 </div>
             </Slide>
@@ -233,16 +233,16 @@ export default function InterestingCases() {
                 <h2>Анонимные блоки</h2>
                 <div className={"columns two"}>
                     <pre className={"smaller"}>
-                        <code>{"<div>"}</code>
-                        <code>{"  <div>text</div>"}</code>
-                        <code>{"  text"}</code>
-                        <code>{"  <div>text</div>"}</code>
-                        <code>{"</div>"}</code>
-                        <code>{"<style>"}</code>
-                        <code>{"  div > * {"}</code>
-                        <code>{"    color: orange"}</code>
-                        <code>{"  }"}</code>
-                        <code>{"</style>"}</code>
+                        <code className={`language-html`}>{"<div>"}</code>
+                        <code className={`language-html`}>{"  <div>text</div>"}</code>
+                        <code className={`language-html`}>{"  text"}</code>
+                        <code className={`language-html`}>{"  <div>text</div>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
+                        <code className={`language-html`}>{"<style>"}</code>
+                        <code className={`language-html`}>{"  div > * {"}</code>
+                        <code className={`language-html`}>{"    color: orange"}</code>
+                        <code className={`language-html`}>{"  }"}</code>
+                        <code className={`language-html`}>{"</style>"}</code>
                     </pre>
                     <div className={cx('anonim_example')}>
                         <span>text</span>
@@ -256,11 +256,11 @@ export default function InterestingCases() {
                 <h2>Анонимные блоки</h2>
                 <div className={"columns two"}>
                     <pre className={""}>
-                        <code>{"<div>"}</code>
-                        <code>{"  <div>text</div>"}</code>
-                        <code>{"  text"}</code>
-                        <code>{"  <div>text</div>"}</code>
-                        <code>{"</div>"}</code>
+                        <code className={`language-html`}>{"<div>"}</code>
+                        <code className={`language-html`}>{"  <div>text</div>"}</code>
+                        <code className={`language-html`}>{"  text"}</code>
+                        <code className={`language-html`}>{"  <div>text</div>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
                     </pre>
                     <center>
                         <span className={cx('example', 'principal',)}>
