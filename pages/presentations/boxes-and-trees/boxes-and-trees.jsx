@@ -35,7 +35,7 @@ export default function index() {
                         DCM
                     </span>
                     <span className={"next"}>🏊🏻‍🧊</span>
-                    <span className={"next"}>🎌</span>
+                    <span className={"next"}>🇯🇵🇰🇷</span>
                 </div>
             </Slide>
 
