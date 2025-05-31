@@ -2,3 +2,7 @@
 @import "./themes/codeFest24.css";
 @import "./themes/webStorm.css";
 @import "./themes/shadow.css";
+
+nextjs-portal {
+  display: none;
+}

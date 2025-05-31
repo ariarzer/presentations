@@ -313,17 +313,15 @@ export default function Values() {
                 <h2>Порядок объявления</h2>
                 <p>Чем ближе к концу документа, тем приоритетнее</p>
                 <pre>
-                        <code>{'<div class="red blue">'}
-                            <span style={{'font-style': 'bold', color: 'red'}}>CSS</span>
-                            {'</div>'}
-                        </code>
-                        <code>{'<style>'}</code>
-                        <code>{'  .blue { color: blue; }'}</code>
-                        <code>{'  .red { color: red; }'}</code>
-                        <code>{'</style>'}</code>
-                    </pre>
-                <a href="https://twitter.com/mxstbr/status/1038073603311448064"
-                   hidden={true}>https://twitter.com/mxstbr/status/1038073603311448064</a>
+                    <code>{'<div class="red blue">'}
+                        <span style={{'font-style': 'bold', color: 'red'}}>CSS</span>
+                        {'</div>'}
+                    </code>
+                    <code>{'<style>'}</code>
+                    <code>{'  .blue { color: blue; }'}</code>
+                    <code>{'  .red { color: red; }'}</code>
+                    <code>{'</style>'}</code>
+                </pre>
             </Slide>
 
             <Slide>
