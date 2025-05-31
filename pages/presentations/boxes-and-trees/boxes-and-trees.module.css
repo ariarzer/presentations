@@ -63,3 +63,10 @@
 .tags span:nth-child(3) svg {
   height: 1em;
 }
+
+.qr {
+  height: 300px;
+  position: absolute;
+  right: 100px;
+  top: 150px;
+}
