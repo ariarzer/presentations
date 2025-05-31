@@ -241,6 +241,14 @@ export default function Values() {
             </Slide>
 
             <Slide>
+                <iframe className={cx('iframe')} src="https://www.youtube.com/embed/TDQMI03MOFI?si=wzJEMTlt1dgX93Xl"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+                </iframe>
+            </Slide>
+
+            <Slide>
                 <h2>Селекторы</h2>
                 <p>Коэффициент специфичности - набор чисел, позволяющий определить приоритет селектора.</p>
             </Slide>

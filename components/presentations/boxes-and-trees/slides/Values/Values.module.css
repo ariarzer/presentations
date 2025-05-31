@@ -2,3 +2,27 @@
   border: 2px solid var(--accent);
   padding: 1em;
 }
+
+.CascadedValue__example--author {
+  color: var(--ORANGE);
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.CascadedValue__example--animation {
+  font-size: 70px;
+  font-weight: bold;
+  color: var(--ORANGE);
+  animation: anim 3s infinite;
+}
+
+.CascadedValue__example--animationImportant {
+  font-size: 70px;
+  font-weight: bold;
+  color: var(--ORANGE);
+}
+
+.iframe {
+  width: 90%;
+  height: 90%;
+}
