@@ -13,12 +13,12 @@ export default function Into() {
                 <p>CSS придает внешний вид HTML-элементам</p>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{'＜div&gt;color＜/div&gt;'}</code>
-                        <code>{'＜style&gt;'}</code>
+                        <code>{'＜div>color＜/div>'}</code>
+                        <code>{'＜style>'}</code>
                         <code>{'  div {'}</code>
                         <code>{'    color: orange;'}</code>
                         <code>{'  }'}</code>
-                        <code>{'＜/style&gt;'}</code>
+                        <code>{'＜/style>'}</code>
                     </pre>
                     <center>
                         <span className={cx('example')}>color</span>
