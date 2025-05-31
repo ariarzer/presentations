@@ -33,14 +33,14 @@ export default function BoxTree() {
                 <h2>Обычно один бокс</h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{"＜div>＜/div>"}</code>
-                        <code>{"＜style>"}</code>
-                        <code>{"  div {"}</code>
-                        <code>{"    border: 10px solid orange;"}</code>
-                        <code>{"    width: 100px;"}</code>
-                        <code>{"    height: 100px;"}</code>
-                        <code>{"  }"}</code>
-                        <code>{"＜/style>"}</code>
+                        <code className={`language-html`}>{"<div></div>"}</code>
+                        <code className={`language-html`}>{"<style>"}</code>
+                        <code className={`language-css`}>{"  div {"}</code>
+                        <code className={`language-css`}>{"    border: 10px solid orange;"}</code>
+                        <code className={`language-css`}>{"    width: 100px;"}</code>
+                        <code className={`language-css`}>{"    height: 100px;"}</code>
+                        <code className={`language-css`}>{"  }"}</code>
+                        <code className={`language-html`}>{"</style>"}</code>
                     </pre>
                     <center>
                         <span className={cx('example', 'principal')}></span>
@@ -82,12 +82,12 @@ export default function BoxTree() {
                 <h2><code>{"display: none"}</code></h2>
                 <div className="columns two">
                     <pre className={''}>
-                        <code>{"＜div>любой контент＜/div>"}</code>
-                        <code>{"＜style>"}</code>
-                        <code>{"  div {"}</code>
-                        <code>{"    display: none;"}</code>
-                        <code>{"  }"}</code>
-                        <code>{"＜/style>"}</code>
+                        <code className={`language-html`}>{"<div>любой контент</div>"}</code>
+                        <code className={`language-html`}>{"<style>"}</code>
+                        <code className={`language-css`}>{"  div {"}</code>
+                        <code className={`language-css`}>{"    display: none;"}</code>
+                        <code className={`language-css`}>{"  }"}</code>
+                        <code className={`language-html`}>{"</style>"}</code>
                     </pre>
                     <center>
                         <span></span>
@@ -103,10 +103,10 @@ export default function BoxTree() {
                 <h2><code>{"display: contents"}</code></h2>
                 <div className="columns two">
                     <pre className={''}>
-                        <code>{"＜div>"}</code>
-                        <code>{"  ＜span>котики＜/span>"}</code>
-                        <code>{"  ＜span>не котики＜/span>"}</code>
-                        <code>{"＜/div>"}</code>
+                        <code className={`language-html`}>{"<div>"}</code>
+                        <code className={`language-html`}>{"  <span>котики</span>"}</code>
+                        <code className={`language-html`}>{"  <span>не котики</span>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
                     </pre>
                     <center>
                         <span className={cx('example', 'principal')}>
@@ -121,15 +121,15 @@ export default function BoxTree() {
                 <h2><code>{"display: contents"}</code></h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{"＜div>"}</code>
-                        <code>{"  ＜span>котики＜/span>"}</code>
-                        <code>{"  ＜span>не котики＜/span>"}</code>
-                        <code>{"＜/div>"}</code>
-                        <code>{"＜style>"}</code>
-                        <code>{"  div {"}</code>
-                        <code>{"    display: contents;"}</code>
-                        <code>{"  }"}</code>
-                        <code>{"＜/style>"}</code>
+                        <code className={`language-html`}>{"<div>"}</code>
+                        <code className={`language-html`}>{"  <span>котики</span>"}</code>
+                        <code className={`language-html`}>{"  <span>не котики</span>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
+                        <code className={`language-html`}>{"<style>"}</code>
+                        <code className={`language-css`}>{"  div {"}</code>
+                        <code className={`language-css`}>{"    display: contents;"}</code>
+                        <code className={`language-css`}>{"  }"}</code>
+                        <code className={`language-html`}>{"</style>"}</code>
                     </pre>
                     <center>
                         <span>
@@ -175,13 +175,13 @@ export default function BoxTree() {
             <Slide className={'noBadge'}>
                 <div className={'columns two'}>
                     <pre className={'smaller'}>
-                        <code>{"＜div class='menu'>"}</code>
-                        <code>{"  ＜div class='logo'> logo ＜/div>"}</code>
-                        <code>{"  ＜div class='link'> link ＜/div>"}</code>
-                        <code>{"  ＜div class='link'> link ＜/div>"}</code>
-                        <code>{"  ＜div class='link'> link ＜/div>"}</code>
-                        <code>{"  ＜div class='signIn'> sign in ＜/div>"}</code>
-                        <code>{"＜/div>"}</code>
+                        <code className={`language-html`}>{"<div class='menu'>"}</code>
+                        <code className={`language-html`}>{"  <div class='logo'> logo </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='link'> link </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='link'> link </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='link'> link </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='signIn'> sign in </div>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
                     </pre>
                     <div className={cx('menuExample')} style={{'zoom': '0.5'}}>
                         <div className={cx('menuExample__List')}>
@@ -199,16 +199,16 @@ export default function BoxTree() {
 
                 <div className={'columns two'}>
                     <pre className={'smaller'}>
-                        <code>{"＜div class='menu'>"}</code>
-                        <code>{"  ＜div class='logo'> logo ＜/div>"}</code>
-                        <code>{"  ＜div class='burger'>＜/div>"}</code>
-                        <code>{"＜/div>"}</code>
-                        <code>{"＜div class='mobile-menu'>"}</code>
-                        <code>{"  ＜div class='link'> link ＜/div>"}</code>
-                        <code>{"  ＜div class='link'> link ＜/div>"}</code>
-                        <code>{"  ＜div class='link'> link ＜/div>"}</code>
-                        <code>{"  ＜div class='signIn'> sign in ＜/div>"}</code>
-                        <code>{"＜/div>"}</code>
+                        <code className={`language-html`}>{"<div class='menu'>"}</code>
+                        <code className={`language-html`}>{"  <div class='logo'> logo </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='burger'></div>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
+                        <code className={`language-html`}>{"<div class='mobile-menu'>"}</code>
+                        <code className={`language-html`}>{"  <div class='link'> link </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='link'> link </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='link'> link </div>"}</code>
+                        <code className={`language-html`}>{"  <div class='signIn'> sign in </div>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
                     </pre>
 
                     <div className={cx('mobileExample')} style={{'zoom': 0.5}}>
@@ -231,33 +231,33 @@ export default function BoxTree() {
 
             <Slide>
                 <pre className={'smaller'}>
-                    <code>{"＜div class='menu'>"}</code>
-                    <code>{"  ＜div class='logo'> logo ＜/div>"}</code>
-                    <code>{"  ＜div class='burger'>＜/div>"}</code>
-                    <code>{"  ＜div class='mobile-menu'>"}</code>
-                    <code>{"    ＜div class='link'> link ＜/div>"}</code>
-                    <code>{"    ＜div class='link'> link ＜/div>"}</code>
-                    <code>{"    ＜div class='link'> link ＜/div>"}</code>
-                    <code>{"    ＜div class='signIn'> sign in ＜/div>"}</code>
-                    <code>{"  ＜/div>"}</code>
-                    <code>{"＜/div>"}</code>
+                    <code className={`language-html`}>{"<div class='menu'>"}</code>
+                    <code className={`language-html`}>{"  <div class='logo'> logo </div>"}</code>
+                    <code className={`language-html`}>{"  <div class='burger'></div>"}</code>
+                    <code className={`language-html`}>{"  <div class='mobile-menu'>"}</code>
+                    <code className={`language-html`}>{"    <div class='link'> link </div>"}</code>
+                    <code className={`language-html`}>{"    <div class='link'> link </div>"}</code>
+                    <code className={`language-html`}>{"    <div class='link'> link </div>"}</code>
+                    <code className={`language-html`}>{"    <div class='signIn'> sign in </div>"}</code>
+                    <code className={`language-html`}>{"  </div>"}</code>
+                    <code className={`language-html`}>{"</div>"}</code>
                 </pre>
             </Slide>
 
             <Slide>
                 <div className={'columns two'}>
                     <pre className={'smaller'}>
-                        <code>{".menu {'{'}"}</code>
-                        <code>{"  position: relative;"}</code>
-                        <code>{"{'}'}"}</code>
-                        <code>{".mobile-menu {'{'}"}</code>
-                        <code>{"    position: absolute;"}</code>
-                        <code>{"    top: 60px;"}</code>
-                        <code>{"    left: 200px;"}</code>
-                        <code>{"{'}'}"}</code>
-                        <code>{".open .mobile-menu {'{'}"}</code>
-                        <code>{"    transform: translateX(-200px);"}</code>
-                        <code>{"{'}'}"}</code>
+                        <code className={`language-css`}>{".menu {'{'}"}</code>
+                        <code className={`language-css`}>{"  position: relative;"}</code>
+                        <code className={`language-css`}>{"{'}'}"}</code>
+                        <code className={`language-css`}>{".mobile-menu {'{'}"}</code>
+                        <code className={`language-css`}>{"    position: absolute;"}</code>
+                        <code className={`language-css`}>{"    top: 60px;"}</code>
+                        <code className={`language-css`}>{"    left: 200px;"}</code>
+                        <code className={`language-css`}>{"{'}'}"}</code>
+                        <code className={`language-css`}>{".open .mobile-menu {'{'}"}</code>
+                        <code className={`language-css`}>{"    transform: translateX(-200px);"}</code>
+                        <code className={`language-css`}>{"{'}'}"}</code>
                     </pre>
 
                     <div className={cx('mobileExample')} style={{'zoom': 0.5}}>
@@ -281,15 +281,15 @@ export default function BoxTree() {
             <Slide  className={'noBadge'}>
                 <div className={'columns two'}>
                     <pre className={'smaller'}>
-                        <code>{".burger {'{display: none}'}"}</code>
-                        <code>{".menu {'{'}"}</code>
-                        <code>{"  display: grid;"}</code>
-                        <code>{"  grid-template-columns: "}</code>
-                        <code>{"    1fr 100px 100px 100px 1fr;"}</code>
-                        <code>{"{'}'}"}</code>
-                        <code>{" .mobile-menu {'{'}"}</code>
-                        <code>{"    display: contents;"}</code>
-                        <code>{"{'}'}"}</code>
+                        <code className={`language-css`}>{".burger {'{display: none}'}"}</code>
+                        <code className={`language-css`}>{".menu {'{'}"}</code>
+                        <code className={`language-css`}>{"  display: grid;"}</code>
+                        <code className={`language-css`}>{"  grid-template-columns: "}</code>
+                        <code className={`language-css`}>{"    1fr 100px 100px 100px 1fr;"}</code>
+                        <code className={`language-css`}>{"{'}'}"}</code>
+                        <code className={`language-css`}>{" .mobile-menu {'{'}"}</code>
+                        <code className={`language-css`}>{"    display: contents;"}</code>
+                        <code className={`language-css`}>{"{'}'}"}</code>
                     </pre>
                     <div className={cx('menuExample')} style={{'zoom': '0.5'}}>
                         <div className={cx('menuExample__List')}>
@@ -307,12 +307,12 @@ export default function BoxTree() {
                 <h2>Иногда больше одного бокса</h2>
                 <div className="columns two">
                     <pre className={''}>
-                        <code>{"＜div>＜/div>"}</code>
-                        <code>{"＜style>"}</code>
-                        <code>{"  div::before {'{'}"}</code>
-                        <code>{"    content: '';"}</code>
-                        <code>{"  {'}'}"}</code>
-                        <code>{"＜/style>"}</code>
+                        <code className={`language-html`}>{"<div></div>"}</code>
+                        <code className={`language-html`}>{"<style>"}</code>
+                        <code className={`language-css`}>{"  div::before {'{'}"}</code>
+                        <code className={`language-css`}>{"    content: '';"}</code>
+                        <code className={`language-css`}>{"  {'}'}"}</code>
+                        <code className={`language-html`}>{"</style>"}</code>
                     </pre>
                     <center>
                         <span className={cx('example', 'principal')}>
@@ -326,14 +326,14 @@ export default function BoxTree() {
                 <h2>Иногда больше одного бокса</h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{"＜div>"}</code>
-                        <code>{"  ＜span>котики＜/span>"}</code>
-                        <code>{"＜/div>"}</code>
-                        <code>{"＜style>"}</code>
-                        <code>{"  div::before {'{'}"}</code>
-                        <code>{"    content: '';"}</code>
-                        <code>{"  {'}'}"}</code>
-                        <code>{"＜/style>"}</code>
+                        <code className={`language-html`}>{"<div>"}</code>
+                        <code className={`language-html`}>{"  <span>котики</span>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
+                        <code className={`language-html`}>{"<style>"}</code>
+                        <code className={`language-css`}>{"  div::before {'{'}"}</code>
+                        <code className={`language-css`}>{"    content: '';"}</code>
+                        <code className={`language-css`}>{"  {'}'}"}</code>
+                        <code className={`language-html`}>{"</style>"}</code>
                     </pre>
                     <center>
                          <span className={cx('example', 'principal')}>
@@ -349,15 +349,15 @@ export default function BoxTree() {
                 <h2><code>{"display: contents"}</code></h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{"＜div>"}</code>
-                        <code>{"  ＜span>котики＜/span>"}</code>
-                        <code>{"＜/div>"}</code>
-                        <code>{"＜style>"}</code>
-                        <code>{"  div {'{ display: contents; }'}"}</code>
-                        <code>{"  div::after {'{'}"}</code>
-                        <code>{"    content: '';"}</code>
-                        <code>{"  {'}'}"}</code>
-                        <code>{"＜/style>"}</code>
+                        <code className={`language-html`}>{"<div>"}</code>
+                        <code className={`language-html`}>{"  <span>котики</span>"}</code>
+                        <code className={`language-html`}>{"</div>"}</code>
+                        <code className={`language-html`}>{"<style>"}</code>
+                        <code className={`language-css`}>{"  div {'{ display: contents; }'}"}</code>
+                        <code className={`language-css`}>{"  div::after {'{'}"}</code>
+                        <code className={`language-css`}>{"    content: '';"}</code>
+                        <code className={`language-css`}>{"  {'}'}"}</code>
+                        <code className={`language-html`}>{"</style>"}</code>
                     </pre>
                     <center>
                         <span>
@@ -372,11 +372,11 @@ export default function BoxTree() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                            <code>{"＜li>"}</code>
-                            <code>{"    ＜span>"}</code>
-                            <code>{"         котики"}</code>
-                            <code>{"    ＜/span>"}</code>
-                            <code>{"＜/li>"}</code>
+                            <code className={`language-html`}>{"<li>"}</code>
+                            <code className={`language-html`}>{"    <span>"}</code>
+                            <code className={`language-html`}>{"         котики"}</code>
+                            <code className={`language-html`}>{"    </span>"}</code>
+                            <code className={`language-html`}>{"</li>"}</code>
                         </pre>
                         <li>котики</li>
                     </div>
@@ -394,12 +394,12 @@ export default function BoxTree() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                            <code>{"＜li>＜span>котики＜/span>＜/li>"}</code>
-                            <code>{"＜style>"}</code>
-                            <code>{"  li::marker {'{'}"}</code>
-                            <code>{"    color: green;"}</code>
-                            <code>{"  {'}'}"}</code>
-                            <code>{"＜/style>"}</code>
+                            <code className={`language-html`}>{"<li><span>котики</span></li>"}</code>
+                            <code className={`language-html`}>{"<style>"}</code>
+                            <code className={`language-css`}>{"  li::marker {'{'}"}</code>
+                            <code className={`language-css`}>{"    color: green;"}</code>
+                            <code className={`language-css`}>{"  {'}'}"}</code>
+                            <code className={`language-html`}>{"</style>"}</code>
                         </pre>
                         <li className={cx('markerExample')}>котики</li>
                     </div>
@@ -417,12 +417,12 @@ export default function BoxTree() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                            <code>{"＜li>＜span>котики＜/span>＜/li>"}</code>
-                            <code>{"＜style>"}</code>
-                            <code>{"  li::after {'{'}"}</code>
-                            <code>{"    content: '123';"}</code>
-                            <code>{"  {'}'}"}</code>
-                            <code>{"＜/style>"}</code>
+                            <code className={`language-html`}>{"<li><span>котики</span></li>"}</code>
+                            <code className={`language-html`}>{"<style>"}</code>
+                            <code className={`language-css`}>{"  li::after {'{'}"}</code>
+                            <code className={`language-css`}>{"    content: '123';"}</code>
+                            <code className={`language-css`}>{"  {'}'}"}</code>
+                            <code className={`language-html`}>{"</style>"}</code>
                         </pre>
                         <li className={cx('markerExample', 'afterMarker')}>котики</li>
                     </div>

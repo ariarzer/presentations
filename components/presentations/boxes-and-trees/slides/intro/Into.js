@@ -13,12 +13,12 @@ export default function Into() {
                 <p>CSS придает внешний вид HTML-элементам</p>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{'＜div>color＜/div>'}</code>
-                        <code>{'＜style>'}</code>
-                        <code>{'  div {'}</code>
-                        <code>{'    color: orange;'}</code>
-                        <code>{'  }'}</code>
-                        <code>{'＜/style>'}</code>
+                        <code className={`language-html`} >{'<div>color</div>'}</code>
+                        <code className={`language-html`} >{'<style>'}</code>
+                        <code className={`language-css`} >{'  div {'}</code>
+                        <code className={`language-css`} >{'    color: orange;'}</code>
+                        <code className={`language-css`} >{'  }'}</code>
+                        <code className={`language-html`} >{'</style>'}</code>
                     </pre>
                     <center>
                         <span className={cx('example')}>color</span>
@@ -30,13 +30,13 @@ export default function Into() {
                 <h2>А что на счет псевдоэлементов?</h2>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{'＜div>＜/div>'}</code>
-                        <code>{'＜style>'}</code>
-                        <code>{'  div::after {'}</code>
-                        <code>{"    content: 'color';"}</code>
-                        <code>{'    color: orange;'}</code>
-                        <code>{'  }'}</code>
-                        <code>{'＜/style>'}</code>
+                        <code className={`language-html`} >{'<div></div>'}</code>
+                        <code className={`language-html`} >{'<style>'}</code>
+                        <code className={`language-css`} >{'  div::after {'}</code>
+                        <code className={`language-css`} >{"    content: 'color';"}</code>
+                        <code className={`language-css`} >{'    color: orange;'}</code>
+                        <code className={`language-css`} >{'  }'}</code>
+                        <code className={`language-html`} >{'</style>'}</code>
                     </pre>
                     <center>
                         <span className={cx('example')}>color</span>
@@ -50,7 +50,7 @@ export default function Into() {
             </Slide>
 
             <Slide>
-                <h2 className={cx('querySelector', 'shout')}><code>{'document.querySelector("div::before");'}</code></h2>
+                <h2 className={cx('querySelector', 'shout')}><code className={`language-js`}>{'document.querySelector("div::before");'}</code></h2>
             </Slide>
 
             <Slide>

@@ -30,3 +30,17 @@
     color: var(--DARK);
     clip-path: path('M0 0h50v100L25 80 0 100');
 }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    border-radius: .5em;
+    border: none !important;
+    box-shadow: unset!important;
+    margin: 0 !important;
+    overflow: inherit !important;
+    padding: unset !important;
+    background: unset !important;
+}
+code[class*="language-"], pre[class*="language-"] {
+    text-shadow: none !important;
+}

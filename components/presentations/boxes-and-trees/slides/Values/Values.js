@@ -33,35 +33,35 @@ export default function Values() {
             <Slide>
                 <h2>Селектор</h2>
                 <pre>
-                    <code>{'<div class="a">CSS</div>'}</code>
-                    <code>{'<style>'}</code>
-                    <code className={'next next-light false'}>{'  #id { /* ... */ }'}</code>
-                    <code className={'next next-light true'}>{'  .a { /* ... */ }'}</code>
-                    <code className={'next next-light true'}>{'  div { /* ... */ }'}</code>
-                    <code>{'</style>'}</code>
+                    <code className={`language-html`}>{'<div class="a">CSS</div>'}</code>
+                    <code className={`language-html`}>{'<style>'}</code>
+                    <code className={'next next-light false language-css'}>{'  #id { /* ... */ }'}</code>
+                    <code className={'next next-light true language-css'}>{'  .a { /* ... */ }'}</code>
+                    <code className={'next next-light true language-css'}>{'  div { /* ... */ }'}</code>
+                    <code className={`language-html`}>{'</style>'}</code>
                 </pre>
             </Slide>
             <Slide>
                 <h2>Условия</h2>
                 <pre>
-                    <code>{'<div class="a">Safari IOs</div>'}</code>
-                    <code>{'<style>'}</code>
-                    <code className={'next next-light true'}>{'  @media (max-width: 600px) {}'}</code>
-                    <code className={'next next-light true'}>{'  @supports (display: flex) {}'}</code>
-                    <code className={'next next-light false'}>{'  @media (min-width: 1200px) {}'}</code>
-                    <code>{'</style>'}</code>
+                    <code className={`language-html`}>{'<div class="a">Safari IOs</div>'}</code>
+                    <code className={`language-html`}>{'<style>'}</code>
+                    <code className={'next next-light true language-css'}>{'  @media (max-width: 600px) {}'}</code>
+                    <code className={'next next-light true language-css'}>{'  @supports (display: flex) {}'}</code>
+                    <code className={'next next-light false language-css'}>{'  @media (min-width: 1200px) {}'}</code>
+                    <code className={`language-html`}>{'</style>'}</code>
                 </pre>
             </Slide>
             <Slide>
                 <h2 className={'noMargin'}>Проверка типа</h2>
                 <pre>
-                    <code>{'<div class="a">CSS</div>'}</code>
-                    <code>{'<style>'}</code>
-                    <code>{'  .a {'}</code>
-                    <code className={'next next-light false'}>{'    height: 12ms;'}</code>
-                    <code className={'next next-light true'}>{'    height: 12em;'}</code>
-                    <code>{'  }'}</code>
-                    <code>{'</style>'}</code>
+                    <code className={`language-html`}>{'<div class="a">CSS</div>'}</code>
+                    <code className={`language-html`}>{'<style>'}</code>
+                    <code className={`language-css`}>{'  .a {'}</code>
+                    <code className={'next next-light false language-css'}>{'    height: 12ms;'}</code>
+                    <code className={'next next-light true language-css'}>{'    height: 12em;'}</code>
+                    <code className={`language-css`}>{'  }'}</code>
+                    <code className={`language-html`}>{'</style>'}</code>
                 </pre>
             </Slide>
 
@@ -142,12 +142,12 @@ export default function Values() {
                 <CascadeLevelsList active={[5]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
-                        <code>    color: blue;</code>
-                        <code>{"}"}</code>
-                        <code>{'.red {'}</code>
-                        <code>    color: red;</code>
-                        <code>{"}"}</code>
+                        <code className={`language-css`} >{'.blue {'}</code>
+                        <code className={`language-css`} >    color: blue;</code>
+                        <code className={`language-css`} >{"}"}</code>
+                        <code className={`language-css`} >{'.red {'}</code>
+                        <code className={`language-css`} >    color: red;</code>
+                        <code className={`language-css`} >{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
                 </div>
@@ -158,12 +158,12 @@ export default function Values() {
                 <CascadeLevelsList active={[5, 3]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
-                        <code>    color: blue;</code>
-                        <code>{"}"}</code>
-                        <code>{'.red {'}</code>
-                        <code>    color: red !important;</code>
-                        <code>{"}"}</code>
+                        <code className={`language-css`}>{'.blue {'}</code>
+                        <code className={`language-css`}>    color: blue;</code>
+                        <code className={`language-css`}>{"}"}</code>
+                        <code className={`language-css`}>{'.red {'}</code>
+                        <code className={`language-css`}>    color: red !important;</code>
+                        <code className={`language-css`}>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
                 </div>
@@ -174,13 +174,13 @@ export default function Values() {
                 <CascadeLevelsList active={[4]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
-                        <code>{'    color: red;'}</code>
-                        <code>{'    animation: anim 3s infinite;'}</code>
-                        <code>{'}'}</code>
-                        <code>{'@keyframes anim {'}</code>
-                        <code>{'    50% {color: green;}'}</code>
-                        <code>{"}"}</code>
+                        <code className={`language-css`}>{'.blue {'}</code>
+                        <code className={`language-css`}>{'    color: red;'}</code>
+                        <code className={`language-css`}>{'    animation: anim 3s infinite;'}</code>
+                        <code className={`language-css`}>{'}'}</code>
+                        <code className={`language-css`}>{'@keyframes anim {'}</code>
+                        <code className={`language-css`}>{'    50% {color: green;}'}</code>
+                        <code className={`language-css`}>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--animation']}>CSS</div>
                 </div>
@@ -191,13 +191,13 @@ export default function Values() {
                 <CascadeLevelsList active={[4, 3]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
-                        <code>{'    color: red !important;'}</code>
-                        <code>{'    animation: anim 3s infinite;'}</code>
-                        <code>{'}'}</code>
-                        <code>{'@keyframes anim {'}</code>
-                        <code>{'    50% {color: green;}'}</code>
-                        <code>{"}"}</code>
+                        <code className={`language-css`}>{'.blue {'}</code>
+                        <code className={`language-css`}>{'    color: red !important;'}</code>
+                        <code className={`language-css`}>{'    animation: anim 3s infinite;'}</code>
+                        <code className={`language-css`}>{'}'}</code>
+                        <code className={`language-css`}>{'@keyframes anim {'}</code>
+                        <code className={`language-css`}>{'    50% {color: green;}'}</code>
+                        <code className={`language-css`}>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--animationImportant']}>CSS</div>
                 </div>
@@ -208,13 +208,13 @@ export default function Values() {
                 <CascadeLevelsList active={[0]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.red {'}</code>
-                        <code>{'    color: red;'}</code>
-                        <code>{'    transition: color 1s;'}</code>
-                        <code>{'}'}</code>
-                        <code>{'.green'}</code>
-                        <code>{'    color: green;'}</code>
-                        <code>{'}'}</code>
+                        <code className={`language-css`} >{'.red {'}</code>
+                        <code className={`language-css`} >{'    color: red;'}</code>
+                        <code className={`language-css`} >{'    transition: color 1s;'}</code>
+                        <code className={`language-css`} >{'}'}</code>
+                        <code className={`language-css`} >{'.green'}</code>
+                        <code className={`language-css`} >{'    color: green;'}</code>
+                        <code className={`language-css`} >{'}'}</code>
                     </pre>
                     <Transition className={classes.CascadedValue__example}/>
                 </div>
@@ -229,14 +229,14 @@ export default function Values() {
 
             <Slide>
                 <pre>
-                    <code>@layer default, components, theme;</code>
-                    <code>{"@layer default {"}</code>
-                    <code>{"   button {  color: red; }"}</code>
-                    <code>{"}"}</code>
-                    <code>{"@import url('theme.css') layer(theme); }"}</code>
-                    <code>{"@layer components {"}</code>
-                    <code>{"   button { color: green; }"}</code>
-                    <code>{"}"}</code>
+                    <code className={`language-css`}>@layer default, components, theme;</code>
+                    <code className={`language-css`}>{"@layer default {"}</code>
+                    <code className={`language-css`}>{"   button {  color: red; }"}</code>
+                    <code className={`language-css`}>{"}"}</code>
+                    <code className={`language-css`}>{"@import url('theme.css') layer(theme); }"}</code>
+                    <code className={`language-css`}>{"@layer components {"}</code>
+                    <code className={`language-css`}>{"   button { color: green; }"}</code>
+                    <code className={`language-css`}>{"}"}</code>
             </pre>
             </Slide>
 
@@ -321,14 +321,14 @@ export default function Values() {
                 <h2>Порядок объявления</h2>
                 <p>Чем ближе к концу документа, тем приоритетнее</p>
                 <pre>
-                    <code>{'<div class="red blue">'}
+                    <code className={`language-html`}>{'<div class="red blue">'}
                         <span style={{'font-style': 'bold', color: 'red'}}>CSS</span>
                         {'</div>'}
                     </code>
-                    <code>{'<style>'}</code>
-                    <code>{'  .blue { color: blue; }'}</code>
-                    <code>{'  .red { color: red; }'}</code>
-                    <code>{'</style>'}</code>
+                    <code className={`language-html`}>{'<style>'}</code>
+                    <code className={`language-css`}>{'  .blue { color: blue; }'}</code>
+                    <code className={`language-css`}>{'  .red { color: red; }'}</code>
+                    <code className={`language-html`}>{'</style>'}</code>
                 </pre>
             </Slide>
 
@@ -361,11 +361,11 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
-                        <code>height: 100px;<span className="next">{" // => 100px"}</span></code>
+                        <code className={`language-css`} >height: 100px;<span className="next">{" // => 100px"}</span></code>
                     </pre>
                     <div className={classes.ComputedValue__border}>
                             <pre lang="css">
-                                <code>height: inherit<span className="next">{" // => 100px "}</span></code>
+                                <code className={`language-css`}>height: inherit<span className="next">{" // => 100px "}</span></code>
                             </pre>
                     </div>
                 </div>
@@ -374,16 +374,16 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
-                        <code>font-size: 10px;</code>
+                        <code className={`language-css`}>font-size: 10px;</code>
                     </pre>
                     <div className={classes.ComputedValue__border}>
                         <pre lang="css">
-                            <code>height: 5em;<span className="next">{" // => 50px"}<span className="next"> CV=50px </span></span></code>
+                            <code className={`language-css`}>height: 5em;<span className="next">{" // => 50px"}<span className="next"> CV=50px </span></span></code>
                         </pre>
                         <div className={classes.ComputedValue__border}>
                             <pre lang="css" className="no-code" style={{'margin-bottom': '0 !important'}}>
-                                <code>font-size: 20px;</code>
-                                <code>height: inherit;<span className="next">{" // => 50px "}<span
+                                <code className={`language-css`}>font-size: 20px;</code>
+                                <code className={`language-css`}>height: inherit;<span className="next">{" // => 50px "}<span
                                     className="next"> CV=50px </span></span> </code>
                             </pre>
                         </div>
@@ -395,16 +395,16 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                         <pre lang="css">
-                            <code>height: 100px; <span className="next">{"// => 100px"}</span></code>
+                            <code className={`language-css`}>height: 100px; <span className="next">{"// => 100px"}</span></code>
                         </pre>
                     <div className={classes.ComputedValue__border}>
                                 <pre lang="css">
-                                    <code>height: 50%; <span className="next">{"// => 50px"}<span
+                                    <code className={`language-css`}>height: 50%; <span className="next">{"// => 50px"}<span
                                         className="next"> CV = 50%</span></span></code>
                                 </pre>
                         <div className={classes.ComputedValue__border}>
                                     <pre lang="css">
-                                        <code>height: inherit;<span className="next">{" // => 25px"}<span className="next"> CV = 50%</span></span> </code>
+                                        <code className={`language-css`}>height: inherit;<span className="next">{" // => 25px"}<span className="next"> CV = 50%</span></span> </code>
                                     </pre>
                         </div>
                     </div>
@@ -414,17 +414,17 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
-                        <code>--h: 100px;</code>
+                        <code className={`language-css`}>--h: 100px;</code>
                     </pre>
                     <div className={classes.ComputedValue__border}>
                         <pre lang="css">
-                            <code>height: var(--h);<span className="next">{" // => 100px "}<span
+                            <code className={`language-css`}>height: var(--h);<span className="next">{" // => 100px "}<span
                                 className="next"> CV=100px </span></span></code>
                         </pre>
                         <div className={classes.ComputedValue__border}>
                             <pre lang="css" className="no-code" style={{'margin-bottom': '0 !important'}}>
-                                <code>--h: 10px;</code>
-                                <code>height: inherit;<span className="next">{" // => 100px "}<span
+                                <code className={`language-css`}>--h: 10px;</code>
+                                <code className={`language-css`}>height: inherit;<span className="next">{" // => 100px "}<span
                                     className="next"> CV=100px </span></span> </code>
                             </pre>
                         </div>
@@ -435,11 +435,11 @@ export default function Values() {
             <Slide className={"noBadge"}>
                 <div className={classes.ComputedValue__border}>
                     <pre lang="css">
-                        <code>display: block;<span className="next">{" // => block"}</span></code>
+                        <code className={`language-css`}>display: block;<span className="next">{" // => block"}</span></code>
                     </pre>
                     <div className={classes.ComputedValue__border}>
                             <pre lang="css">
-                                <code>display: inherit<span className="next">{" // => blocks "}</span></code>
+                                <code className={`language-css`}>display: inherit<span className="next">{" // => blocks "}</span></code>
                             </pre>
                     </div>
                 </div>
@@ -454,9 +454,9 @@ export default function Values() {
                 <h2>Used value</h2>
                     <h3>Считаем проценты</h3>
                     <pre>
-                    <code>height: 50%; </code>
-                    <code>    /* CV = 50% */</code>
-                    <code>    /* UV = 25px */</code>
+                    <code className={`language-css`}>height: 50%; </code>
+                    <code className={`language-css`}>    /* CV = 50% */</code>
+                    <code className={`language-css`}>    /* UV = 25px */</code>
                     </pre>
             </Slide>
 
@@ -464,9 +464,9 @@ export default function Values() {
                 <h2>Used value</h2>
                     <h3>Считаем <code>calc()</code></h3>
                     <pre>
-                    <code>width: calc(100px - 50%); </code>
-                    <code>    /* CV = calc(100px - 50%) */</code>
-                    <code>    /* UV = 25px */</code>
+                    <code className={`language-css`}>width: calc(100px - 50%); </code>
+                    <code className={`language-css`}>    /* CV = calc(100px - 50%) */</code>
+                    <code className={`language-css`}>    /* UV = 25px */</code>
                 </pre>
             </Slide>
 

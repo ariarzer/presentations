@@ -28,9 +28,9 @@ export default function InterestingCases() {
             <Slide>
                 <h2>Синтаксис</h2>
                 <pre>
-                    <code>{"display = [ ＜display-outside> || ＜display-inside> ] "}</code>
-                    <code>{"    | ＜display-listitem> | ＜display-internal>"}</code>
-                    <code>{"    | ＜display-box> | ＜display-legacy>"}</code>
+                    <code>{"display = [ <display-outside> || <display-inside> ] "}</code>
+                    <code>{"    | <display-listitem> | <display-internal>"}</code>
+                    <code>{"    | <display-box> | <display-legacy>"}</code>
                 </pre>
             </Slide>
 
@@ -48,12 +48,12 @@ export default function InterestingCases() {
             <Slide>
                 <h2>А нас интересует вот это</h2>
                 <pre className={''}>
-                    <code>{"display = [ ＜display-outside> || ＜display-inside> ]"}</code>
-                    <code>{"    | ＜display-legacy>"}</code>
-                    <code>{"＜display-outside>  = block | inline | run-in"}</code>
-                    <code>{"＜display-inside> = flow | flow-root | table "}</code>
+                    <code>{"display = [ <display-outside> || <display-inside> ]"}</code>
+                    <code>{"    | <display-legacy>"}</code>
+                    <code>{"<display-outside>  = block | inline | run-in"}</code>
+                    <code>{"<display-inside> = flow | flow-root | table "}</code>
                     <code>{"    | flex | grid | ruby"}</code>
-                    <b><code>{"＜display-legacy> = inline-block | inline-table "}</code>
+                    <b><code>{"<display-legacy> = inline-block | inline-table "}</code>
                     <code>{"    | inline-flex | inline-grid"}</code></b>
                 </pre>
             </Slide>
@@ -75,15 +75,15 @@ export default function InterestingCases() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                           <code>{"＜div class=class1>"}</code>
-                            <code>{"  content1"}</code>
-                            <code>{"  ＜div class=class2>"}</code>
-                            <code>{"    content2"}</code>
-                            <code>{"    ＜div class=class3>"}</code>
-                            <code>{"       content3"}</code>
-                            <code>{"       ＜/div>"}</code>
-                            <code>{"  ＜/div>"}</code>
-                            <code>{"＜/div>"}</code>
+                           <code className={`language-html`}>{"<div class=class1>"}</code>
+                            <code className={`language-html`}>{"  content1"}</code>
+                            <code className={`language-html`}>{"  <div class=class2>"}</code>
+                            <code className={`language-html`}>{"    content2"}</code>
+                            <code className={`language-html`}>{"    <div class=class3>"}</code>
+                            <code className={`language-html`}>{"       content3"}</code>
+                            <code className={`language-html`}>{"       </div>"}</code>
+                            <code className={`language-html`}>{"  </div>"}</code>
+                            <code className={`language-html`}>{"</div>"}</code>
                         </pre>
                     </div>
                     <center>
@@ -104,15 +104,15 @@ export default function InterestingCases() {
                 <div className="columns two">
                     <div>
                         <pre className={'smaller'}>
-                            <code>{"＜div class=class1>"}</code>
-                            <code>{"    content1"}</code>
-                            <code>{"    ＜div class=class2>"}</code>
-                            <code>{"        content2"}</code>
-                            <code>{"        ＜div class=class3>"}</code>
-                            <code>{"          content3"}</code>
-                            <code>{"        ＜/div>"}</code>
-                            <code>{"    ＜/div>"}</code>
-                            <code>{"＜/div>"}</code>
+                            <code className={`language-html`}>{"<div class=class1>"}</code>
+                            <code className={`language-html`}>{"    content1"}</code>
+                            <code className={`language-html`}>{"    <div class=class2>"}</code>
+                            <code className={`language-html`}>{"        content2"}</code>
+                            <code className={`language-html`}>{"        <div class=class3>"}</code>
+                            <code className={`language-html`}>{"          content3"}</code>
+                            <code className={`language-html`}>{"        </div>"}</code>
+                            <code className={`language-html`}>{"    </div>"}</code>
+                            <code className={`language-html`}>{"</div>"}</code>
                         </pre>
 
                         <pre className={'smaller'}>
@@ -140,12 +140,12 @@ export default function InterestingCases() {
             <Slide>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{".class1 {'{ position: relative;}'}"}</code>
-                        <code>{".class1 {'{ '}"}</code>
-                        <code>{"  position: absolute;"}</code>
-                        <code>{"  top: 0;"}</code>
-                        <code>{"  left: 0;"}</code>
-                        <code>{" {'}'}"}</code>
+                        <code className={`language-css`}>{".class1 {'{ position: relative;}'}"}</code>
+                        <code className={`language-css`}>{".class1 {'{ '}"}</code>
+                        <code className={`language-css`}>{"  position: absolute;"}</code>
+                        <code className={`language-css`}>{"  top: 0;"}</code>
+                        <code className={`language-css`}>{"  left: 0;"}</code>
+                        <code className={`language-css`}>{" {'}'}"}</code>
                     </pre>
 
                     <center>
@@ -165,12 +165,12 @@ export default function InterestingCases() {
             <Slide>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{".class1 {'{ position: relative;}'}"}</code>
-                        <code>{".class1 {'{ '}"}</code>
-                        <code>{"  position: absolute;"}</code>
-                        <code>{"  top: 0;"}</code>
-                        <code>{"  height: 100%;"}</code>
-                        <code>{" {'}'}"}</code>
+                        <code className={`language-css`}>{".class1 {'{ position: relative;}'}"}</code>
+                        <code className={`language-css`}>{".class1 {'{ '}"}</code>
+                        <code className={`language-css`}>{"  position: absolute;"}</code>
+                        <code className={`language-css`}>{"  top: 0;"}</code>
+                        <code className={`language-css`}>{"  height: 100%;"}</code>
+                        <code className={`language-css`}>{" {'}'}"}</code>
                     </pre>
 
                     <center>
