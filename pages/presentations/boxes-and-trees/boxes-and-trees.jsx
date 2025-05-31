@@ -78,6 +78,8 @@ export default function index() {
                     <li>Мой блог про css – <a href="https://ru.ariarzer.dev" target="_blank">ariarzer.dev</a></li>
                 </ul>
 
+                <img src="/assets/boxes-and-trees/qr.svg" alt="" className={cx('qr')}/>
+
                 <p className="small">Презентация сделана с помощью <a href="https://shwr.me/">Shower</a>.</p>
             </Slide>
         </Layout>
