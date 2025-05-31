@@ -116,8 +116,8 @@ export default function InterestingCases() {
                         </pre>
 
                         <pre className={'smaller'}>
-                            <code>{".class1 {'{ position: relative;}'}"}</code>
-                            <code>{".class3 {'{ position: absolute;}'}"}</code>
+                            <code>{".class1 { position: relative;}"}</code>
+                            <code>{".class3 { position: absolute;}"}</code>
                         </pre>
                     </div>
                     <div>
@@ -140,12 +140,12 @@ export default function InterestingCases() {
             <Slide>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{".class1 {'{ position: relative;}'}"}</code>
-                        <code>{".class1 {'{ '}"}</code>
+                        <code>{".class1 { position: relative;}"}</code>
+                        <code>{".class1 {"}</code>
                         <code>{"  position: absolute;"}</code>
                         <code>{"  top: 0;"}</code>
                         <code>{"  left: 0;"}</code>
-                        <code>{" {'}'}"}</code>
+                        <code>{"}"}</code>
                     </pre>
 
                     <center>
@@ -165,12 +165,12 @@ export default function InterestingCases() {
             <Slide>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code>{".class1 {'{ position: relative;}'}"}</code>
-                        <code>{".class1 {'{ '}"}</code>
+                        <code>{".class1 { position: relative;}"}</code>
+                        <code>{".class1 {"}</code>
                         <code>{"  position: absolute;"}</code>
                         <code>{"  top: 0;"}</code>
                         <code>{"  height: 100%;"}</code>
-                        <code>{" {'}'}"}</code>
+                        <code>{"}"}</code>
                     </pre>
 
                     <center>
@@ -209,6 +209,73 @@ export default function InterestingCases() {
                 <p><code>transform | perspective !: none</code></p>
                 <p><code>will-change:transform | perspective.</code> </p>
                 <p><code>contain: paint</code></p>
+            </Slide>
+
+            <Slide>
+                <h2>Анонимные блоки</h2>
+                <div className={"columns two"}>
+                    <pre>
+                        <code>{"<div>"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"  text"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"</div>"}</code>
+                    </pre>
+                    <pre className={'next'}>
+                        <code>{"div > * {"}</code>
+                        <code>{"  color: orange"}</code>
+                        <code>{"}"}</code>
+                    </pre>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Анонимные блоки</h2>
+                <div className={"columns two"}>
+                    <pre className={"smaller"}>
+                        <code>{"<div>"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"  text"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"</div>"}</code>
+                        <code>{"<style>"}</code>
+                        <code>{"  div > * {"}</code>
+                        <code>{"    color: orange"}</code>
+                        <code>{"  }"}</code>
+                        <code>{"</style>"}</code>
+                    </pre>
+                    <div className={cx('anonim_example')}>
+                        <span>text</span>
+                        <span>text</span>
+                        <span>text</span>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Анонимные блоки</h2>
+                <div className={"columns two"}>
+                    <pre className={""}>
+                        <code>{"<div>"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"  text"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"</div>"}</code>
+                    </pre>
+                    <center>
+                        <span className={cx('example', 'principal',)}>
+                            <span className={cx('example', 'principal')}>
+                                text
+                            </span>
+                            <span className={cx('example', 'anonimus')}>
+                                text
+                            </span>
+                            <span className={cx('example', 'principal')}>
+                                  content3
+                            </span>
+                        </span>
+                    </center>
+                </div>
             </Slide>
         </>
     )

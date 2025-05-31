@@ -32,6 +32,13 @@
   content: 'content';
 }
 
+.example.anonimus {
+  color: var(--GREY);
+}
+.example.anonimus::before {
+  content: 'anonimus';
+}
+
 .example.before,
 .example.after {
   color: var(--PURPLE);

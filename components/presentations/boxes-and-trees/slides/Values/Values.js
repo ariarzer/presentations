@@ -145,8 +145,8 @@ export default function Values() {
                         <code>{'.blue {'}</code>
                         <code>    color: blue;</code>
                         <code>{"}"}</code>
-                        <code>{'.red {'}</code>
-                        <code>    color: red;</code>
+                        <code>{'.orange {'}</code>
+                        <code>    color: orange;</code>
                         <code>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
@@ -161,8 +161,8 @@ export default function Values() {
                         <code>{'.blue {'}</code>
                         <code>    color: blue;</code>
                         <code>{"}"}</code>
-                        <code>{'.red {'}</code>
-                        <code>    color: red !important;</code>
+                        <code>{'.orange {'}</code>
+                        <code>    color: orange !important;</code>
                         <code>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
@@ -174,8 +174,8 @@ export default function Values() {
                 <CascadeLevelsList active={[4]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
-                        <code>{'    color: red;'}</code>
+                        <code>{'.class {'}</code>
+                        <code>{'    color: orange;'}</code>
                         <code>{'    animation: anim 3s infinite;'}</code>
                         <code>{'}'}</code>
                         <code>{'@keyframes anim {'}</code>
@@ -191,8 +191,8 @@ export default function Values() {
                 <CascadeLevelsList active={[4, 3]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code>{'.blue {'}</code>
-                        <code>{'    color: red !important;'}</code>
+                        <code>{'.class {'}</code>
+                        <code>{'    color: orange !important;'}</code>
                         <code>{'    animation: anim 3s infinite;'}</code>
                         <code>{'}'}</code>
                         <code>{'@keyframes anim {'}</code>
