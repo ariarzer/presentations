@@ -22,6 +22,12 @@
   color: var(--ORANGE);
 }
 
+@keyframes anim {
+  50% {
+    color: var(--DARK_GREEN);
+  }
+}
+
 .iframe {
   width: 90%;
   height: 90%;

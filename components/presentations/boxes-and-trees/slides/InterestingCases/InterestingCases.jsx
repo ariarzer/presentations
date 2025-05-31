@@ -116,8 +116,8 @@ export default function InterestingCases() {
                         </pre>
 
                         <pre className={'smaller'}>
-                            <code>{".class1 {'{ position: relative;}'}"}</code>
-                            <code>{".class3 {'{ position: absolute;}'}"}</code>
+                            <code>{".class1 { position: relative;}"}</code>
+                            <code>{".class3 { position: absolute;}"}</code>
                         </pre>
                     </div>
                     <div>
@@ -140,12 +140,12 @@ export default function InterestingCases() {
             <Slide>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code className={`language-css`}>{".class1 {'{ position: relative;}'}"}</code>
-                        <code className={`language-css`}>{".class1 {'{ '}"}</code>
+                        <code className={`language-css`}>{".class1 { position: relative;}"}</code>
+                        <code className={`language-css`}>{".class1 {"}</code>
                         <code className={`language-css`}>{"  position: absolute;"}</code>
                         <code className={`language-css`}>{"  top: 0;"}</code>
                         <code className={`language-css`}>{"  left: 0;"}</code>
-                        <code className={`language-css`}>{" {'}'}"}</code>
+                        <code className={`language-css`}>{"}"}</code>
                     </pre>
 
                     <center>
@@ -165,12 +165,12 @@ export default function InterestingCases() {
             <Slide>
                 <div className="columns two">
                     <pre className={'smaller'}>
-                        <code className={`language-css`}>{".class1 {'{ position: relative;}'}"}</code>
-                        <code className={`language-css`}>{".class1 {'{ '}"}</code>
+                        <code className={`language-css`}>{".class1 { position: relative;}"}</code>
+                        <code className={`language-css`}>{".class1 {"}</code>
                         <code className={`language-css`}>{"  position: absolute;"}</code>
                         <code className={`language-css`}>{"  top: 0;"}</code>
                         <code className={`language-css`}>{"  height: 100%;"}</code>
-                        <code className={`language-css`}>{" {'}'}"}</code>
+                        <code className={`language-css`}>{"}"}</code>
                     </pre>
 
                     <center>
@@ -193,6 +193,89 @@ export default function InterestingCases() {
                     Положение и размер блоков элемента вычисляются относительно определенного прямоугольника, который
                     называется <b>содержащим блоком</b> элемента.
                 </p>
+            </Slide>
+
+            <Slide>
+                <h2>Содержащий блок</h2>
+                <p className={'next'}>
+                    <code>position: static | relative</code> {"=>"} ближайший предок
+                </p>
+                <p className={'next'}><code>position: fixed</code> {"=>"} ближайший предок скролл-контейнер</p>
+                <p className={'next'}><code>position: absolute</code> {"=>"} </p>
+            </Slide>
+
+            <Slide>
+                <h3><code>position: absolute</code> {"=>"} </h3>
+                <p><code>transform | perspective !: none</code></p>
+                <p><code>will-change:transform | perspective.</code> </p>
+                <p><code>contain: paint</code></p>
+            </Slide>
+
+            <Slide>
+                <h2>Анонимные блоки</h2>
+                <div className={"columns two"}>
+                    <pre>
+                        <code>{"<div>"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"  text"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"</div>"}</code>
+                    </pre>
+                    <pre className={'next'}>
+                        <code>{"div > * {"}</code>
+                        <code>{"  color: orange"}</code>
+                        <code>{"}"}</code>
+                    </pre>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Анонимные блоки</h2>
+                <div className={"columns two"}>
+                    <pre className={"smaller"}>
+                        <code>{"<div>"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"  text"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"</div>"}</code>
+                        <code>{"<style>"}</code>
+                        <code>{"  div > * {"}</code>
+                        <code>{"    color: orange"}</code>
+                        <code>{"  }"}</code>
+                        <code>{"</style>"}</code>
+                    </pre>
+                    <div className={cx('anonim_example')}>
+                        <span>text</span>
+                        <span>text</span>
+                        <span>text</span>
+                    </div>
+                </div>
+            </Slide>
+
+            <Slide>
+                <h2>Анонимные блоки</h2>
+                <div className={"columns two"}>
+                    <pre className={""}>
+                        <code>{"<div>"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"  text"}</code>
+                        <code>{"  <div>text</div>"}</code>
+                        <code>{"</div>"}</code>
+                    </pre>
+                    <center>
+                        <span className={cx('example', 'principal',)}>
+                            <span className={cx('example', 'principal')}>
+                                text
+                            </span>
+                            <span className={cx('example', 'anonimus')}>
+                                text
+                            </span>
+                            <span className={cx('example', 'principal')}>
+                                  content3
+                            </span>
+                        </span>
+                    </center>
+                </div>
             </Slide>
         </>
     )

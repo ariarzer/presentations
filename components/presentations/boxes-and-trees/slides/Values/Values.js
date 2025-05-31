@@ -145,8 +145,8 @@ export default function Values() {
                         <code className={`language-css`} >{'.blue {'}</code>
                         <code className={`language-css`} >    color: blue;</code>
                         <code className={`language-css`} >{"}"}</code>
-                        <code className={`language-css`} >{'.red {'}</code>
-                        <code className={`language-css`} >    color: red;</code>
+                        <code className={`language-css`} >{'.orange {'}</code>
+                        <code className={`language-css`} >    color: orange;</code>
                         <code className={`language-css`} >{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
@@ -161,8 +161,8 @@ export default function Values() {
                         <code className={`language-css`}>{'.blue {'}</code>
                         <code className={`language-css`}>    color: blue;</code>
                         <code className={`language-css`}>{"}"}</code>
-                        <code className={`language-css`}>{'.red {'}</code>
-                        <code className={`language-css`}>    color: red !important;</code>
+                        <code className={`language-css`}>{'.orange {'}</code>
+                        <code className={`language-css`}>    color: orange !important;</code>
                         <code className={`language-css`}>{"}"}</code>
                     </pre>
                     <div className={classes['CascadedValue__example--author']}>CSS</div>
@@ -174,8 +174,8 @@ export default function Values() {
                 <CascadeLevelsList active={[4]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code className={`language-css`}>{'.blue {'}</code>
-                        <code className={`language-css`}>{'    color: red;'}</code>
+                        <code className={`language-css`}>{'.class {'}</code>
+                        <code className={`language-css`}>{'    color: orange;'}</code>
                         <code className={`language-css`}>{'    animation: anim 3s infinite;'}</code>
                         <code className={`language-css`}>{'}'}</code>
                         <code className={`language-css`}>{'@keyframes anim {'}</code>
@@ -191,8 +191,8 @@ export default function Values() {
                 <CascadeLevelsList active={[4, 3]}/>
                 <div className={'columns two'}>
                     <pre lang='css'>
-                        <code className={`language-css`}>{'.blue {'}</code>
-                        <code className={`language-css`}>{'    color: red !important;'}</code>
+                        <code className={`language-css`}>{'.class {'}</code>
+                        <code className={`language-css`}>{'    color: orange !important;'}</code>
                         <code className={`language-css`}>{'    animation: anim 3s infinite;'}</code>
                         <code className={`language-css`}>{'}'}</code>
                         <code className={`language-css`}>{'@keyframes anim {'}</code>

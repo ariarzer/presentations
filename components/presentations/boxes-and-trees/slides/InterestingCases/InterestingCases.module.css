@@ -34,3 +34,12 @@
 .absolute_sized {
   height: 258px;
 }
+
+.anonim_example {
+  display: flex;
+  flex-direction: column;
+}
+
+.anonim_example *:nth-child(odd) {
+  color: var(--DARK_ORANGE)
+}
