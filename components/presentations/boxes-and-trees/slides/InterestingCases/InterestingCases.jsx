@@ -194,6 +194,22 @@ export default function InterestingCases() {
                     называется <b>содержащим блоком</b> элемента.
                 </p>
             </Slide>
+
+            <Slide>
+                <h2>Содержащий блок</h2>
+                <p className={'next'}>
+                    <code>position: static | relative</code> {"=>"} ближайший предок
+                </p>
+                <p className={'next'}><code>position: fixed</code> {"=>"} ближайший предок скролл-контейнер</p>
+                <p className={'next'}><code>position: absolute</code> {"=>"} </p>
+            </Slide>
+
+            <Slide>
+                <h3><code>position: absolute</code> {"=>"} </h3>
+                <p><code>transform | perspective !: none</code></p>
+                <p><code>will-change:transform | perspective.</code> </p>
+                <p><code>contain: paint</code></p>
+            </Slide>
         </>
     )
 }

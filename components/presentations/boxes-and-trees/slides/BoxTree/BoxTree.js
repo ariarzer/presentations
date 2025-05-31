@@ -247,17 +247,17 @@ export default function BoxTree() {
             <Slide>
                 <div className={'columns two'}>
                     <pre className={'smaller'}>
-                        <code>{".menu {'{'}"}</code>
+                        <code>{".menu {"}</code>
                         <code>{"  position: relative;"}</code>
-                        <code>{"{'}'}"}</code>
-                        <code>{".mobile-menu {'{'}"}</code>
+                        <code>{"}"}</code>
+                        <code>{".mobile-menu {"}</code>
                         <code>{"    position: absolute;"}</code>
                         <code>{"    top: 60px;"}</code>
                         <code>{"    left: 200px;"}</code>
-                        <code>{"{'}'}"}</code>
-                        <code>{".open .mobile-menu {'{'}"}</code>
+                        <code>{"}"}</code>
+                        <code>{".open .mobile-menu {"}</code>
                         <code>{"    transform: translateX(-200px);"}</code>
-                        <code>{"{'}'}"}</code>
+                        <code>{"}"}</code>
                     </pre>
 
                     <div className={cx('mobileExample')} style={{'zoom': 0.5}}>
@@ -281,15 +281,15 @@ export default function BoxTree() {
             <Slide  className={'noBadge'}>
                 <div className={'columns two'}>
                     <pre className={'smaller'}>
-                        <code>{".burger {'{display: none}'}"}</code>
-                        <code>{".menu {'{'}"}</code>
+                        <code>{".burger {display: none}"}</code>
+                        <code>{".menu {"}</code>
                         <code>{"  display: grid;"}</code>
                         <code>{"  grid-template-columns: "}</code>
                         <code>{"    1fr 100px 100px 100px 1fr;"}</code>
-                        <code>{"{'}'}"}</code>
-                        <code>{" .mobile-menu {'{'}"}</code>
+                        <code>{"}"}</code>
+                        <code>{" .mobile-menu {"}</code>
                         <code>{"    display: contents;"}</code>
-                        <code>{"{'}'}"}</code>
+                        <code>{"}"}</code>
                     </pre>
                     <div className={cx('menuExample')} style={{'zoom': '0.5'}}>
                         <div className={cx('menuExample__List')}>
@@ -309,9 +309,9 @@ export default function BoxTree() {
                     <pre className={''}>
                         <code>{"＜div>＜/div>"}</code>
                         <code>{"＜style>"}</code>
-                        <code>{"  div::before {'{'}"}</code>
+                        <code>{"  div::before {"}</code>
                         <code>{"    content: '';"}</code>
-                        <code>{"  {'}'}"}</code>
+                        <code>{"  }"}</code>
                         <code>{"＜/style>"}</code>
                     </pre>
                     <center>
@@ -330,9 +330,9 @@ export default function BoxTree() {
                         <code>{"  ＜span>котики＜/span>"}</code>
                         <code>{"＜/div>"}</code>
                         <code>{"＜style>"}</code>
-                        <code>{"  div::before {'{'}"}</code>
+                        <code>{"  div::before {"}</code>
                         <code>{"    content: '';"}</code>
-                        <code>{"  {'}'}"}</code>
+                        <code>{"  }"}</code>
                         <code>{"＜/style>"}</code>
                     </pre>
                     <center>
@@ -353,10 +353,10 @@ export default function BoxTree() {
                         <code>{"  ＜span>котики＜/span>"}</code>
                         <code>{"＜/div>"}</code>
                         <code>{"＜style>"}</code>
-                        <code>{"  div {'{ display: contents; }'}"}</code>
-                        <code>{"  div::after {'{'}"}</code>
+                        <code>{"  div { display: contents; }"}</code>
+                        <code>{"  div::after {"}</code>
                         <code>{"    content: '';"}</code>
-                        <code>{"  {'}'}"}</code>
+                        <code>{"  }"}</code>
                         <code>{"＜/style>"}</code>
                     </pre>
                     <center>
@@ -396,9 +396,9 @@ export default function BoxTree() {
                         <pre className={'smaller'}>
                             <code>{"＜li>＜span>котики＜/span>＜/li>"}</code>
                             <code>{"＜style>"}</code>
-                            <code>{"  li::marker {'{'}"}</code>
+                            <code>{"  li::marker {"}</code>
                             <code>{"    color: green;"}</code>
-                            <code>{"  {'}'}"}</code>
+                            <code>{"  }"}</code>
                             <code>{"＜/style>"}</code>
                         </pre>
                         <li className={cx('markerExample')}>котики</li>
@@ -419,9 +419,9 @@ export default function BoxTree() {
                         <pre className={'smaller'}>
                             <code>{"＜li>＜span>котики＜/span>＜/li>"}</code>
                             <code>{"＜style>"}</code>
-                            <code>{"  li::after {'{'}"}</code>
+                            <code>{"  li::after {"}</code>
                             <code>{"    content: '123';"}</code>
-                            <code>{"  {'}'}"}</code>
+                            <code>{"  }"}</code>
                             <code>{"＜/style>"}</code>
                         </pre>
                         <li className={cx('markerExample', 'afterMarker')}>котики</li>
