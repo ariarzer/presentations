@@ -8,10 +8,15 @@ import InterestingCases
 import Into from "../../../components/presentations/boxes-and-trees/slides/intro/Into";
 import Values from "../../../components/presentations/boxes-and-trees/slides/Values/Values";
 import classes from './boxes-and-trees.module.css';
+import { useEffect } from "react";
+import Prism from "prismjs";
 
 const cx = classNames.bind(classes);
 
 export default function index() {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
     return (
         <Layout header={'Деревья и коробки'} theme={'webStorm'} appearance={'dark'}>
             <Slide className={cx('myself','noBadge')}>
